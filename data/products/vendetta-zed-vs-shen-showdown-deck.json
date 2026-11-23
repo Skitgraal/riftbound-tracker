@@ -1,0 +1,103 @@
+{
+  "slug": "vendetta-zed-vs-shen-showdown-deck",
+  "name": "Vendetta Zed vs Shen Showdown Deck",
+  "set": "Vendetta",
+  "type": "deck",
+  "language": "EN",
+  "msrp": {
+    "amount": 34.99,
+    "currency": "USD"
+  },
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "confirmed",
+  "image": "media/vendetta-zed-vs-shen-showdown-deck-5353b2cd.webp",
+  "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/e8238ddeff8f44a3164a3155712307fad4d9f7fb-2560x2560.png?w=1200&fm=webp&q=82",
+  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "riot-merch",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "price": {
+        "amount": 34.99,
+        "currency": "USD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Vendetta Zed vs Shen Showdown Deck",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Zed vs Shen Showdown Deck · 34.99 USD · en stock",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "set",
+      "value": "Vendetta",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Zed vs Shen Showdown Deck · 34.99 USD · en stock",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Zed vs Shen Showdown Deck · 34.99 USD · en stock",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 34.99,
+        "currency": "USD"
+      },
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Zed vs Shen Showdown Deck · 34.99 USD · en stock",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Zed vs Shen Showdown Deck · 34.99 USD · en stock",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/e8238ddeff8f44a3164a3155712307fad4d9f7fb-2560x2560.png?w=1200&fm=webp&q=82",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Zed vs Shen Showdown Deck · 34.99 USD · en stock",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-zed-shen-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Zed vs Shen Showdown Deck · 34.99 USD · en stock",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "createdAt": "2026-11-23T22:04:12.120Z",
+  "updatedAt": "2026-11-23T22:04:12.120Z"
+}

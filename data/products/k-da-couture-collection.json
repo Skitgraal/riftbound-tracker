@@ -1,0 +1,85 @@
+{
+  "slug": "k-da-couture-collection",
+  "name": "Riftbound x K/DA: Couture Collection",
+  "set": null,
+  "type": "box_exclusive",
+  "language": "EN",
+  "msrp": {
+    "amount": 150,
+    "currency": "USD"
+  },
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "announced",
+  "reliability": "confirmed",
+  "image": "media/k-da-couture-collection-abd3e8bc.webp",
+  "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/22ab18d64a04741aa6d917d34a21c5932f2e259b-2560x2560.png?w=1200&fm=webp&q=82",
+  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "riot-merch",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+      "price": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Riftbound x K/DA: Couture Collection",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+      "evidence": "Riftbound x K/DA: Couture Collection · 150 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "type",
+      "value": "box_exclusive",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+      "evidence": "Riftbound x K/DA: Couture Collection · 150 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+      "evidence": "Riftbound x K/DA: Couture Collection · 150 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/22ab18d64a04741aa6d917d34a21c5932f2e259b-2560x2560.png?w=1200&fm=webp&q=82",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+      "evidence": "Riftbound x K/DA: Couture Collection · 150 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+      "evidence": "Riftbound x K/DA: Couture Collection · 150 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "createdAt": "2026-11-23T22:04:12.120Z",
+  "updatedAt": "2026-11-23T22:04:12.120Z"
+}

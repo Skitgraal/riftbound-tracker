@@ -1,0 +1,85 @@
+{
+  "slug": "t1-2025-worlds-champion-player-bundle",
+  "name": "Riftbound x T1 2025 Worlds Champion Player Bundle",
+  "set": null,
+  "type": "bundle",
+  "language": "EN",
+  "msrp": {
+    "amount": 69.99,
+    "currency": "USD"
+  },
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "announced",
+  "reliability": "confirmed",
+  "image": "media/t1-2025-worlds-champion-player-bundle-b77aa26c.webp",
+  "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/00d22f8dc82269bca968ddd72802b0ba3e2d03c6-2560x2560.png?w=1200&fm=webp&q=82",
+  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "riot-merch",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+      "price": {
+        "amount": 69.99,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Riftbound x T1 2025 Worlds Champion Player Bundle",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+      "evidence": "Riftbound x T1 2025 Worlds Champion Player Bundle · 69.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+      "evidence": "Riftbound x T1 2025 Worlds Champion Player Bundle · 69.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 69.99,
+        "currency": "USD"
+      },
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+      "evidence": "Riftbound x T1 2025 Worlds Champion Player Bundle · 69.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/00d22f8dc82269bca968ddd72802b0ba3e2d03c6-2560x2560.png?w=1200&fm=webp&q=82",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+      "evidence": "Riftbound x T1 2025 Worlds Champion Player Bundle · 69.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-t1-2025-worlds-player-bundle/",
+      "evidence": "Riftbound x T1 2025 Worlds Champion Player Bundle · 69.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "createdAt": "2026-11-23T22:04:12.120Z",
+  "updatedAt": "2026-11-23T22:04:12.120Z"
+}

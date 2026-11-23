@@ -1,0 +1,94 @@
+{
+  "slug": "vendetta-booster-display",
+  "name": "Vendetta Booster Display",
+  "set": "Vendetta",
+  "type": "display",
+  "language": "EN",
+  "msrp": {
+    "amount": 119.99,
+    "currency": "USD"
+  },
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "announced",
+  "reliability": "confirmed",
+  "image": "media/vendetta-booster-display-bcfca670.webp",
+  "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/3102667c372acb3a074f2ca9c2fdbc1caeaef923-2560x2560.png?w=1200&fm=webp&q=82",
+  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "riot-merch",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "price": {
+        "amount": 119.99,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Vendetta Booster Display",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Booster Display · 119.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "set",
+      "value": "Vendetta",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Booster Display · 119.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Booster Display · 119.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 119.99,
+        "currency": "USD"
+      },
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Booster Display · 119.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/3102667c372acb3a074f2ca9c2fdbc1caeaef923-2560x2560.png?w=1200&fm=webp&q=82",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Booster Display · 119.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-vendetta-booster-display/",
+      "evidence": "Riftbound: League of Legends TCG Vendetta Booster Display · 119.99 USD · précommande · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "createdAt": "2026-11-23T22:04:12.120Z",
+  "updatedAt": "2026-11-23T22:04:12.120Z"
+}

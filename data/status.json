@@ -8,5 +8,33 @@
       "catalogCreatedAt": "2026-11-23T13:05:58+0100",
       "lastSnapshotDate": "2026-11-23"
     }
+  },
+  "source:riot-merch": {
+    "lastRunAt": "2026-11-23T22:04:12.120Z",
+    "lastSuccessAt": "2026-11-23T22:04:12.120Z",
+    "consecutiveFailures": 0,
+    "info": {
+      "items": 9
+    }
+  },
+  "source:riot-news": {
+    "lastRunAt": "2026-11-23T22:04:12.120Z",
+    "lastSuccessAt": "2026-11-23T22:04:12.120Z",
+    "consecutiveFailures": 0,
+    "info": {
+      "items": 107,
+      "fresh": 26
+    }
+  },
+  "watch": {
+    "lastRunAt": "2026-11-23T22:04:12.120Z",
+    "lastSuccessAt": "2026-11-23T22:04:12.120Z",
+    "consecutiveFailures": 0,
+    "info": {
+      "products": 9,
+      "pending": 26,
+      "extracted": 0,
+      "llm": "indisponible"
+    }
   }
 }

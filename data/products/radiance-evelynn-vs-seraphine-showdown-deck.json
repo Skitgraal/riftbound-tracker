@@ -1,0 +1,94 @@
+{
+  "slug": "radiance-evelynn-vs-seraphine-showdown-deck",
+  "name": "Radiance Evelynn vs Seraphine Showdown Deck",
+  "set": "Radiance",
+  "type": "deck",
+  "language": "EN",
+  "msrp": {
+    "amount": 34.99,
+    "currency": "USD"
+  },
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "announced",
+  "reliability": "confirmed",
+  "image": "media/radiance-evelynn-vs-seraphine-showdown-deck-66e7d984.webp",
+  "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/ae1927c472cb538719aa5d1c9cfe2efb3048fa90-2560x2560.png?w=1200&fm=webp&q=82",
+  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "riot-merch",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "price": {
+        "amount": 34.99,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Radiance Evelynn vs Seraphine Showdown Deck",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Radiance Evelynn vs Seraphine Showdown Deck · 34.99 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Radiance Evelynn vs Seraphine Showdown Deck · 34.99 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Radiance Evelynn vs Seraphine Showdown Deck · 34.99 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 34.99,
+        "currency": "USD"
+      },
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Radiance Evelynn vs Seraphine Showdown Deck · 34.99 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/ae1927c472cb538719aa5d1c9cfe2efb3048fa90-2560x2560.png?w=1200&fm=webp&q=82",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Radiance Evelynn vs Seraphine Showdown Deck · 34.99 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "source": "riot-merch",
+      "tier": "official",
+      "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-evelynn-seraphine-showdown/",
+      "evidence": "Riftbound: League of Legends TCG Radiance Evelynn vs Seraphine Showdown Deck · 34.99 USD · épuisé",
+      "observedAt": "2026-11-23T22:04:12.120Z"
+    }
+  ],
+  "createdAt": "2026-11-23T22:04:12.120Z",
+  "updatedAt": "2026-11-23T22:04:12.120Z"
+}
