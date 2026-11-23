@@ -95,7 +95,8 @@ Une entrée par produit Cardmarket.
 | `expansionId` | |
 | `languageTag` | `ZH` si le nom l'indique, sinon vide |
 | `dateAdded` | |
-| `firstSeenAt`, `lastSeenAt` | un produit retiré du fichier Cardmarket reste au catalogue |
+| `firstSeenAt` | première apparition dans les fichiers |
+| `removedAt` | absent tant que le produit figure dans les fichiers ; un produit retiré reste au catalogue avec cette date |
 
 ### `prices/history/AAAA-MM.csv`
 Une ligne par produit et par jour, ajoutée en fin de fichier.

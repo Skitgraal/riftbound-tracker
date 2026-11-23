@@ -1,0 +1,52 @@
+name: prices
+
+# Ingestion Cardmarket, 3 fois par jour (heures UTC : 06:17, 14:17 et 22:17 à Paris en hiver, une heure plus tard en été).
+# Idempotente : si Cardmarket n'a rien publié de nouveau, rien n'est commité.
+on:
+  schedule:
+    - cron: '17 5,13,21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Un seul workflow écrit dans data/ à la fois.
+concurrency:
+  group: data-writer
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Ingestion Cardmarket
+        run: npm run prices -w collector
+        env:
+          DISCORD_WEBHOOK_CRITICAL: ${{ secrets.DISCORD_WEBHOOK_CRITICAL }}
+          DISCORD_WEBHOOK_FEED: ${{ secrets.DISCORD_WEBHOOK_FEED }}
+
+      # Même en cas d'échec : l'état des tâches (data/status.json) doit être enregistré.
+      - name: Commit des données
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data
+          if git diff --cached --quiet; then
+            echo "Aucune donnée nouvelle."
+            exit 0
+          fi
+          git commit -m "data: prix Cardmarket du $(TZ=Europe/Paris date +%F)"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          exit 1
