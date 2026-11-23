@@ -47,7 +47,11 @@ async function main(): Promise<void> {
   const now = new Date();
   const sent = await loadSent();
 
+  // Panne simulée (workflow lancé à la main avec simulate_failure) : vérifie que l'alerte d'échec part.
+  const simulated = process.env.SIMULATE_FAILURE === 'true';
+
   try {
+    if (simulated) throw new Error('Panne simulée (test de l\'alerte d\'échec).');
     const files = await downloadAll();
     const meta = await readJson<Meta>(PATHS.meta, {});
     const log: string[] = [];
@@ -115,7 +119,7 @@ async function main(): Promise<void> {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`Ingestion Cardmarket en échec : ${message}`);
     const status = await recordJob('prices', { ok: false, error: message }, now);
-    const failKey = `prices-failed:${parisDate(now)}`;
+    const failKey = `prices-failed${simulated ? '-simulated' : ''}:${parisDate(now)}`;
     if (!sent[failKey]) {
       const ok = await sendDiscord('feed', [{
         title: 'Ingestion Cardmarket en échec',

@@ -6,6 +6,11 @@ on:
   schedule:
     - cron: '17 5,13,21 * * *'
   workflow_dispatch:
+    inputs:
+      simulate_failure:
+        description: "Simuler une panne (teste l'alerte d'échec, rien n'est commité)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,10 +37,11 @@ jobs:
         env:
           DISCORD_WEBHOOK_CRITICAL: ${{ secrets.DISCORD_WEBHOOK_CRITICAL }}
           DISCORD_WEBHOOK_FEED: ${{ secrets.DISCORD_WEBHOOK_FEED }}
+          SIMULATE_FAILURE: ${{ inputs.simulate_failure }}
 
-      # Même en cas d'échec : l'état des tâches (data/status.json) doit être enregistré.
+      # Même en cas d'échec : l'état des tâches (data/status.json) doit être enregistré. Sauf panne simulée.
       - name: Commit des données
-        if: always()
+        if: always() && inputs.simulate_failure != true
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
