@@ -6,7 +6,8 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "prices": "tsx src/prices/run.ts",
-    "alert-test": "tsx src/alerts/test.ts"
+    "alert-test": "tsx src/alerts/test.ts",
+    "build-data": "tsx src/build-data/run.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",

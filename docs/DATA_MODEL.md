@@ -124,14 +124,22 @@ La date est celle du `createdAt` du fichier Cardmarket. Volume : environ 2 000 l
 
 ## Fichiers dérivés pour le dashboard
 
-Générés par `collector/build-data` à chaque publication, pour que le navigateur ne charge que de petits fichiers.
+Générés par `npm run build-data -w collector` (lancé par `npm run build` et `npm run dev`) dans `site/public/data/`, pour que le navigateur ne charge que de petits fichiers.
 
 | Fichier | Contenu |
 |---|---|
-| `products.json` | toutes les fiches sans leurs affirmations, pour la grille et la frise |
-| `products/{slug}.json` | fiche complète |
-| `draws.json` | tirages ouverts et à venir |
-| `prices/index.json` | catalogue allégé avec dernier prix et variations 1 j / 7 j / 30 j, pour la recherche |
-| `prices/{id}.json` | historique complet d'un produit, pour la courbe |
-| `watchlist.json` | produits suivis avec variations |
-| `status.json` | état des sources |
+| `meta.json` | fraîcheur (guide de prix, dernier relevé), début et durée de l'historique, seuils d'alerte, langues masquées |
+| `prices/index.json` | catalogue allégé : set, catégorie, langue, dernier prix, variations 1 j / 7 j / 30 j, `watched` ; mini-courbe 7 jours (`spark`) pour les produits suivis |
+| `prices/series/{id}.json` | historique complet d'un produit, pour la courbe : `[date, tendance, plus bas, moyenne]` |
+| `status.json` | copie de `data/status.json` |
+| `products.json` | (jalon 3) toutes les fiches sans leurs affirmations, pour la grille et la frise |
+| `products/{slug}.json` | (jalon 3) fiche complète |
+| `draws.json` | (jalon 5) tirages ouverts et à venir |
+
+Un produit sans set identifié (bundle, coffret, promo) est affiché « Hors série ».
+
+## Watchlist et alertes de variation
+
+- Suivis automatiquement : tout le scellé anglais présent sur Cardmarket (les versions `(French)`, `(Chinese…)`… sont exclues). En plus : les cartes de `config/watchlist.yml`.
+- Variation = prix tendance du dernier relevé comparé au relevé le plus récent datant d'au moins 1, 7 ou 30 jours avant.
+- Alerte dans `fil` si |1 j| ≥ `alert_1d_pct` ou |7 j| ≥ `alert_7d_pct` et prix ≥ `min_price_eur` ; une seule par produit et par relevé (clé `price-move:{id}:{date}`).

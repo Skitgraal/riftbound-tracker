@@ -10,6 +10,31 @@ import { parisDate, parseTimestamp } from '../shared/time.ts';
 import { cardmarketSearchUrl, downloadAll } from './cardmarket.ts';
 import { deriveExpansions, mergeCatalog, type Catalog, type CatalogEntry, type Expansions } from './catalog.ts';
 import { appendDay, monthFileOf, priceRows } from './history.ts';
+import { loadPriceSettings, loadWatchedCards } from '../shared/config.ts';
+import { loadHistory } from './series.ts';
+import { findMoves, watchedProducts, type Move } from './watchlist.ts';
+
+const SITE_URL = 'https://skitgraal.github.io/riftbound-tracker/';
+
+const pct = (v: number | null): string =>
+  v === null ? '—' : `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toLocaleString('fr-FR', { maximumFractionDigits: 1 })} %`;
+const eur = (v: number): string => v.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' });
+
+function moveEmbed(m: Move, expansions: Expansions): Embed {
+  const set = expansions[String(m.entry.expansionId)] ?? 'Hors série';
+  return {
+    title: `${m.entry.name} : ${pct(m.pct)} sur ${m.window === '1d' ? '1 jour' : '7 jours'}`,
+    url: `${SITE_URL}#/prix?id=${m.entry.id}`,
+    color: m.pct > 0 ? COLORS.accent : COLORS.down,
+    fields: [
+      { name: 'Prix tendance', value: eur(m.trend), inline: true },
+      { name: '1 j / 7 j / 30 j', value: `${pct(m.variations.d1)} / ${pct(m.variations.d7)} / ${pct(m.variations.d30)}`, inline: true },
+      { name: 'Set', value: set, inline: true },
+      { name: 'Cardmarket', value: `[Offres en anglais](${cardmarketSearchUrl(m.entry.name)})` },
+    ],
+    footer: { text: `Relevé Cardmarket du ${m.date}` },
+  };
+}
 
 const PATHS = {
   catalog: repoPath('data/prices/catalog.json'),
@@ -29,7 +54,7 @@ interface Meta {
 }
 
 function newProductEmbed(p: CatalogEntry, expansions: Expansions): Embed {
-  const set = expansions[String(p.expansionId)] ?? `Extension #${p.expansionId}`;
+  const set = expansions[String(p.expansionId)] ?? 'Hors série';
   return {
     title: `Nouveau produit sur Cardmarket : ${p.name}`,
     url: cardmarketSearchUrl(p.name),
@@ -78,12 +103,14 @@ async function main(): Promise<void> {
 
     // Historique des prix
     const snapshotDate = parisDate(files.priceGuide.createdAt);
+    let newDay = false;
     if (files.priceGuide.createdAt !== meta.priceGuideCreatedAt) {
       const file = PATHS.history(monthFileOf(snapshotDate));
       const next = appendDay(await readText(file), priceRows(files.priceGuide.priceGuides, snapshotDate), snapshotDate);
       if (next !== undefined) {
         await writeText(file, next);
         meta.lastSnapshotDate = snapshotDate;
+        newDay = true;
         log.push(`prix : ${files.priceGuide.priceGuides.length} lignes ajoutées pour le ${snapshotDate}`);
       } else {
         log.push(`prix : le ${snapshotDate} est déjà enregistré`);
@@ -93,6 +120,18 @@ async function main(): Promise<void> {
       log.push(`prix : fichier déjà intégré (${files.priceGuide.createdAt})`);
     }
     await writeJson(PATHS.meta, meta);
+
+    // Variations de prix de la watchlist : une alerte par produit et par relevé au maximum
+    if (newDay) {
+      const settings = await loadPriceSettings();
+      const watched = watchedProducts(await readJson<Catalog>(PATHS.catalog, {}), await loadWatchedCards(), settings);
+      const moves = findMoves(watched, await loadHistory(2), snapshotDate, settings)
+        .filter((m) => !sent[`price-move:${m.entry.id}:${m.date}`]);
+      log.push(`watchlist : ${watched.length} produits suivis, ${moves.length} variation(s) au-delà du seuil`);
+      if (moves.length > 0 && (await sendDiscord('feed', moves.map((m) => moveEmbed(m, expansions))))) {
+        for (const m of moves) sent[`price-move:${m.entry.id}:${m.date}`] = now.toISOString();
+      }
+    }
 
     // Guide de prix périmé : une alerte par jour au maximum
     const ageHours = (now.getTime() - parseTimestamp(files.priceGuide.createdAt).getTime()) / 3_600_000;

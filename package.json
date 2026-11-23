@@ -12,7 +12,7 @@
   "scripts": {
     "test": "npm run test --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
-    "build": "npm run build -w site",
-    "dev": "npm run dev -w site"
+    "build": "npm run build-data -w collector && npm run build -w site",
+    "dev": "npm run build-data -w collector && npm run dev -w site"
   }
 }

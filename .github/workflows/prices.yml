@@ -56,3 +56,13 @@ jobs:
             git pull --rebase
           done
           exit 1
+
+  # Republie le dashboard avec les nouvelles données (et l'état à jour, même après un échec).
+  publish:
+    needs: ingest
+    if: ${{ !cancelled() && inputs.simulate_failure != true }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/pages.yml

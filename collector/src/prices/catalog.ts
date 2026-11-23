@@ -6,7 +6,7 @@ export interface CatalogEntry {
   kind: 'single' | 'sealed';
   category: string;
   expansionId: number;
-  /** `ZH` pour les versions chinoises, repérées au nom ; vide sinon. */
+  /** Langue d'une version non anglaise (`ZH`, `FR`…), repérée au nom ; vide pour l'anglais. */
   languageTag: string;
   dateAdded: string;
   firstSeenAt: string;
@@ -17,8 +17,35 @@ export interface CatalogEntry {
 /** Catalogue indexé par idProduct (clé texte pour le JSON). */
 export type Catalog = Record<string, CatalogEntry>;
 
+const LANGUAGE_TAGS: Record<string, string> = {
+  chinese: 'ZH',
+  french: 'FR',
+  german: 'DE',
+  italian: 'IT',
+  spanish: 'ES',
+  japanese: 'JA',
+  korean: 'KO',
+  portuguese: 'PT',
+};
+const LANGUAGE_RE = new RegExp(`\\((${Object.keys(LANGUAGE_TAGS).join('|')})\\b`, 'i');
+
+/** Cardmarket signale les versions non anglaises dans le nom : « Origins Booster (French) ». */
 export function languageTagOf(name: string): string {
-  return /\(chinese\b/i.test(name) ? 'ZH' : '';
+  const match = LANGUAGE_RE.exec(name);
+  return match?.[1] ? (LANGUAGE_TAGS[match[1].toLowerCase()] ?? '') : '';
+}
+
+/** Libellé court d'une catégorie Cardmarket. */
+export function categoryLabel(category: string): string {
+  const labels: Record<string, string> = {
+    'Riftbound Single': 'Carte',
+    'Riftbound Display': 'Display',
+    'Riftbound Booster': 'Booster',
+    'Riftbound Champion Decks': 'Deck',
+    'Riftbound Riftbound Box Sets': 'Box set',
+    'RB Set': 'Set de cartes',
+  };
+  return labels[category] ?? category.replace(/^(Riftbound|RB)\s+/, '');
 }
 
 export interface MergeResult {

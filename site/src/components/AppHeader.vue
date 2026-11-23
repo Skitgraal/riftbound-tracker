@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { navItems } from '../router.ts';
 import BrandMark from './BrandMark.vue';
+import { useData, type SiteMeta } from '../lib/data.ts';
+import { day, hoursSince } from '../lib/format.ts';
+
+const { data: meta } = useData<SiteMeta>('meta.json');
 </script>
 
 <template>
@@ -23,6 +27,20 @@ import BrandMark from './BrandMark.vue';
           {{ item.label }}
         </RouterLink>
       </nav>
+
+      <RouterLink
+        v-if="meta?.lastSnapshotDate"
+        to="/etat"
+        class="ml-auto flex items-center gap-2 text-[13px] text-text-muted no-underline hover:text-text"
+        title="État des sources"
+      >
+        <span
+          class="size-2 rounded-full"
+          :class="hoursSince(meta.priceGuideCreatedAt) > 36 ? 'bg-down' : 'bg-accent'"
+          aria-hidden="true"
+        />
+        <span class="hidden sm:inline">Cardmarket · fichier du</span> {{ day(meta.lastSnapshotDate) }}
+      </RouterLink>
     </div>
   </header>
 </template>

@@ -1,11 +1,11 @@
 name: pages
 
 # Publie le dashboard sur GitHub Pages.
-# Déclenché par une modification du site, et plus tard par les workflows de collecte après chaque mise à jour de data/.
+# Déclenché par une modification du code ou de la config, et par les workflows de collecte après chaque passage.
 on:
   push:
     branches: [main]
-    paths: ['site/**', 'package-lock.json', '.github/workflows/pages.yml']
+    paths: ['site/**', 'collector/**', 'config/**', 'package-lock.json', '.github/workflows/pages.yml']
   workflow_dispatch:
   workflow_call:
 
@@ -23,7 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # main et non le commit déclencheur : appelé après une collecte, le site doit inclure les données qu'elle vient de committer.
       - uses: actions/checkout@v7
+        with:
+          ref: main
       - uses: actions/setup-node@v7
         with:
           node-version: 22
