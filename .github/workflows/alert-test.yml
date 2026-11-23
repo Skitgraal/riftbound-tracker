@@ -1,0 +1,24 @@
+name: alert-test
+
+# Lancement manuel : envoie un message de test dans chaque salon Discord.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run alert-test -w collector
+        env:
+          DISCORD_WEBHOOK_CRITICAL: ${{ secrets.DISCORD_WEBHOOK_CRITICAL }}
+          DISCORD_WEBHOOK_FEED: ${{ secrets.DISCORD_WEBHOOK_FEED }}

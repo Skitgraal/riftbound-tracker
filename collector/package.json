@@ -5,7 +5,8 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "prices": "tsx src/prices/run.ts"
+    "prices": "tsx src/prices/run.ts",
+    "alert-test": "tsx src/alerts/test.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
