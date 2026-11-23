@@ -1,2 +1,19 @@
-# Sources de la veille (Module 1). Rempli au jalon 3. Voir docs/SOURCES.md.
-sources: []
+# Sources de la veille (Module 1). Voir docs/SOURCES.md.
+# Ajouter une source d'un type déjà géré (kind) ne demande pas de code. Mettre enabled: false pour en couper une.
+
+sources:
+  - id: riot-news
+    name: Site Riftbound — actualités
+    kind: riot-news
+    tier: official
+    url: https://playriftbound.com/en-us/news/
+    enabled: true
+    # Tournois et règles : jamais de produit à suivre
+    skip_categories: [organized_play]
+
+  - id: riot-merch
+    name: Boutique Riot — Riftbound
+    kind: riot-merch
+    tier: official
+    url: https://merch.riotgames.com/en-us/category/riftbound/
+    enabled: true

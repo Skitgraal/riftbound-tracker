@@ -26,12 +26,18 @@ Tous fonctionnent par simple requête HTTP depuis GitHub Actions : aucun program
 
 Liste de départ. **Chaque URL et chaque méthode d'accès est à valider au jalon correspondant** : rien n'a encore été testé ici, sauf Cardmarket. Un site peut bloquer les serveurs de GitHub ; dans ce cas la source est remplacée, pas contournée.
 
-### Officiel
-| Id | Source | Type envisagé | Apporte |
+### Officiel — en service depuis le jalon 3 (vérifié le 23/11/2026)
+| Id | Source | Type | Apporte |
 |---|---|---|---|
-| `riot-riftbound-news` | actualités du site Riftbound | `html` ou `rss` | annonces de sets et de produits |
-| `riot-riftbound-products` | pages produits du site Riftbound | `html` | fiche, image, date |
-| `riot-merch` | boutique Riot | `html` ou `shopify` | box exclusives, tirages, prix |
+| `riot-news` | `https://playriftbound.com/en-us/news/` (l'ancien domaine riftbound.leagueoflegends.com y redirige) | `riot-news` : JSON `__NEXT_DATA__` de la page de liste, puis corps de l'article (blocs `articleRichText*`) | annonces de sets et de produits, tirages, prix ; extraction par LLM |
+| `riot-merch` | `https://merch.riotgames.com/en-us/category/riftbound/` | `riot-merch` : liste `initialProducts` du flux React de la page | nom, prix, disponibilité, précommande, photos ; sans LLM |
+
+Constats :
+- `robots.txt` : tout est autorisé sur les deux sites.
+- Le site Riftbound n'a pas de flux RSS, et n'a pas de pages produits : les produits sont annoncés dans les articles. La source `riot-riftbound-products` envisagée est donc abandonnée.
+- La boutique Riot n'est pas une boutique Shopify (`/products.json` répond 500) : elle est lue par sa page de catégorie. Elle ne liste que les produits en vente ou récemment épuisés ; les accessoires (sleeves, playmats…) sont ignorés.
+- Les articles récents (moins de 21 jours) sont relus à chaque passage, car Riot les complète souvent (dates de tirage). Le carrousel « articles liés » est exclu du texte : il change à chaque chargement.
+- Catégorie `organized_play` ignorée (tournois).
 
 ### Relais
 | Id | Source | Type envisagé | Apporte |

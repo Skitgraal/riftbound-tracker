@@ -35,7 +35,7 @@ Coût : 0 €. Comptes nécessaires : GitHub et Discord.
 | Exécution planifiée | GitHub Actions | gratuit et illimité sur un dépôt public |
 | Scripts de collecte | TypeScript sur Node 22 | un seul langage pour la collecte et le front ; Node est déjà installé |
 | Stockage | fichiers JSON et CSV dans le dépôt | pas de base à héberger ; l'historique Git sert d'audit |
-| Extraction | règles d'abord, LLM gratuit en complément (GitHub Models) | voir §5 |
+| Extraction | règles d'abord, LLM gratuit en complément (API Gemini, offre gratuite) | voir §5 |
 | Dashboard | Vue 3, Vite, TypeScript, Tailwind CSS, Apache ECharts | site statique |
 | Hébergement | GitHub Pages | gratuit, HTTPS inclus |
 | Alertes | webhooks Discord | gratuit, notification push sur téléphone |
@@ -93,13 +93,14 @@ Un passage **toutes les 2 heures**, en permanence. C'est gratuit, donc autant ga
 
 | Point | Choix |
 |---|---|
-| Fournisseur | **GitHub Models**, appelé depuis Actions avec le jeton fourni automatiquement : pas de compte ni de clé en plus |
-| Modèle | choisi au jalon 3 parmi le catalogue gratuit, sur un jeu d'essai de documents réels |
-| Volume | faible : seuls les documents nouveaux, en texte libre, et passés par le tri par mots-clés |
-| Si le quota gratuit est atteint | mode dégradé (alerte « à lire »), reprise au passage suivant |
-| Solution de repli | l'offre gratuite de l'API Gemini ; le fournisseur est isolé derrière une interface |
+| Fournisseur | **API Gemini, offre gratuite** (clé créée dans Google AI Studio, sans carte bancaire), rangée dans le secret `GEMINI_API_KEY`. GitHub Models, prévu au départ, a été arrêté par GitHub le 30/07/2026 (voir D13) |
+| Appel | `generateContent` avec sortie JSON imposée par un schéma (`responseJsonSchema`), température 0 ; prompt versionné dans `prompts/extract.md` ; réponse revalidée par le code (`collector/src/watch/extract.ts`) |
+| Modèles | `gemini-3.8-flash`, puis `gemini-3.5-flash-lite` en secours si le premier est saturé (quotas comptés par modèle). Réglables dans `config/settings.yml` |
+| Volume | faible : seuls les documents nouveaux ou modifiés, en texte libre, passés par le tri par mots-clés ; au plus 6 par passage, le reste attend le passage suivant |
+| Si le LLM est indisponible | mode dégradé : alerte « à lire » avec le lien, document gardé dans `data/pending.json` et retenté ensuite. Sans clé, les documents attendent sans être abandonnés |
+| Données | l'offre gratuite peut servir à Google pour améliorer ses produits : seuls des articles publics y sont envoyés |
 
-Les quotas et conditions des offres gratuites changent : ils sont à vérifier au jalon 3. L'architecture ne dépend pas du LLM pour fonctionner, seulement pour remplir les fiches automatiquement.
+Les sources structurées (boutique Riot) n'utilisent pas le LLM. L'architecture ne dépend pas du LLM pour fonctionner, seulement pour remplir les fiches automatiquement.
 
 ## 6. Module 2 — tracker de prix
 

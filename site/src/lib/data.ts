@@ -33,6 +33,8 @@ export interface SiteMeta {
   thresholds: { d1: number; d7: number; minPrice: number };
   hideLanguageTags: string[];
   products: number;
+  releases: number;
+  sources: { id: string; name: string; url: string; tier: string; enabled: boolean }[];
   watched: number;
 }
 

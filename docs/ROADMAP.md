@@ -44,7 +44,7 @@ Déjà en place sur le poste : Node 22 et Git. Rien à payer.
 
 ## Jalon 3 — Veille officielle
 - Registre des sources, collecteurs `html` et `rss`, détection de nouveauté, tri par mots-clés.
-- Extraction LLM via GitHub Models : vérification des quotas, choix du modèle sur un jeu d'essai d'une vingtaine de documents réels.
+- Extraction LLM via l'API Gemini gratuite (GitHub Models a été retiré, voir D13) : vérification sur les articles réels.
 - Mode dégradé « à lire ».
 - Fiches, affirmations, statut et fiabilité, images.
 - Vues Sorties et Fiche produit. Workflow `watch` toutes les 2 h.

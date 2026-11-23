@@ -10,17 +10,29 @@ prices:
   hide_language_tags: [ZH, FR, DE, IT, ES, JA, KO, PT]
 
 watch:
-  # Un document ne part à l'extraction que s'il contient au moins un de ces mots (insensible à la casse)
+  # LLM gratuit (API Gemini, offre gratuite) : modèle principal, puis modèle de secours si le premier est saturé
+  llm_model: gemini-3.8-flash
+  llm_fallback_model: gemini-3.5-flash-lite
+  # Nombre maximal d'articles envoyés au LLM par passage (le reste attend le passage suivant)
+  max_extractions_per_run: 6
+  # Au tout premier passage, seuls les articles de moins de N jours sont lus
+  bootstrap_days: 150
+  # Un article ne part à l'extraction que s'il contient au moins un de ces mots (insensible à la casse).
+  # Les noms de sets connus (Origins, Spiritforged…) sont ajoutés automatiquement.
   keywords:
     - booster
     - display
-    - booster box
-    - box
     - bundle
-    - deck
+    - box set
+    - collection
+    - edition
+    - champion deck
+    - showdown deck
+    - precon
     - preorder
     - pre-order
+    - drawing
     - raffle
-    - release
-    - exclusive
-    - collector
+    - merch store
+    - msrp
+    - release date

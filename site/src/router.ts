@@ -18,6 +18,7 @@ export const navItems: NavItem[] = [
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: () => import('./views/ReleasesView.vue'), meta: { title: 'Sorties' } },
+  { path: '/produit/:slug', component: () => import('./views/ProductView.vue'), meta: { title: 'Fiche produit' } },
   { path: '/tirages', component: () => import('./views/DrawsView.vue'), meta: { title: 'Tirages' } },
   { path: '/prix', component: () => import('./views/PricesView.vue'), meta: { title: 'Prix' } },
   { path: '/watchlist', component: () => import('./views/WatchlistView.vue'), meta: { title: 'Watchlist' } },

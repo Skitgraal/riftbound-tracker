@@ -47,7 +47,7 @@ En période chaude (révélation d'un set, tirage ouvert) : passage toutes les 2
 ## Stack retenue (0 €, sans serveur)
 - Exécution : GitHub Actions (dépôt public), scripts de collecte en TypeScript / Node
 - Stockage : fichiers JSON et CSV committés dans le dépôt (pas de base de données)
-- Extraction : règles et mots-clés d'abord, LLM gratuit (GitHub Models) pour le texte libre, alerte « à lire » si le LLM échoue
+- Extraction : règles et mots-clés d'abord, LLM gratuit (API Gemini, GitHub Models ayant été retiré) pour le texte libre, alerte « à lire » si le LLM échoue
 - Front : Vue 3, site statique sur GitHub Pages (dashboard des sorties + tracker de prix)
 - Alertes : webhooks Discord
 - Abandonné : Java / Spring Boot, PostgreSQL, VPS, API LLM payante

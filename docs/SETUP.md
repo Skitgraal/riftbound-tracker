@@ -43,6 +43,7 @@ Dans l'application X, sur le profil du compte officiel Riftbound et de ton leake
 | Jalon 0 | rouvrir VS Code dans le nouveau dossier `C:\dev\riftbound-tracker` | 1 min |
 | Jalon 1 | `gh secret set DISCORD_WEBHOOK_CRITICAL` puis `gh secret set DISCORD_WEBHOOK_FEED`, et coller l'URL quand c'est demandé (elle ne s'affiche pas) | 1 min |
 | Jalon 2 | ouvrir le dashboard sur le téléphone → menu du navigateur → **Ajouter à l'écran d'accueil** | 1 min |
+| Jalon 3 | créer une clé API Gemini gratuite sur aistudio.google.com (**Get API key** → **Create API key**), puis `gh secret set GEMINI_API_KEY` et coller la clé | 2 min |
 | Jalon 4 | valider la liste des retailers et des subreddits proposée ; créer l'accès Reddit si la source Reddit est retenue (guide fourni) | 10 min |
 | Jalon 6 | créer le bot Discord qui lit les salons d'annonces suivis (guide fourni) | 5 min |
 

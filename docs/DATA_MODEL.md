@@ -44,6 +44,7 @@ Le `slug` est la clé normalisée (set + type + variante) ; c'est elle qui sert 
 | `status` | texte | `rumor`, `announced`, `preorder`, `released`, `cancelled` |
 | `reliability` | texte | `unconfirmed`, `confirmed` |
 | `image` | texte ou vide | chemin dans `data/media/` ; vide = « image à venir » |
+| `imageSource` | texte ou vide | adresse d'origine du visuel retenu ; le visuel est recopié quand elle change. Une photo produit (boutique) passe toujours avant une bannière d'article (`imageFallback`) |
 | `officialUrl` | texte | lien direct |
 | `cmProductId` | nombre ou vide | rapprochement avec Cardmarket |
 | `possibleDuplicateOf` | texte ou vide | rapprochement incertain |
@@ -73,7 +74,9 @@ Règle de résolution d'un champ : parmi les affirmations valides, le niveau le 
 URL → `{ hash, firstSeenAt, lastSeenAt }`. Sert à ne traiter que le neuf. Les entrées de plus de 12 mois sont purgées.
 
 ### `pending.json`
-Documents qui ont passé le tri mais dont l'extraction a échoué : `{ url, source, title, attempts, firstSeenAt }`. Retentés à chaque passage, abandonnés après 10 essais (l'alerte « à lire » a déjà été envoyée).
+Documents qui ont passé le tri et attendent l'extraction (quota du passage atteint, LLM indisponible ou réponse invalide) : `{ url, source, title, publishedAt, text, attempts, firstSeenAt, lastError, alerted }`. Retentés à chaque passage, abandonnés après 10 essais (l'alerte « à lire » est déjà partie). Sans clé LLM, les essais ne sont pas comptés.
+
+Au tout premier passage, seuls les articles des 150 derniers jours sont mis en attente, sans aucune alerte ; ensuite, un produit tiré d'un article de plus de 30 jours n'est pas annoncé comme nouveau.
 
 ### `alerts.json`
 Liste des clés d'alertes déjà envoyées, avec la date. Empêche les doublons, y compris pour les rappels de tirage. Purge après 6 mois.

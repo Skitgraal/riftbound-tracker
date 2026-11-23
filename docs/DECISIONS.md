@@ -31,7 +31,7 @@ Contrainte directrice : **gratuit, simple, et pratique**. Une entrée par choix 
 **Écarté.** Écraser la fiche à chaque passage : le dernier arrivé gagnerait, même s'il est le moins fiable.
 
 ## D6 — Règles d'abord, LLM gratuit en complément, mode dégradé
-**Décision.** Tri par mots-clés, lecture directe des sources structurées, LLM gratuit (GitHub Models) seulement pour le texte libre. Si le LLM échoue, le document est signalé « à lire » sur Discord.
+**Décision.** Tri par mots-clés, lecture directe des sources structurées, LLM gratuit seulement pour le texte libre (API Gemini depuis D13). Si le LLM échoue, le document est signalé « à lire » sur Discord.
 **Raison.** Les offres gratuites ont des quotas et peuvent changer : l'outil ne doit pas en dépendre pour remplir sa mission première, ne rater aucune sortie.
 **Écarté.** API Claude payante ; tout faire au LLM ; ne pas utiliser de LLM du tout (les posts Reddit et les articles ne se lisent pas de façon fiable avec des règles).
 
@@ -60,3 +60,13 @@ Contrainte directrice : **gratuit, simple, et pratique**. Une entrée par choix 
 ## D12 — Pas d'image pour les cartes en v1
 **Décision.** Images pour le scellé (reprises de la veille), lien Cardmarket pour les cartes.
 **Raison.** Les fichiers Cardmarket n'ont pas d'images, et l'objectif du projet est le scellé.
+
+## D13 — Gemini à la place de GitHub Models
+**Décision.** Extraction par l'offre gratuite de l'API Gemini (clé AI Studio dans le secret `GEMINI_API_KEY`), modèle principal et modèle de secours.
+**Raison.** GitHub Models a été retiré par GitHub le 30/07/2026 (constaté au jalon 3). Gemini était la solution de repli prévue : offre gratuite sans carte bancaire, sortie JSON contrainte par schéma.
+**Coût.** Une clé à créer (2 minutes). Les données envoyées sont des articles publics, ce qui rend acceptable leur réutilisation par Google prévue par l'offre gratuite.
+
+## D14 — Sources officielles lues par leurs données embarquées
+**Décision.** Le site Riftbound (playriftbound.com) et la boutique Riot (merch.riotgames.com) sont lus via le JSON que leurs pages embarquent (Next.js), pas par analyse du HTML affiché.
+**Raison.** Plus robuste et plus précis : la liste des actualités donne titre, date, catégorie et image en une requête ; la boutique donne prix, disponibilité et précommande sans LLM. Les deux `robots.txt` autorisent l'accès.
+

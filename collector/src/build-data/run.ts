@@ -2,8 +2,10 @@
  * Génère les petits fichiers lus par le dashboard (site/public/data/, non committé), à partir de data/ et config/.
  * Lancé avant chaque build du site.
  */
-import { rm } from 'node:fs/promises';
-import { loadPriceSettings, loadWatchedCards } from '../shared/config.ts';
+import { cp, readdir, rm } from 'node:fs/promises';
+import { loadPriceSettings, loadSources, loadWatchedCards } from '../shared/config.ts';
+import { nameTokens } from '../watch/products.ts';
+import type { Product, SourceConfig } from '../watch/types.ts';
 import { readJson, repoPath, writeText } from '../shared/fs.ts';
 import { categoryLabel, languageTagOf, type Catalog, type Expansions } from '../prices/catalog.ts';
 import { loadHistory, variations } from '../prices/series.ts';
@@ -70,6 +72,34 @@ async function main(): Promise<void> {
       write(out(`prices/series/${id}.json`), points.map((p) => [p.date, p.trend, p.low, p.avg])),
     ),
   );
+  await write(out('status.json'), status);
+
+  // Fiches produit (Module 1) : liste légère pour la grille, fiche complète pour la page produit
+  const files = await readdir(repoPath('data/products')).catch(() => [] as string[]);
+  const products = (await Promise.all(files.filter((f) => f.endsWith('.json')).map((f) => readJson<Product | null>(repoPath('data/products', f), null))))
+    .filter((p): p is Product => p !== null);
+  // Prix du marché : produit scellé anglais de Cardmarket au nom équivalent (« Booster Box » = « Booster Display »)
+  const keyOf = (name: string) => [...nameTokens(name)].sort().join(' ');
+  const cmByKey = new Map(
+    Object.values(catalog)
+      .filter((p) => p.kind === 'sealed' && !languageTagOf(p.name) && !p.removedAt)
+      .map((p) => [keyOf(p.name), p]),
+  );
+  const sources = await loadSources<SourceConfig>();
+  const sourceNames = Object.fromEntries(sources.map((s) => [s.id, s.name]));
+  const summaries = [];
+  for (const p of products) {
+    const cm = p.cmProductId ? catalog[String(p.cmProductId)] : cmByKey.get(keyOf(p.name));
+    const last = cm ? series.get(cm.id)?.at(-1) : undefined;
+    const market = cm ? { id: cm.id, trend: last?.trend ?? null, low: last?.low ?? null } : null;
+    const { claims, ...summary } = p;
+    const sourceIds = [...new Set(claims.filter((c) => !c.invalid).map((c) => c.source))];
+    summaries.push({ ...summary, market, sources: sourceIds.length });
+    await write(out('products', `${p.slug}.json`), { ...p, market, sourceNames });
+  }
+  await write(out('products.json'), summaries);
+  await cp(repoPath('data/media'), out('media'), { recursive: true }).catch(() => undefined);
+
   await write(out('meta.json'), {
     generatedAt: new Date().toISOString(),
     priceGuideCreatedAt: meta.priceGuideCreatedAt ?? null,
@@ -80,11 +110,12 @@ async function main(): Promise<void> {
     thresholds: { d1: settings.alert_1d_pct, d7: settings.alert_7d_pct, minPrice: settings.min_price_eur },
     hideLanguageTags: settings.hide_language_tags,
     products: index.length,
+    releases: products.length,
+    sources: sources.map((s) => ({ id: s.id, name: s.name, url: s.url, tier: s.tier, enabled: s.enabled !== false })),
     watched: watched.size,
   });
-  await write(out('status.json'), status);
 
-  console.log(`build-data : ${index.length} produits, ${series.size} historiques, ${watched.size} suivis, ${dates.length} jour(s)`);
+  console.log(`build-data : ${products.length} fiches, ${index.length} produits Cardmarket, ${series.size} historiques, ${watched.size} suivis, ${dates.length} jour(s)`);
 }
 
 await main();
