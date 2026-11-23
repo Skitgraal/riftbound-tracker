@@ -1,0 +1,10 @@
+# Cartes suivies en plus du scellé anglais (qui est suivi automatiquement).
+# Ajoute l'identifiant Cardmarket (idProduct) de la carte, visible dans le dashboard.
+#
+# Exemple :
+# cards:
+#   - id: 845712
+#   - id: 845880
+#     alert_7d_pct: 30   # seuil particulier, facultatif
+
+cards: []

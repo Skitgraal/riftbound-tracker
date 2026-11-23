@@ -1,0 +1,26 @@
+# Réglages globaux. Modifiables à la main, y compris depuis le site GitHub.
+
+prices:
+  # Alerte de variation du prix tendance
+  alert_1d_pct: 10
+  alert_7d_pct: 20
+  # En dessous de ce prix (en euros), pas d'alerte de variation : évite le bruit des cartes à quelques centimes
+  min_price_eur: 5
+  # Versions non anglaises masquées par défaut dans le dashboard
+  hide_language_tags: [ZH]
+
+watch:
+  # Un document ne part à l'extraction que s'il contient au moins un de ces mots (insensible à la casse)
+  keywords:
+    - booster
+    - display
+    - booster box
+    - box
+    - bundle
+    - deck
+    - preorder
+    - pre-order
+    - raffle
+    - release
+    - exclusive
+    - collector

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Riftbound Tracker — Fiche produit</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#0B0D12}
+a{color:#7FE3D6}a:hover{color:#B5F0E8}
+.chip{display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 10px;border-radius:999px;font:600 12px/1 Inter,sans-serif;letter-spacing:.02em;white-space:nowrap}
+.chip-rumor{background:#2A2140;color:#C9B5FF}
+.chip-announced{background:#1A2A45;color:#9CC3FF}
+.chip-preorder{background:#3A2C12;color:#FFCB6B}
+.chip-released{background:#123430;color:#7FE3D6}
+.chip-official{background:#123430;color:#7FE3D6}
+.chip-relay{background:#1A2A45;color:#9CC3FF}
+.chip-leak{background:#2A2140;color:#C9B5FF}
+.dot{width:6px;height:6px;border-radius:50%;background:currentColor}
+.navlink{color:#9AA3B5;text-decoration:none;font:500 14px/1 Inter,sans-serif;padding:10px 14px;border-radius:8px}
+.navlink:hover{color:#E8EAF0;background:#181C25}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;border-radius:10px;font:600 14px/1 Inter,sans-serif;text-decoration:none}
+.btn-ghost{border:1px solid #2C3242;color:#E8EAF0}
+.btn-ghost:hover{border-color:#4A5368;color:#FFFFFF}
+</style>
+</helmet>
+<div style="min-height: 100vh; background: #0B0D12; color: #E8EAF0; font-family: Inter, sans-serif">
+
+  <header style="border-bottom: 1px solid #1A1E28">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 24px">
+      <a href="Main.dc.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #E8EAF0">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M14 2 L24 14 L14 26 L4 14 Z" stroke="#4FD1C5" stroke-width="2"></path><path d="M14 8 L19 14 L14 20 L9 14 Z" fill="#4FD1C5"></path></svg>
+        <span style="font: 700 17px/1 'Space Grotesk', sans-serif">Riftbound Tracker</span>
+      </a>
+      <nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; gap: 4px">
+        <a class="navlink" href="Main.dc.html" style="color: #E8EAF0; background: #181C25">Sorties</a>
+        <a class="navlink" href="#">Tirages</a>
+        <a class="navlink" href="Prices.dc.html">Prix</a>
+        <a class="navlink" href="#">Watchlist</a>
+        <a class="navlink" href="#">État</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="max-width: 1280px; margin: 0 auto; padding: 32px 24px 64px; display: flex; flex-direction: column; gap: 40px">
+    <a href="Main.dc.html" style="font-size: 14px; text-decoration: none; color: #9AA3B5">← Toutes les sorties</a>
+
+    <section style="display: flex; flex-wrap: wrap; gap: 40px">
+      <div style="flex: 1 1 420px; min-width: 0; aspect-ratio: 1 / 1; max-width: 560px; border-radius: 20px; background: #201A14; border: 1px solid #3A2E1C; display: grid; place-items: center; position: relative">
+        <svg width="160" height="160" viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="M14 2 L24 14 L14 26 L4 14 Z" stroke="#5A4626" stroke-width="0.8"></path><path d="M14 8 L19 14 L14 20 L9 14 Z" stroke="#5A4626" stroke-width="0.8"></path></svg>
+        <div style="position: absolute; bottom: 16px; left: 16px; font-size: 12px; color: #C9BFA9; background: #0B0D12; padding: 6px 10px; border-radius: 6px">Visuel : boutique Riot</div>
+      </div>
+
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <div style="display: flex; gap: 8px; flex-wrap: wrap">
+          <span class="chip chip-announced"><span class="dot"></span>Annoncé</span>
+          <span class="chip chip-released"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Confirmé par Riot</span>
+        </div>
+        <h1 style="margin: 0; font: 700 40px/1.1 'Space Grotesk', sans-serif; letter-spacing: -0.02em">Coffret exclusif Riot</h1>
+        <p style="margin: 0; color: #9AA3B5; font-size: 16px; line-height: 1.6">Box exclusive vendue uniquement par tirage sur la boutique Riot. Édition anglaise.</p>
+
+        <dl style="margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #232836; border: 1px solid #232836; border-radius: 14px; overflow: hidden">
+          <sc-for list="{{fields}}" as="f" hint-placeholder-count="6">
+            <div style="background: #12151C; padding: 16px 18px">
+              <dt style="font-size: 12px; color: #7D8698; text-transform: uppercase; letter-spacing: .06em">{{f.k}}</dt>
+              <dd style="margin: 6px 0 0; font-size: 15px; font-weight: 600">{{f.v}}</dd>
+            </div>
+          </sc-for>
+        </dl>
+
+        <div style="border-radius: 14px; background: #1C1710; border: 1px solid #4A3818; padding: 20px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+          <div>
+            <div style="color: #FFCB6B; font: 600 12px/1 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase">Tirage ouvert</div>
+            <div style="margin-top: 8px; font: 600 20px/1.2 'Space Grotesk', sans-serif">Ferme dans 1 j 22 h</div>
+            <div style="margin-top: 4px; font-size: 13px; color: #C9BFA9">Rappels Discord : 24 h et 2 h avant</div>
+          </div>
+          <a class="btn" href="#" style="background: #FFCB6B; color: #1C1710">S'inscrire au tirage
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg>
+          </a>
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <a class="btn btn-ghost" href="#">Page officielle <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+          <a class="btn btn-ghost" href="#">Voir sur Cardmarket <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="hist" style="display: flex; flex-wrap: wrap; gap: 40px">
+      <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <h2 id="hist" style="margin: 0; font: 600 22px/1.2 'Space Grotesk', sans-serif">Historique</h2>
+        <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+          <sc-for list="{{claims}}" as="c" hint-placeholder-count="4">
+            <li style="display: flex; gap: 16px">
+              <div style="display: flex; flex-direction: column; align-items: center; width: 14px; flex: none">
+                <div style="width: 10px; height: 10px; border-radius: 50%; background: {{c.color}}; margin-top: 6px"></div>
+                <div style="flex: 1; width: 1px; background: #232836; margin-top: 6px"></div>
+              </div>
+              <div style="padding-bottom: 24px; min-width: 0; flex: 1">
+                <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap">
+                  <span style="font-weight: 600; font-size: 15px">{{c.title}}</span>
+                  <span class="chip chip-{{c.tier}}">{{c.tierLabel}}</span>
+                </div>
+                <div style="font-size: 13px; color: #9AA3B5; margin-top: 4px">{{c.when}} · {{c.source}}</div>
+                <blockquote style="margin: 10px 0 0; padding: 10px 14px; border-radius: 8px; background: #12151C; color: #C3C9D6; font-size: 14px; line-height: 1.5">« {{c.quote}} »</blockquote>
+              </div>
+            </li>
+          </sc-for>
+        </ol>
+      </div>
+
+      <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <h2 style="margin: 0; font: 600 22px/1.2 'Space Grotesk', sans-serif">Où l'acheter</h2>
+        <div style="border-radius: 14px; border: 1px solid #232836; overflow: hidden">
+          <div style="padding: 16px 18px; background: #12151C; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+            <div>
+              <div style="font-weight: 600; font-size: 14px">Boutique Riot</div>
+              <div style="font-size: 12px; color: #9AA3B5; margin-top: 3px">Par tirage uniquement</div>
+            </div>
+            <div style="font-weight: 600">49,99 $</div>
+          </div>
+        </div>
+        <p style="margin: 0; font-size: 13px; color: #7D8698; line-height: 1.5">Aucun retailer ne le propose pour l'instant. Une alerte part dès qu'une offre apparaît.</p>
+      </div>
+    </section>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1240}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      fields: [
+        { k: 'Type', v: 'Box exclusive' },
+        { k: 'Langue', v: 'Anglais' },
+        { k: 'Prix officiel', v: '49,99 $' },
+        { k: 'Annoncé le', v: '20 nov. 2026' },
+        { k: 'Tirage', v: '22 → 25 nov.' },
+        { k: 'Envoi', v: 'Décembre 2026' }
+      ],
+      claims: [
+        { title: 'Confirmé par Riot', tier: 'official', tierLabel: 'Officiel', when: '20 nov. 19:04', source: 'Site Riftbound', quote: 'An exclusive collector box, available by raffle on the Riot Store from November 22.', color: '#4FD1C5' },
+        { title: 'Prix et date de tirage', tier: 'official', tierLabel: 'Officiel', when: '20 nov. 19:20', source: 'Boutique Riot', quote: 'Raffle entries close November 25. Price: $49.99.', color: '#4FD1C5' },
+        { title: 'Vu chez un distributeur', tier: 'relay', tierLabel: 'Relais', when: '17 nov. 14:02', source: 'Distributeur', quote: 'Riot-exclusive collector box — details soon.', color: '#6EA8FF' },
+        { title: 'Premier signalement', tier: 'leak', tierLabel: 'Leak', when: '12 nov. 21:47', source: 'Reddit', quote: 'Heard there is a Riot store exclusive box coming before the holidays.', color: '#B79CFF' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

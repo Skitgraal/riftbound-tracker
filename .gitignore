@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.*
+
+# Fichiers dérivés générés pour le dashboard (voir docs/DATA_MODEL.md)
+site/public/data/
+
+.DS_Store
+Thumbs.db
