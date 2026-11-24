@@ -70,3 +70,12 @@ Contrainte directrice : **gratuit, simple, et pratique**. Une entrée par choix 
 **Décision.** Le site Riftbound (playriftbound.com) et la boutique Riot (merch.riotgames.com) sont lus via le JSON que leurs pages embarquent (Next.js), pas par analyse du HTML affiché.
 **Raison.** Plus robuste et plus précis : la liste des actualités donne titre, date, catégorie et image en une requête ; la boutique donne prix, disponibilité et précommande sans LLM. Les deux `robots.txt` autorisent l'accès.
 
+## D15 — Reddit abandonné
+**Décision.** Pas de source Reddit.
+**Raison.** Constaté au jalon 4 (24/11/2026) : le `robots.txt` de Reddit interdit tout (`Disallow: /`) et l'API n'accepte plus de nouvelles applications. Conformément à la règle « une source bloquée est retirée, pas contournée ». Compensé par les boutiques (qui listent les produits avant l'annonce officielle, voir D16), les notifications du téléphone et, au jalon 6, les salons Discord suivis.
+
+## D16 — Boutiques Shopify en relais, prix boutique ≠ prix officiel
+**Décision.** Quatre boutiques sous Shopify (2 en Europe, 2 en Amérique du Nord) sont lues par leur liste JSON publique, collection Riftbound seulement. Leurs prix vont dans « Où l'acheter », jamais dans le prix officiel ; elles peuvent créer une fiche (non confirmée) et lui donner le statut « précommande » ou « sorti ».
+**Raison.** Les boutiques listent les produits des semaines avant l'annonce de Riot (sets 6 et 7 vus ainsi le 24/11/2026), avec stock et photos, sans LLM. Un prix de revente (ex. 672 € pour une édition limitée) ne doit pas passer pour le prix officiel.
+**Garde-fous.** Premier passage d'une nouvelle boutique : un seul message de résumé. Les boutiques protégées par un défi anti-robots (Cloudflare) sont écartées.
+

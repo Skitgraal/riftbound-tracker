@@ -17,7 +17,7 @@ Les sources sont déclarées dans `config/sources.yml`. Ajouter une source d'un 
 | `html` | téléchargement de la page, extraction du texte principal et des images | oui | préférer le flux de données embarqué dans la page s'il existe |
 | `rss` | lecture du flux | oui | le plus robuste quand il existe |
 | `shopify` | endpoint JSON public des boutiques Shopify | non | donne prix, stock et images directement |
-| `reddit` | API officielle, application gratuite de type « script » | oui | les accès anonymes sont souvent bloqués depuis les serveurs de GitHub ; Reddit a durci la création d'accès à son API, à vérifier au jalon 4. Si l'accès est refusé, Reddit est retiré et compensé par les autres sources |
+| ~~`reddit`~~ | abandonné au jalon 4 : `robots.txt` interdit tout et l'API est fermée aux nouvelles applications (D15) | — | — |
 | `discord` | bot gratuit dans **ton propre serveur**, qui lit par l'API les salons où tu as « suivi » les salons d'annonces des serveurs communautaires | oui | lire un serveur tiers avec un compte utilisateur est interdit par Discord |
 
 Tous fonctionnent par simple requête HTTP depuis GitHub Actions : aucun programme ne doit rester allumé en permanence.
@@ -39,18 +39,30 @@ Constats :
 - Les articles récents (moins de 21 jours) sont relus à chaque passage, car Riot les complète souvent (dates de tirage). Le carrousel « articles liés » est exclu du texte : il change à chaque chargement.
 - Catégorie `organized_play` ignorée (tournois).
 
-### Relais
-| Id | Source | Type envisagé | Apporte |
+### Relais — en service depuis le jalon 4 (vérifié le 24/11/2026 depuis GitHub Actions)
+| Id | Boutique | Collections lues | Devise |
 |---|---|---|---|
-| `distributor-en` | distributeur de la version anglaise | `html` | dates et gammes |
-| `retailer-*` | 3 à 5 boutiques vendant le scellé anglais, de préférence sous Shopify | `shopify` ou `html` | précommandes, prix, images |
-| `cardmarket-catalog` | nouveaux produits au catalogue Cardmarket | interne (Module 2) | signal de sortie imminente |
+| `universe-tcg` | universetcg.com (Espagne) | `riftbound` | EUR |
+| `cardcosmos` | cardcosmos.de (Allemagne) | `riftbound-league-of-legends-trading-card-game`, `riftbound-release-2026`, `riftbound-legacy-kaufen`, `riftbound-set-7-the-reckoning` | EUR |
+| `stomping-grounds` | stompinggroundstcg.com (États-Unis) | `riftbound` | USD |
+| `face-to-face` | facetofacegames.com (Canada) | `riftbound-sealed` | CAD |
+
+Type `shopify` : `/collections/{handle}/products.json`, pages de 250. Apporte nom, prix, stock, précommande (étiquettes ou titre), photos ; sans LLM. Seul le scellé anglais est gardé : autres langues (titre ou variante), lots (« case »), kits de boutique, accessoires et singles sont écartés.
+
+Constats :
+- `robots.txt` : `products.json` autorisé sur les quatre (seuls `sort_by`, `+` et les recommandations sont interdits).
+- Depuis une connexion personnelle, Shopify répond souvent 429 (limite par IP) ; depuis GitHub Actions, tout répond 200. Tester une source avec le workflow `probe`.
+- Écartées : Wayland Games et La Cité des Nuages (défi anti-robots Cloudflare, 403), Boardtopia (catalogue Riftbound à l'abandon), Poke-Collect (pas de collection Riftbound scellé).
+- Pour ajouter une boutique Shopify : trouver la collection avec `/search/suggest.json?q=riftbound&resources[type]=collection`, la tester avec `probe`, puis l'ajouter à `config/sources.yml`.
+
+Pistes non retenues pour l'instant : `cardmarket-catalog` (nouveau produit scellé au catalogue Cardmarket = sortie imminente), distributeur anglais (UVS Games).
 
 ### Leaks
 | Id | Source | Type envisagé | Apporte |
 |---|---|---|---|
-| `reddit-riftbound` | subreddit principal Riftbound | `reddit` | leaks, relais rapides des annonces |
-| `discord-relay` | salons d'annonces suivis dans ton serveur | `discord` | leaks précoces |
+| `discord-relay` | salons d'annonces suivis dans ton serveur (jalon 6) | `discord` | leaks précoces |
+
+Reddit abandonné : `robots.txt` en `Disallow: /` et API fermée aux nouvelles applications (D15).
 
 ### Hors périmètre
 - **X / Twitter** : API payante et scraping bloqué. Compensé par les notifications du téléphone pour 2 ou 3 comptes clés, et par Reddit.

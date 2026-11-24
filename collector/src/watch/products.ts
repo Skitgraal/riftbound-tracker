@@ -27,7 +27,7 @@ export function classifyType(name: string): ProductType {
   if (/booster (display|box)|\bdisplay\b|\bcase\b/.test(n)) return 'display';
   if (/\bbooster\b|\bpacks?\b/.test(n)) return 'booster';
   if (/\bdecks?\b|precon|proving grounds|starter/.test(n)) return 'deck';
-  if (/\bbundle\b/.test(n)) return 'bundle';
+  if (/\bbundle\b|\bvault\b/.test(n)) return 'bundle';
   if (/pre-?rift (kit|box)|prerelease/.test(n)) return 'box_exclusive';
   if (/collection|edition|box set|\bbox\b|\bvault\b/.test(n)) return 'box_exclusive';
   return 'other';
@@ -51,20 +51,38 @@ export function nameTokens(name: string): string[] {
     .trim()
     .split(' ')
     .filter((w) => w && !STOPWORDS.has(w));
-  return words
+  const out = words
     // « Vault Bundle » et « Vault » désignent le même produit selon les boutiques.
     .filter((w, i) => !(w === 'bundle' && words[i - 1] === 'vault'))
-    .map((w, i, ws) => (w === 'box' && ws[i - 1] === 'booster' ? 'display' : w === 'packs' ? 'pack' : w === 'decks' ? 'deck' : w === 'champions' ? 'champion' : w));
+    .map((w, i, ws) => (w === 'box' && ws[i - 1] === 'booster' ? 'display' : (PLURALS[w] ?? w)));
+  // « Origins Booster » seul = un booster (pack), pas une display.
+  return out.flatMap((w, i) => (w === 'booster' && !['display', 'pack'].includes(out[i + 1] ?? '') ? ['booster', 'pack'] : [w]));
 }
+
+const PLURALS: Record<string, string> = { packs: 'pack', decks: 'deck', champions: 'champion', kits: 'kit', boosters: 'booster', bundles: 'bundle', boxes: 'box', displays: 'display' };
 
 export const slugOf = (name: string): string => nameTokens(name).join('-') || 'produit';
 
+/**
+ * Proximité de deux noms. Un doublon possible est un nom qui en contient un autre avec un ou deux mots en plus
+ * (« Origins Proving Grounds » / « Proving Grounds »), ou un long nom dont un seul mot change. Sur un nom court, un mot
+ * différent fait deux produits distincts (« … Champion Deck Jinx » / « … Champion Deck Viktor »).
+ */
 function similarity(a: string[], b: string[]): number {
   const A = new Set(a);
   const B = new Set(b);
   const inter = [...A].filter((t) => B.has(t)).length;
-  return inter / (A.size + B.size - inter || 1);
+  const score = inter / (A.size + B.size - inter || 1);
+  const subset = inter === A.size || inter === B.size;
+  return subset || score >= 0.7 ? score : 0;
 }
+
+/** Même produit : mêmes mots, dans n'importe quel ordre. */
+export const sameName = (a: string, b: string): boolean => {
+  const A = new Set(nameTokens(a));
+  const B = new Set(nameTokens(b));
+  return A.size === B.size && [...A].every((t) => B.has(t));
+};
 
 export interface Match {
   product?: Product;
@@ -83,7 +101,36 @@ export function findMatch(products: Product[], name: string): Match {
       if (!best || score > best.score) best = { p, score };
     }
   }
-  return best && best.score >= 0.6 ? { maybe: best.p } : {};
+  return best && best.score >= 0.5 ? { maybe: best.p } : {};
+}
+
+/**
+ * Fusionne les fiches devenues identiques (après une amélioration du rapprochement des noms).
+ * La fiche gardée est la plus fiable, puis la plus ancienne ; les autres sont renvoyées pour suppression.
+ */
+export function consolidate(products: Map<string, Product>): string[] {
+  const removed: string[] = [];
+  const list = [...products.values()].sort(
+    (a, b) => Number(b.reliability === 'confirmed') - Number(a.reliability === 'confirmed') || a.createdAt.localeCompare(b.createdAt),
+  );
+  for (const keep of list) {
+    if (removed.includes(keep.slug)) continue;
+    for (const other of list) {
+      if (other === keep || removed.includes(other.slug) || !sameName(keep.name, other.name)) continue;
+      keep.claims.push(...other.claims);
+      keep.claims.sort((x, y) => x.observedAt.localeCompare(y.observedAt));
+      for (const o of other.offers) if (!keep.offers.some((k) => k.url === o.url)) keep.offers.push(o);
+      products.delete(other.slug);
+      removed.push(other.slug);
+    }
+  }
+  // Les signalements « doublon possible » sont réévalués avec les règles actuelles.
+  for (const p of products.values()) {
+    if (!p.possibleDuplicateOf) continue;
+    const others = [...products.values()].filter((o) => o !== p);
+    p.possibleDuplicateOf = findMatch(others, p.name).maybe?.slug ?? null;
+  }
+  return removed;
 }
 
 // ---------- Affirmations ----------

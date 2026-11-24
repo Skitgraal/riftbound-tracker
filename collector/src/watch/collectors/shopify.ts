@@ -13,10 +13,12 @@ export interface ShopifyProduct {
   handle: string;
   product_type?: string;
   tags?: string[] | string;
+  created_at?: string;
   variants: { title?: string; price: string; available?: boolean }[];
   images?: { src: string }[];
 }
 
+const SOLD_OUT_RELEASED_DAYS = 60;
 const PAGE_SIZE = 250;
 const MAX_PAGES = 4;
 
@@ -58,7 +60,7 @@ function englishVariant(p: ShopifyProduct): ShopifyProduct['variants'][number] |
 }
 
 /** Transforme un produit Shopify en produit vu, ou `null` s'il est hors périmètre. */
-export function shopifySighting(p: ShopifyProduct, source: SourceConfig, knownSets: string[]): StructuredSighting | null {
+export function shopifySighting(p: ShopifyProduct, source: SourceConfig, knownSets: string[], now = new Date()): StructuredSighting | null {
   if (!/riftbound/i.test(p.title) && !tagsOf(p).some((t) => /riftbound/i.test(t))) return null;
   if (EXCLUDED_TITLE.test(p.title) || EXCLUDED_TYPE.test(p.product_type ?? '') || isAccessory(p.title)) return null;
   // La langue étrangère se lit dans le titre (« - CHN », « - French ») ; les étiquettes mélangent souvent plusieurs langues.
@@ -73,7 +75,10 @@ export function shopifySighting(p: ShopifyProduct, source: SourceConfig, knownSe
   const tags = tagsOf(p);
   const preorderSignal = /pre-?order|presale/i.test(p.title) || tags.some((t) => /^(pre-?order|presale|vorbestellung|preventa)$/i.test(t));
   const available = variant.available !== false;
-  const status: Status | null = available ? (preorderSignal ? 'preorder' : 'released') : null;
+  // Épuisé, sans étiquette de précommande, et en ligne depuis longtemps : il est sorti (et parti). Une fiche épuisée
+  // récente peut au contraire être une annonce en attente de précommande : on ne conclut rien.
+  const listedDays = p.created_at ? (now.getTime() - Date.parse(p.created_at)) / 86_400_000 : 0;
+  const status: Status | null = available ? (preorderSignal ? 'preorder' : 'released') : !preorderSignal && listedDays > SOLD_OUT_RELEASED_DAYS ? 'released' : null;
   const price = Number(variant.price);
   const money = Number.isFinite(price) && price > 0 ? { amount: price, currency: source.currency ?? 'EUR' } : null;
   const origin = new URL(source.url).origin;

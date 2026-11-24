@@ -52,7 +52,8 @@ Déjà en place sur le poste : Node 22 et Git. Rien à payer.
 **Fini quand** : les produits actuellement annoncés par Riot apparaissent seuls avec image, date et lien, et couper le LLM produit bien une alerte « à lire ».
 
 ## Jalon 4 — Sources relais et fusion
-- Collecteurs `shopify` et `reddit`.
+- Collecteur `shopify` (4 boutiques). Reddit abandonné : accès interdit (voir D15).
+- Outil `probe` pour tester une source candidate depuis les serveurs de GitHub.
 - Rapprochement des fiches, offres retailers, lien fiche ↔ produit Cardmarket.
 
 **Fini quand** : un produit vu par trois sources donne une seule fiche, et un leak repris par Riot passe à « confirmé » sans intervention.

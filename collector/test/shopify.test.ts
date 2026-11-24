@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { cleanRetailName, shopifySighting, type ShopifyProduct } from '../src/watch/collectors/shopify.ts';
-import { applySighting, emptyProduct, findMatch, recompute } from '../src/watch/products.ts';
+import { applySighting, consolidate, emptyProduct, findMatch, recompute } from '../src/watch/products.ts';
 import type { Sighting, SourceConfig } from '../src/watch/types.ts';
 
 const NOW = '2026-11-23T12:00:00.000Z';
@@ -85,6 +85,14 @@ describe('shopifySighting', () => {
     expect(sold.sighting.offer?.availability).toBe('out_of_stock');
   });
 
+  it('épuisé depuis longtemps sans précommande = sorti ; épuisé récent = on ne sait pas', () => {
+    const now = new Date(NOW);
+    const old = product('Riftbound: Origins Champion Deck Jinx', { created_at: '2025-08-20T00:00:00Z', variants: [{ price: '20', available: false }] });
+    expect(shopifySighting(old, shop, SETS, now)?.sighting.status).toBe('released');
+    const recent = product('Riftbound TCG: The Reckoning Vault', { created_at: '2026-11-11T00:00:00Z', variants: [{ price: '45', available: false }] });
+    expect(shopifySighting(recent, shop, SETS, now)?.sighting.status).toBeNull();
+  });
+
   it("prend la variante anglaise d'un produit multilingue", () => {
     const multi = product('Riftbound: Origins Booster Box (24 Packs)', {
       variants: [{ title: 'Francés', price: '150', available: true }, { title: 'Inglés', price: '188', available: false }],
@@ -92,6 +100,40 @@ describe('shopifySighting', () => {
     expect(shopifySighting(multi, shop, SETS)?.sighting.offer).toMatchObject({ price: { amount: 188 }, availability: 'out_of_stock' });
     const frOnly = product('Riftbound: Origins Booster Box', { variants: [{ title: 'French', price: '150', available: true }] });
     expect(shopifySighting(frOnly, shop, SETS)).toBeNull();
+  });
+});
+
+describe('rapprochement des noms', () => {
+  it('deux decks de champions différents ne sont pas des doublons', () => {
+    const viktor = emptyProduct('origins-champion-deck-viktor', 'Origins Champion Deck Viktor', NOW);
+    expect(findMatch([viktor], 'Origins Champion Deck Jinx')).toEqual({});
+  });
+
+  it('un nom qui en contient un autre est signalé comme doublon possible', () => {
+    const pg = emptyProduct('proving-grounds', 'Proving Grounds', NOW);
+    expect(findMatch([pg], 'Origins Proving Grounds').maybe?.slug).toBe('proving-grounds');
+  });
+
+  it('pluriels et « booster » seul', () => {
+    const kits = emptyProduct('radiance-pre-rift-kits', 'Radiance Pre-Rift Kits', NOW);
+    expect(findMatch([kits], 'Radiance Pre-Rift Kit').product?.slug).toBe('radiance-pre-rift-kits');
+    const pack = emptyProduct('origins-booster-pack', 'Origins Booster Pack', NOW);
+    expect(findMatch([pack], 'Origins Booster').product?.slug).toBe('origins-booster-pack');
+    expect(findMatch([pack], 'Origins Booster Display')).toEqual({});
+  });
+
+  it('consolidate fusionne les fiches identiques dans la plus fiable', () => {
+    const official = emptyProduct('radiance-pre-rift-kits', 'Radiance Pre-Rift Kits', '2026-11-24T00:00:00Z');
+    official.reliability = 'confirmed';
+    const shopCopy = emptyProduct('radiance-pre-rift-kit', 'Radiance Pre-Rift Kit', '2026-11-20T00:00:00Z');
+    shopCopy.offers.push({ source: 's', url: 'https://s/p', price: null, availability: 'in_stock', lastSeenAt: NOW });
+    const jinx = emptyProduct('origins-champion-deck-jinx', 'Origins Champion Deck Jinx', NOW);
+    jinx.possibleDuplicateOf = 'origins-champion-deck-viktor';
+    const viktor = emptyProduct('origins-champion-deck-viktor', 'Origins Champion Deck Viktor', NOW);
+    const map = new Map([official, shopCopy, jinx, viktor].map((p) => [p.slug, p]));
+    expect(consolidate(map)).toEqual(['radiance-pre-rift-kit']);
+    expect(map.get('radiance-pre-rift-kits')!.offers).toHaveLength(1);
+    expect(map.get('origins-champion-deck-jinx')!.possibleDuplicateOf).toBeNull();
   });
 });
 

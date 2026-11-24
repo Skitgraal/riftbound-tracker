@@ -16,7 +16,7 @@ import { collectRiotNews, loadArticleBody } from './collectors/riot-news.ts';
 import { collectShopify } from './collectors/shopify.ts';
 import { ExtractionError, extractProducts, pauseBetweenExtractions } from './extract.ts';
 import { storeImage } from './media.ts';
-import { applySighting, detectSet, emptyProduct, findMatch, recompute, slugOf } from './products.ts';
+import { applySighting, consolidate, detectSet, emptyProduct, findMatch, recompute, slugOf } from './products.ts';
 import type { Doc, Product, Sighting, SourceConfig, Tier } from './types.ts';
 import { describeChanges, productEmbed, type ChangeEvent } from './events.ts';
 
@@ -77,6 +77,16 @@ async function main(): Promise<void> {
   const sources = (await loadSources<SourceConfig>()).filter((s) => s.enabled !== false);
   const knownSets = [...new Set([...Object.values(await readJson<Record<string, string>>(repoPath('data/prices/expansions.json'), {})), ...settings.extra_sets])];
   const products = await loadProducts();
+  // Fiches devenues identiques avec les règles de rapprochement actuelles : fusionnées sans alerte.
+  const dirty = new Set<string>();
+  const merged = consolidate(products);
+  for (const slug of merged) {
+    const file = `${PRODUCTS_DIR}/${slug}.json`;
+    const old = await readJson<Product | null>(file, null);
+    if (old?.image) await rm(repoPath('data', old.image), { force: true });
+    await rm(file, { force: true });
+  }
+  if (merged.length) for (const p of products.values()) dirty.add(p.slug);
   const before = new Map([...products].map(([slug, p]) => [slug, structuredClone(p)]));
   const seen = await readJson<Record<string, SeenEntry>>(SEEN, {});
   let pending = await readJson<Pending[]>(PENDING, []);
@@ -234,7 +244,7 @@ async function main(): Promise<void> {
     const old = before.get(slug);
     const { claims: _a, updatedAt: _b, ...a } = old ?? ({} as Product);
     const { claims: _c, updatedAt: _d, ...b } = product;
-    if (!old || JSON.stringify(a) !== JSON.stringify(b) || old.claims.length !== product.claims.length) {
+    if (!old || dirty.has(slug) || JSON.stringify(a) !== JSON.stringify(b) || old.claims.length !== product.claims.length) {
       product.updatedAt = nowIso;
       await writeJson(`${PRODUCTS_DIR}/${slug}.json`, product);
       events.push(...describeChanges(old, product, now));
