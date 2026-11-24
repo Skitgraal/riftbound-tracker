@@ -28,6 +28,7 @@ export function classifyType(name: string): ProductType {
   if (/\bbooster\b|\bpacks?\b/.test(n)) return 'booster';
   if (/\bdecks?\b|precon|proving grounds|starter/.test(n)) return 'deck';
   if (/\bbundle\b/.test(n)) return 'bundle';
+  if (/pre-?rift (kit|box)|prerelease/.test(n)) return 'box_exclusive';
   if (/collection|edition|box set|\bbox\b|\bvault\b/.test(n)) return 'box_exclusive';
   return 'other';
 }
@@ -50,7 +51,10 @@ export function nameTokens(name: string): string[] {
     .trim()
     .split(' ')
     .filter((w) => w && !STOPWORDS.has(w));
-  return words.map((w, i) => (w === 'box' && words[i - 1] === 'booster' ? 'display' : w === 'packs' ? 'pack' : w === 'decks' ? 'deck' : w));
+  return words
+    // « Vault Bundle » et « Vault » désignent le même produit selon les boutiques.
+    .filter((w, i) => !(w === 'bundle' && words[i - 1] === 'vault'))
+    .map((w, i, ws) => (w === 'box' && ws[i - 1] === 'booster' ? 'display' : w === 'packs' ? 'pack' : w === 'decks' ? 'deck' : w === 'champions' ? 'champion' : w));
 }
 
 export const slugOf = (name: string): string => nameTokens(name).join('-') || 'produit';
@@ -143,8 +147,12 @@ export function applySighting(product: Product, s: Sighting, ctx: ClaimContext):
   if (ctx.publishedAt) addClaim(product, 'announcedAt', ctx.publishedAt.slice(0, 10), s.evidence, ctx);
   for (const d of s.draws) addClaim(product, 'draw', d, s.evidence, ctx);
   if (s.offer) {
-    const offer: Offer = { ...s.offer, lastSeenAt: ctx.observedAt };
-    product.offers = [...product.offers.filter((o) => o.url !== offer.url), offer];
+    // La date de passage n'est rafraîchie qu'une fois par jour si rien ne change : évite de réécrire la fiche à chaque passage.
+    const prev = product.offers.find((o) => o.url === s.offer!.url);
+    const unchanged = prev && same(prev.price, s.offer.price) && prev.availability === s.offer.availability;
+    const fresh = prev && Date.parse(ctx.observedAt) - Date.parse(prev.lastSeenAt) < 86_400_000;
+    const offer: Offer = { ...s.offer, lastSeenAt: unchanged && fresh ? prev.lastSeenAt : ctx.observedAt };
+    product.offers = prev ? product.offers.map((o) => (o === prev ? offer : o)) : [...product.offers, offer];
   }
 }
 
@@ -155,6 +163,22 @@ const byPriority = (a: Claim, b: Claim) => TIER_RANK[b.tier] - TIER_RANK[a.tier]
 function resolve<T>(claims: Claim[], field: Claim['field']): T | null {
   const best = claims.filter((c) => c.field === field && !c.invalid).sort(byPriority)[0];
   return best ? (best.value as T) : null;
+}
+
+/**
+ * Statut annoncé : niveau de source le plus fiable, puis le dernier avis de chaque source de ce niveau.
+ * Si l'une d'elles le vend déjà en stock, il est sorti (une boutique peut garder une vieille étiquette « précommande »).
+ */
+function resolveStatus(claims: Claim[]): Status | null {
+  const all = claims.filter((c) => c.field === 'status').sort(byPriority);
+  const top = all[0]?.tier;
+  if (!top) return null;
+  const latest = new Map<string, Status>();
+  for (const c of all.filter((c) => c.tier === top)) if (!latest.has(c.source)) latest.set(c.source, c.value as Status);
+  const values = [...latest.values()];
+  if (values.includes('cancelled')) return 'cancelled';
+  if (values.includes('released')) return 'released';
+  return values[0] ?? null;
 }
 
 /** Date au plus tôt couverte par une date imprécise (pour savoir si elle est passée). */
@@ -190,7 +214,7 @@ export function recompute(product: Product, today: string): void {
   }
   product.draws = [...draws.values()].sort((a, b) => (a.opensAt ?? a.closesAt ?? '').localeCompare(b.opensAt ?? b.closesAt ?? ''));
 
-  const stated = resolve<Status>(claims, 'status');
+  const stated = resolveStatus(claims);
   const released = product.releaseDate?.precision === 'day' && product.releaseDate.value <= today;
   product.status =
     stated === 'cancelled' ? 'cancelled'

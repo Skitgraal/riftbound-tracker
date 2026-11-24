@@ -34,10 +34,13 @@ export interface WatchSettings {
   max_extractions_per_run: number;
   /** Au premier passage, seuls les articles plus récents que ça sont lus (les plus anciens sont marqués vus). */
   bootstrap_days: number;
+  /** Sets annoncés mais pas encore au catalogue Cardmarket (ceux de Cardmarket sont ajoutés automatiquement). */
+  extra_sets: string[];
 }
 
 const DEFAULT_WATCH: WatchSettings = {
   keywords: [],
+  extra_sets: [],
   llm_model: 'gemini-3.8-flash',
   llm_fallback_model: 'gemini-3.5-flash-lite',
   max_extractions_per_run: 6,

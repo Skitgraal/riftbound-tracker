@@ -17,3 +17,42 @@ sources:
     tier: official
     url: https://merch.riotgames.com/en-us/category/riftbound/
     enabled: true
+
+  # --- Relais : boutiques Shopify (liste JSON publique, robots.txt OK, testées depuis GitHub Actions le 24/11/2026) ---
+  # Seules les collections Riftbound sont lues. Le prix d'une boutique va dans « Où l'acheter », jamais dans le prix officiel.
+
+  - id: universe-tcg
+    name: Universe TCG (Espagne)
+    kind: shopify
+    tier: relay
+    url: https://www.universetcg.com/
+    collections: [riftbound]
+    currency: EUR
+    enabled: true
+
+  - id: cardcosmos
+    name: Cardcosmos (Allemagne)
+    kind: shopify
+    tier: relay
+    url: https://cardcosmos.de/
+    collections: [riftbound-league-of-legends-trading-card-game, riftbound-release-2026, riftbound-legacy-kaufen, riftbound-set-7-the-reckoning]
+    currency: EUR
+    enabled: true
+
+  - id: stomping-grounds
+    name: Stompin' Grounds TCG (États-Unis)
+    kind: shopify
+    tier: relay
+    url: https://www.stompinggroundstcg.com/
+    collections: [riftbound]
+    currency: USD
+    enabled: true
+
+  - id: face-to-face
+    name: Face to Face Games (Canada)
+    kind: shopify
+    tier: relay
+    url: https://facetofacegames.com/
+    collections: [riftbound-sealed]
+    currency: CAD
+    enabled: true

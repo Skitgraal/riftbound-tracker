@@ -17,6 +17,8 @@ watch:
   max_extractions_per_run: 6
   # Au tout premier passage, seuls les articles de moins de N jours sont lus
   bootstrap_days: 150
+  # Sets annoncés mais pas encore au catalogue Cardmarket (ceux de Cardmarket sont ajoutés automatiquement)
+  extra_sets: [The Reckoning]
   # Un article ne part à l'extraction que s'il contient au moins un de ces mots (insensible à la casse).
   # Les noms de sets connus (Origins, Spiritforged…) sont ajoutés automatiquement.
   keywords:

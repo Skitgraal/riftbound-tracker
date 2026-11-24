@@ -9,10 +9,11 @@ import { COLORS, sendDiscord, type Channel, type Embed } from '../alerts/discord
 import { loadSent, saveSent } from '../alerts/sent.ts';
 import { loadSources, loadWatchSettings } from '../shared/config.ts';
 import { readJson, repoPath, writeJson } from '../shared/fs.ts';
-import { recordJob } from '../shared/status.ts';
+import { recordJob, type JobStatus } from '../shared/status.ts';
 import { parisDate } from '../shared/time.ts';
 import { collectRiotMerch } from './collectors/riot-merch.ts';
 import { collectRiotNews, loadArticleBody } from './collectors/riot-news.ts';
+import { collectShopify } from './collectors/shopify.ts';
 import { ExtractionError, extractProducts, pauseBetweenExtractions } from './extract.ts';
 import { storeImage } from './media.ts';
 import { applySighting, detectSet, emptyProduct, findMatch, recompute, slugOf } from './products.ts';
@@ -74,7 +75,7 @@ async function main(): Promise<void> {
   const today = parisDate(now);
   const settings = await loadWatchSettings();
   const sources = (await loadSources<SourceConfig>()).filter((s) => s.enabled !== false);
-  const knownSets = Object.values(await readJson<Record<string, string>>(repoPath('data/prices/expansions.json'), {}));
+  const knownSets = [...new Set([...Object.values(await readJson<Record<string, string>>(repoPath('data/prices/expansions.json'), {})), ...settings.extra_sets])];
   const products = await loadProducts();
   const before = new Map([...products].map(([slug, p]) => [slug, structuredClone(p)]));
   const seen = await readJson<Record<string, SeenEntry>>(SEEN, {});
@@ -98,16 +99,29 @@ async function main(): Promise<void> {
       products.set(slug, product);
     }
     applySighting(product, sighting, { ...ctx, observedAt: nowIso });
+    return product.slug;
   };
+  const jobs = await readJson<Record<string, JobStatus>>(repoPath('data/status.json'), {});
+  /** Fiches touchées par une source à son premier passage : pas d'alerte individuelle. */
+  const silent = new Set<string>();
+  const sourceSummaries: { source: SourceConfig; items: number; created: string[] }[] = [];
 
   // 1. Collecte, source par source
   const queue: Pending[] = [];
   for (const source of sources) {
     try {
-      if (source.kind === 'riot-merch') {
-        const found = await collectRiotMerch(source, knownSets);
-        for (const f of found) upsert(f.sighting, { source: source.id, tier: source.tier, url: f.url, publishedAt: null });
-        log.push(`${source.id} : ${found.length} produits`);
+      if (source.kind === 'riot-merch' || source.kind === 'shopify') {
+        const found = source.kind === 'riot-merch' ? await collectRiotMerch(source, knownSets) : await collectShopify(source, knownSets);
+        const firstRun = !bootstrap && !jobs[`source:${source.id}`]?.lastSuccessAt;
+        const created: string[] = [];
+        for (const f of found) {
+          const slug = upsert(f.sighting, { source: source.id, tier: source.tier, url: f.url, publishedAt: null });
+          // Premier passage d'une nouvelle boutique : tout son catalogue serait « nouveau ». Un seul résumé à la place.
+          if (firstRun) silent.add(slug);
+          if (firstRun && !before.has(slug) && !created.includes(slug)) created.push(slug);
+        }
+        if (firstRun) sourceSummaries.push({ source, items: found.length, created });
+        log.push(`${source.id} : ${found.length} produits${firstRun ? ' (premier passage, sans alerte)' : ''}`);
         await recordJob(`source:${source.id}`, { ok: true, info: { items: found.length } }, now);
       } else if (source.kind === 'riot-news') {
         const docs = await collectRiotNews(source, now);
@@ -241,8 +255,23 @@ async function main(): Promise<void> {
       keys.feed.push('watch-bootstrap');
     }
   } else {
+    for (const { source, items, created } of sourceSummaries) {
+      // Les précommandes d'abord : c'est ce qui demande d'agir.
+      const rows = created
+        .map((slug) => products.get(slug)!)
+        .sort((a, b) => Number(b.status === 'preorder') - Number(a.status === 'preorder'))
+        .map((p) => `• ${p.name}${p.status === 'preorder' ? ' — **précommande**' : ''}`);
+      const list = rows.slice(0, 20).join('\n');
+      outbox.feed.push({
+        title: `Nouvelle source suivie : ${source.name}`,
+        url: source.url,
+        description: `${items} produit(s) lus, ${created.length} fiche(s) créée(s)${created.length ? ` :\n${list}${created.length > 20 ? '\n…' : ''}` : '.'}\nLes changements suivants arriveront ici un par un.`,
+        color: COLORS.accent,
+      });
+      keys.feed.push(`source-added:${source.id}`);
+    }
     for (const e of events) {
-      if (sent[e.key]) continue;
+      if (sent[e.key] || silent.has(e.product.slug)) continue;
       outbox[e.channel].push(productEmbed(e));
       keys[e.channel].push(e.key);
     }

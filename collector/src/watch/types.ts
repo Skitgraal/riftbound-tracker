@@ -37,12 +37,16 @@ export interface Offer {
 export interface SourceConfig {
   id: string;
   name: string;
-  kind: 'riot-news' | 'riot-merch';
+  kind: 'riot-news' | 'riot-merch' | 'shopify';
   tier: Tier;
   url: string;
   enabled: boolean;
   /** Catégories d'articles ignorées (riot-news). */
   skip_categories?: string[];
+  /** Collections Shopify lues (shopify) : seulement celles de Riftbound, jamais tout le catalogue. */
+  collections?: string[];
+  /** Devise des prix de la boutique (shopify : la liste JSON ne la donne pas). */
+  currency?: string;
 }
 
 /** Article ou page récupéré par un collecteur, avant extraction. */
