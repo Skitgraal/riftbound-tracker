@@ -118,8 +118,17 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-spiritforged-booster-pack",
       "evidence": "Riftbound: League of Legends TCG: Spiritforged - Booster Pack · 10.99 CAD · disponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-spiritforged-booster-pack-english",
+      "evidence": "Riftbound: Spiritforged Booster Pack — League of Legends TCG · 8 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

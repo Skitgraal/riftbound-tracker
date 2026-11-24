@@ -2,12 +2,12 @@
   "slug": "unleashed-vault",
   "name": "Unleashed Vault",
   "set": "Unleashed",
-  "type": "box_exclusive",
+  "type": "bundle",
   "language": "EN",
   "msrp": null,
   "announcedAt": null,
   "releaseDate": null,
-  "status": "rumor",
+  "status": "released",
   "reliability": "unconfirmed",
   "image": "media/unleashed-vault-f1999e75.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55130841055573.jpg?v=1794266843&width=1200",
@@ -155,8 +155,62 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-vault",
       "evidence": "Riftbound: League of Legends TCG: Unleashed - Vault · 69.99 CAD · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vault",
+      "evidence": "Riftbound: Unleashed Vault · 45 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vault",
+      "evidence": "Riftbound: Unleashed Vault · 45 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-vault-englisch",
+      "evidence": "Riftbound: League of Legends - Unleashed Vault - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-vault-englisch",
+      "evidence": "Riftbound: League of Legends - Unleashed Vault - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-vault",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Vault · 69.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-vault",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Vault · 69.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

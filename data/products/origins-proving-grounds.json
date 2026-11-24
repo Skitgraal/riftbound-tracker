@@ -7,7 +7,7 @@
   "msrp": null,
   "announcedAt": null,
   "releaseDate": null,
-  "status": "rumor",
+  "status": "released",
   "reliability": "unconfirmed",
   "image": "media/origins-proving-grounds-a1a196e3.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Origins_Proving_Grounds_-_EN_Vorderansicht.png?v=1774475448&width=1200",
@@ -63,8 +63,17 @@
       "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-proving-grounds-englisch",
       "evidence": "Riftbound: League of Legends - Origins Proving Grounds - EN · 49.99 EUR · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-proving-grounds-englisch",
+      "evidence": "Riftbound: League of Legends - Origins Proving Grounds - EN · 49.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

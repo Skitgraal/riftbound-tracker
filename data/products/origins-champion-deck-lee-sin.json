@@ -7,7 +7,7 @@
   "msrp": null,
   "announcedAt": null,
   "releaseDate": null,
-  "status": "rumor",
+  "status": "released",
   "reliability": "unconfirmed",
   "image": "media/origins-champion-deck-lee-sin-38552dcd.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Origins_Champion_Deck_Lee_Sin_-_EN_b00fd25e0c5381cd.webp?v=1791207387&width=1200",
@@ -155,8 +155,35 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
       "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Lee Sin · 39.99 CAD · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-lee-sin-en",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Lee Sin - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Lee Sin] · 50 USD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Lee Sin · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

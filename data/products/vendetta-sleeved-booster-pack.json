@@ -7,7 +7,7 @@
   "msrp": null,
   "announcedAt": null,
   "releaseDate": null,
-  "status": "rumor",
+  "status": "released",
   "reliability": "unconfirmed",
   "image": "media/vendetta-sleeved-booster-pack-ec9f106b.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_57111375085909.jpg?v=1794265839&width=1200",
@@ -63,8 +63,17 @@
       "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-vendetta-sleeved-booster-pack",
       "evidence": "Riftbound: League of Legends TCG - Vendetta Sleeved Booster Pack · 7 EUR · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-vendetta-sleeved-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG - Vendetta Sleeved Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

@@ -7,7 +7,7 @@
   "msrp": null,
   "announcedAt": null,
   "releaseDate": null,
-  "status": "rumor",
+  "status": "released",
   "reliability": "unconfirmed",
   "image": "media/unleashed-booster-pack-08800583.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55130843414869_1c8ae364-1136-4c8b-b878-457708955707.jpg?v=1794267101&width=1200",
@@ -109,8 +109,26 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-pack",
       "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Pack · 12.99 CAD · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Pack · 12.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

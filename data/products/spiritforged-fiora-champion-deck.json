@@ -13,7 +13,7 @@
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55056175825237.jpg?v=1794266185&width=1200",
   "officialUrl": null,
   "cmProductId": null,
-  "possibleDuplicateOf": "spiritforged-rumble-champion-deck",
+  "possibleDuplicateOf": null,
   "draws": [],
   "offers": [
     {
@@ -228,8 +228,17 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-spiritforged-champion-deck-fiora",
       "evidence": "Riftbound: League of Legends TCG: Spiritforged - Champion Deck - Fiora · 32.99 CAD · disponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-spiritforged-champion-deck-fiora",
+      "evidence": "Riftbound: League of Legends TCG - Spiritforged Champion Deck [Fiora] · 35 USD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

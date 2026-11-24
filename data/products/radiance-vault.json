@@ -306,8 +306,35 @@
       "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
       "evidence": "The Vault returns, including a storage box, six Radiance booster packs, foil tokens, and a set of 36 Runes.",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-vault-en",
+      "evidence": "Riftbound TCG: Radiance Vault · 45 EUR · disponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-vault-englisch",
+      "evidence": "Riftbound: League of Legends - Radiance Vault - EN · 39.9 EUR · disponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-vault",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Vault · 49.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

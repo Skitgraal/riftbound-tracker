@@ -10,32 +10,32 @@
     }
   },
   "source:cardcosmos": {
-    "lastRunAt": "2026-11-24T19:37:51.814Z",
-    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "lastRunAt": "2026-11-24T19:59:23.782Z",
+    "lastSuccessAt": "2026-11-24T19:59:23.782Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 19
     }
   },
   "source:face-to-face": {
-    "lastRunAt": "2026-11-24T19:37:51.814Z",
-    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "lastRunAt": "2026-11-24T19:59:23.782Z",
+    "lastSuccessAt": "2026-11-24T19:59:23.782Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 27
     }
   },
   "source:riot-merch": {
-    "lastRunAt": "2026-11-24T19:37:51.814Z",
-    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "lastRunAt": "2026-11-24T19:59:23.782Z",
+    "lastSuccessAt": "2026-11-24T19:59:23.782Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 9
     }
   },
   "source:riot-news": {
-    "lastRunAt": "2026-11-24T19:37:51.814Z",
-    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "lastRunAt": "2026-11-24T19:59:23.782Z",
+    "lastSuccessAt": "2026-11-24T19:59:23.782Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 107,
@@ -43,30 +43,30 @@
     }
   },
   "source:stomping-grounds": {
-    "lastRunAt": "2026-11-24T19:37:51.814Z",
-    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "lastRunAt": "2026-11-24T19:59:23.782Z",
+    "lastSuccessAt": "2026-11-24T19:59:23.782Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 19
     }
   },
   "source:universe-tcg": {
-    "lastRunAt": "2026-11-24T19:37:51.814Z",
-    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "lastRunAt": "2026-11-24T19:59:23.782Z",
+    "lastSuccessAt": "2026-11-24T19:59:23.782Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 33
     }
   },
   "watch": {
-    "lastRunAt": "2026-11-24T19:37:51.814Z",
-    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "lastRunAt": "2026-11-24T19:59:23.782Z",
+    "lastSuccessAt": "2026-11-24T19:59:23.782Z",
     "consecutiveFailures": 0,
     "info": {
-      "products": 48,
+      "products": 46,
       "pending": 17,
-      "extracted": 6,
-      "llm": "ok"
+      "extracted": 0,
+      "llm": "indisponible"
     }
   }
 }

@@ -210,8 +210,35 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-booster-box",
       "evidence": "Riftbound: League of Legends TCG: Origins - Booster Box · 329.99 CAD · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-origins-booster-box-24-ingles",
+      "evidence": "Riftbound: Origins Booster Box (24 Packs) · 188 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-booster-display-englisch",
+      "evidence": "Riftbound: League of Legends - Origins Booster Display - EN · 199.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Booster Box · 329.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

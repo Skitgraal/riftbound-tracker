@@ -6,10 +6,10 @@
     "publishedAt": "2026-10-22T16:00:00.000Z",
     "text": "Riftbound’s 2026 Drawings\n\nEverything about the K/DA Collection, T1 Player Bundle, 2026 Worlds Bundle, and Gift of the Rift.",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3dca0c33a0b7567ee83b4aa2b3a4d1175f68dda2-2880x1620.jpg",
-    "attempts": 2,
+    "attempts": 3,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
     "alerted": true,
-    "lastError": "The operation was aborted due to timeout"
+    "lastError": "Gemini gemini-3.8-flash : HTTP 503 (quota ou surcharge) ; Gemini gemini-3.5-flash-lite : HTTP 503 (quota ou surcharge)"
   },
   {
     "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",

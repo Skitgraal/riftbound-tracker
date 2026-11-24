@@ -7,7 +7,7 @@
   "msrp": null,
   "announcedAt": null,
   "releaseDate": null,
-  "status": "rumor",
+  "status": "released",
   "reliability": "unconfirmed",
   "image": "media/unleashed-pre-rift-kit-924a3cd4.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_new_11794643288405_0.jpg?v=1794263617&width=1200",
@@ -109,8 +109,17 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-pre-rift-kit",
       "evidence": "Riftbound: League of Legends TCG: Unleashed - Pre-Rift Kit · 39.99 CAD · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-pre-rift-kit",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Pre-Rift Kit · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }

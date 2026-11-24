@@ -7,13 +7,13 @@
   "msrp": null,
   "announcedAt": null,
   "releaseDate": null,
-  "status": "rumor",
+  "status": "released",
   "reliability": "unconfirmed",
   "image": "media/origins-champion-deck-jinx-850b6750.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Origins_Champion_Deck_Jinx_-_EN_eb05f8184ff8b66a.webp?v=1791207389&width=1200",
   "officialUrl": null,
   "cmProductId": null,
-  "possibleDuplicateOf": "origins-champion-deck-viktor",
+  "possibleDuplicateOf": null,
   "draws": [],
   "offers": [
     {
@@ -155,8 +155,35 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-jinx",
       "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Jinx · 39.99 CAD · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-jinx-englisch",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Jinx - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-jinx",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Jinx] · 35 USD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-jinx",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Jinx · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:59:23.782Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:37:51.814Z"
+  "updatedAt": "2026-11-24T19:59:23.782Z"
 }
