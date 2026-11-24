@@ -7,6 +7,9 @@ on:
       urls:
         description: URL à tester, séparées par des espaces
         required: true
+      chars:
+        description: Nombre de caractères de réponse affichés
+        default: '160'
 
 permissions:
   contents: read
@@ -25,3 +28,4 @@ jobs:
       - run: npm run probe -w collector
         env:
           PROBE_URLS: ${{ inputs.urls }}
+          PROBE_CHARS: ${{ inputs.chars }}

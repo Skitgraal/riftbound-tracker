@@ -41,7 +41,7 @@ for (const url of urls) {
   try {
     const r = await fetch(url, { headers: { 'user-agent': USER_AGENT }, signal: AbortSignal.timeout(20_000) });
     const text = await r.text();
-    const snippet = text.slice(0, 160).replace(/\s+/g, ' ');
+    const snippet = text.slice(0, Number(process.env.PROBE_CHARS || 160)).replace(/\s+/g, ' ');
     console.log(`${r.status} ${blocked ? `ROBOTS-INTERDIT(${blocked})` : 'robots-ok'} ${r.headers.get('content-type') ?? ''} ${text.length}o ${url}\n    ${snippet}`);
   } catch (error) {
     console.log(`ERR ${url} : ${error instanceof Error ? error.message : error}`);
