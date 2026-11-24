@@ -2,22 +2,30 @@
   "slug": "worlds-2026-edition",
   "name": "Riftbound x Worlds 2026 Edition",
   "set": null,
-  "type": "box_exclusive",
+  "type": "bundle",
   "language": "EN",
   "msrp": {
-    "amount": 79.99,
+    "amount": 80,
     "currency": "USD"
   },
-  "announcedAt": null,
-  "releaseDate": null,
+  "announcedAt": "2026-11-06",
+  "releaseDate": {
+    "value": "2026-12",
+    "precision": "month"
+  },
   "status": "announced",
   "reliability": "confirmed",
   "image": "media/worlds-2026-edition-60a4102d.webp",
   "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/8b1da37ccc1a248a7500e790600eed16ce208a16-2560x2560.png?w=1200&fm=webp&q=82",
-  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-worlds-2026-edition/",
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
   "cmProductId": null,
   "possibleDuplicateOf": null,
-  "draws": [],
+  "draws": [
+    {
+      "opensAt": "2026-11-13T17:00:00.000Z",
+      "closesAt": "2026-11-16T17:00:00.000Z"
+    }
+  ],
   "offers": [
     {
       "source": "riot-merch",
@@ -27,7 +35,7 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T19:11:41.923Z"
+      "lastSeenAt": "2026-11-24T19:14:18.682Z"
     }
   ],
   "claims": [
@@ -78,8 +86,91 @@
       "url": "https://merch.riotgames.com/en-us/product/riftbound-worlds-2026-edition/",
       "evidence": "Riftbound x Worlds 2026 Edition · 79.99 USD · précommande · épuisé",
       "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "name",
+      "value": "Riftbound x Worlds 2026 Edition",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 80,
+        "currency": "USD"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "releaseDate",
+      "value": {
+        "value": "2026-12",
+        "precision": "month"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "status",
+      "value": "announced",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-11-06",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-11-13T17:00:00.000Z",
+        "closesAt": "2026-11-16T17:00:00.000Z",
+        "url": null,
+        "region": null
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-24T19:14:18.682Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-24T19:11:41.923Z"
+  "updatedAt": "2026-11-24T19:14:18.682Z"
 }
