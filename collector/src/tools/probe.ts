@@ -43,6 +43,15 @@ for (const url of urls) {
     const text = await r.text();
     const snippet = text.slice(0, Number(process.env.PROBE_CHARS || 160)).replace(/\s+/g, ' ');
     console.log(`${r.status} ${blocked ? `ROBOTS-INTERDIT(${blocked})` : 'robots-ok'} ${r.headers.get('content-type') ?? ''} ${text.length}o ${url}\n    ${snippet}`);
+    // Liste Shopify : résumé lisible (titre, type, prix, dispo, tags) plutôt que le JSON brut.
+    if (text.startsWith('{"products"')) {
+      const { products } = JSON.parse(text) as { products: { title: string; product_type: string; tags: string[] | string; created_at: string; variants: { price: string; available?: boolean }[] }[] };
+      console.log(`    ${products.length} produits`);
+      for (const p of products) {
+        const v = p.variants[0];
+        console.log(`    - ${p.title} | ${p.product_type} | ${v?.price} | ${v?.available ? 'dispo' : 'indispo'} | ${p.created_at.slice(0, 10)} | ${[p.tags].flat().join(',').slice(0, 80)}`);
+      }
+    }
   } catch (error) {
     console.log(`ERR ${url} : ${error instanceof Error ? error.message : error}`);
   }
