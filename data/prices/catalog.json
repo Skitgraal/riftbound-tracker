@@ -11715,7 +11715,7 @@
     "kind": "sealed",
     "category": "Riftbound Display",
     "expansionId": 6286,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-05-15 16:50:03",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -11725,7 +11725,7 @@
     "kind": "sealed",
     "category": "Riftbound Booster",
     "expansionId": 6286,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-05-15 17:04:38",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -11735,7 +11735,7 @@
     "kind": "sealed",
     "category": "Riftbound Display",
     "expansionId": 6286,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-05-15 17:26:25",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -11745,7 +11745,7 @@
     "kind": "sealed",
     "category": "Riftbound Champion Decks",
     "expansionId": 6286,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-05-15 17:35:07",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -11755,7 +11755,7 @@
     "kind": "sealed",
     "category": "Riftbound Champion Decks",
     "expansionId": 6286,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-05-15 17:39:11",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -11765,7 +11765,7 @@
     "kind": "sealed",
     "category": "Riftbound Champion Decks",
     "expansionId": 6286,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-05-15 17:43:20",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -11775,7 +11775,7 @@
     "kind": "sealed",
     "category": "Riftbound Riftbound Box Sets",
     "expansionId": 6289,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-05-15 17:47:24",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -12145,7 +12145,7 @@
     "kind": "sealed",
     "category": "Riftbound Booster",
     "expansionId": 6399,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-07-15 11:19:04",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -12165,7 +12165,7 @@
     "kind": "sealed",
     "category": "Riftbound Display",
     "expansionId": 6399,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-07-15 11:24:09",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -12175,7 +12175,7 @@
     "kind": "sealed",
     "category": "Riftbound Display",
     "expansionId": 6491,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-07-15 11:39:06",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -12185,7 +12185,7 @@
     "kind": "sealed",
     "category": "Riftbound Booster",
     "expansionId": 6491,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-07-15 11:58:46",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -15575,7 +15575,7 @@
     "kind": "sealed",
     "category": "Riftbound Booster",
     "expansionId": 6587,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-10-01 10:57:28",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -15585,7 +15585,7 @@
     "kind": "sealed",
     "category": "Riftbound Display",
     "expansionId": 6587,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-10-01 11:01:05",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -15595,7 +15595,7 @@
     "kind": "sealed",
     "category": "Riftbound Riftbound Box Sets",
     "expansionId": 6587,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-10-01 11:03:01",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -15605,7 +15605,7 @@
     "kind": "sealed",
     "category": "Riftbound Riftbound Box Sets",
     "expansionId": 6587,
-    "languageTag": "",
+    "languageTag": "FR",
     "dateAdded": "2026-10-01 11:03:40",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
   },
@@ -20098,5 +20098,785 @@
     "languageTag": "",
     "dateAdded": "2026-11-20 10:43:13",
     "firstSeenAt": "2026-11-23T19:58:55.219Z"
+  },
+  "925835": {
+    "id": 925835,
+    "name": "Blazing Scorcher",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:49:49",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925836": {
+    "id": 925836,
+    "name": "Brazen Buccaneer",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:50:24",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925838": {
+    "id": 925838,
+    "name": "Chemtech Enforcer",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:50:46",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925839": {
+    "id": 925839,
+    "name": "Disintegrate",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:51:27",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925840": {
+    "id": 925840,
+    "name": "Flame Chompers",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:52:28",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925841": {
+    "id": 925841,
+    "name": "Fury Rune",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:52:46",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925842": {
+    "id": 925842,
+    "name": "Legion Rearguard",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:53:08",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925843": {
+    "id": 925843,
+    "name": "Magma Wurm",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:53:28",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925844": {
+    "id": 925844,
+    "name": "Noxus Hopeful",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:53:41",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925845": {
+    "id": 925845,
+    "name": "Scrapyard Champion",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:54:06",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925846": {
+    "id": 925846,
+    "name": "Jinx, Demolitionist",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:54:32",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925847": {
+    "id": 925847,
+    "name": "Tryndamere, Barbarian",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:55:04",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925848": {
+    "id": 925848,
+    "name": "Vi, Destructive",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:55:22",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925849": {
+    "id": 925849,
+    "name": "Kadregrin the Infernal",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:55:39",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925851": {
+    "id": 925851,
+    "name": "Seal of Rage",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:58:12",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925852": {
+    "id": 925852,
+    "name": "Volibear, Furious",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:58:51",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925853": {
+    "id": 925853,
+    "name": "Calm Rune",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:59:24",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925854": {
+    "id": 925854,
+    "name": "Clockwork Keeper",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 11:59:46",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925855": {
+    "id": 925855,
+    "name": "Defy",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:00:11",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925856": {
+    "id": 925856,
+    "name": "En Garde",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:00:34",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925857": {
+    "id": 925857,
+    "name": "Meditation",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:00:59",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925858": {
+    "id": 925858,
+    "name": "Wielder of Water",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:01:20",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925859": {
+    "id": 925859,
+    "name": "Discipline",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:01:35",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925860": {
+    "id": 925860,
+    "name": "Wind Wall",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:01:52",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925861": {
+    "id": 925861,
+    "name": "Seal of Focus",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:03:42",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925864": {
+    "id": 925864,
+    "name": "Yasuo, Remorseful",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:04:36",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925865": {
+    "id": 925865,
+    "name": "Mind Rune",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:05:37",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925867": {
+    "id": 925867,
+    "name": "Stupefy",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:07:38",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925868": {
+    "id": 925868,
+    "name": "Watchful Sentry",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:08:05",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925869": {
+    "id": 925869,
+    "name": "Wraith of Echoes",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:08:32",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925870": {
+    "id": 925870,
+    "name": "Unchecked Power",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:08:51",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925871": {
+    "id": 925871,
+    "name": "Challenge",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:09:11",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925872": {
+    "id": 925872,
+    "name": "Mobilize",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:09:35",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925874": {
+    "id": 925874,
+    "name": "Body Rune",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:10:13",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925876": {
+    "id": 925876,
+    "name": "Stormclaw Ursine",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:10:34",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925877": {
+    "id": 925877,
+    "name": "Catalyst of Aeons",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:10:56",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925878": {
+    "id": 925878,
+    "name": "Carnivorous Snapvine",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:11:17",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925879": {
+    "id": 925879,
+    "name": "Volibear, Imposing",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:12:39",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925880": {
+    "id": 925880,
+    "name": "Deadbloom Predator",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:13:10",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925881": {
+    "id": 925881,
+    "name": "Miss Fortune, Captain",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:14:42",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925882": {
+    "id": 925882,
+    "name": "Cemetery Attendant",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:15:00",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925883": {
+    "id": 925883,
+    "name": "Chaos Rune",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:15:29",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925884": {
+    "id": 925884,
+    "name": "Gust",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:15:45",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925885": {
+    "id": 925885,
+    "name": "Rebuke",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:16:02",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925886": {
+    "id": 925886,
+    "name": "Stealthy Pursuer",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:16:21",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925887": {
+    "id": 925887,
+    "name": "Undercover Agent",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:16:37",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925888": {
+    "id": 925888,
+    "name": "Traveling Merchant",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:16:57",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925889": {
+    "id": 925889,
+    "name": "Kayn, Unleashed",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:17:18",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925890": {
+    "id": 925890,
+    "name": "Maddened Marauder",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:17:35",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925891": {
+    "id": 925891,
+    "name": "Jinx, Rebel",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:17:56",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925892": {
+    "id": 925892,
+    "name": "Miss Fortune, Buccaneer",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:18:13",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925893": {
+    "id": 925893,
+    "name": "Possession",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:18:33",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925894": {
+    "id": 925894,
+    "name": "Seal of Discord",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:19:04",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925895": {
+    "id": 925895,
+    "name": "Cruel Patron",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:19:22",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925896": {
+    "id": 925896,
+    "name": "Cull the Weak",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:19:44",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925897": {
+    "id": 925897,
+    "name": "Faithful Manufactor",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:20:03",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925898": {
+    "id": 925898,
+    "name": "Hidden Blade",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:20:23",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925899": {
+    "id": 925899,
+    "name": "Order Rune",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:20:37",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925900": {
+    "id": 925900,
+    "name": "Soaring Scout",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:20:56",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925901": {
+    "id": 925901,
+    "name": "Vanguard Captain",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:21:11",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925902": {
+    "id": 925902,
+    "name": "Machine Evangel",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:21:26",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925903": {
+    "id": 925903,
+    "name": "Grand Strategem",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:21:48",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925904": {
+    "id": 925904,
+    "name": "Harnessed Dragon",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:22:02",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925905": {
+    "id": 925905,
+    "name": "Seal of Unity",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:22:23",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925906": {
+    "id": 925906,
+    "name": "Viktor, Leader",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:23:03",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925907": {
+    "id": 925907,
+    "name": "Stormbringer",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:25:17",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925922": {
+    "id": 925922,
+    "name": "Super Mega Death Rocket!",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:38:00",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925925": {
+    "id": 925925,
+    "name": "Last Breath",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:39:35",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925926": {
+    "id": 925926,
+    "name": "Siphon Power",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:40:59",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925928": {
+    "id": 925928,
+    "name": "Altar to Unity",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:41:37",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925929": {
+    "id": 925929,
+    "name": "Obelisk of Power",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:41:58",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925932": {
+    "id": 925932,
+    "name": "Reaver's Row",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:43:13",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925933": {
+    "id": 925933,
+    "name": "Targon's Peak",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:43:29",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925934": {
+    "id": 925934,
+    "name": "The Grand Plaza",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:43:50",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925935": {
+    "id": 925935,
+    "name": "Trifarian War Camp",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:44:01",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925937": {
+    "id": 925937,
+    "name": "Void Gate",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:44:24",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925939": {
+    "id": 925939,
+    "name": "Windswept Hillock",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:46:22",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925940": {
+    "id": 925940,
+    "name": "Zaun Warrens",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 12:46:45",
+    "firstSeenAt": "2026-11-24T23:02:32.925Z"
   }
 }
