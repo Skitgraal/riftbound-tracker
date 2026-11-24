@@ -1,0 +1,79 @@
+{
+  "slug": "legacy-booster-display",
+  "name": "Legacy Booster Display",
+  "set": "Legacy",
+  "type": "display",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "preorder",
+  "reliability": "unconfirmed",
+  "image": "media/legacy-booster-display-7cc9c4f6.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb06bd01en.png?v=1794781719&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-booster-display-24-boosters-en",
+      "price": {
+        "amount": 140,
+        "currency": "EUR"
+      },
+      "availability": "preorder",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Legacy Booster Display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Legacy Booster Display (24 Boosters) · 140 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Legacy",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Legacy Booster Display (24 Boosters) · 140 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Legacy Booster Display (24 Boosters) · 140 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "preorder",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Legacy Booster Display (24 Boosters) · 140 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb06bd01en.png?v=1794781719&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Legacy Booster Display (24 Boosters) · 140 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

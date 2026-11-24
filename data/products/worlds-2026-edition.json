@@ -36,6 +36,16 @@
       },
       "availability": "out_of_stock",
       "lastSeenAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-x-worlds-2026-edition",
+      "price": {
+        "amount": 672,
+        "currency": "EUR"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
     }
   ],
   "claims": [
@@ -169,8 +179,44 @@
       "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
       "evidence": "Cost: $80.00 + shipping and handling.",
       "observedAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "field": "name",
+      "value": "Riftbound x Worlds 2026 Edition",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-x-worlds-2026-edition",
+      "evidence": "Riftbound x Worlds 2026 Edition · 672 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "box_exclusive",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-x-worlds-2026-edition",
+      "evidence": "Riftbound x Worlds 2026 Edition · 672 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-x-worlds-2026-edition",
+      "evidence": "Riftbound x Worlds 2026 Edition · 672 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/worlds2026_35713ecf.png?v=1794839007&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-x-worlds-2026-edition",
+      "evidence": "Riftbound x Worlds 2026 Edition · 672 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-24T19:14:18.682Z"
+  "updatedAt": "2026-11-24T19:37:51.814Z"
 }

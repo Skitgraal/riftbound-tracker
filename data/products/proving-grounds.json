@@ -28,6 +28,26 @@
       },
       "availability": "in_stock",
       "lastSeenAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-proving-grounds-reprint-en",
+      "price": {
+        "amount": 56,
+        "currency": "EUR"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-proving-grounds",
+      "price": {
+        "amount": 45,
+        "currency": "USD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
     }
   ],
   "claims": [
@@ -87,8 +107,80 @@
       "url": "https://merch.riotgames.com/en-us/product/riftbound-proving-grounds/",
       "evidence": "Riftbound: League of Legends TCG Proving Grounds · 39.99 USD · en stock",
       "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "name",
+      "value": "Proving Grounds",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-proving-grounds-reprint-en",
+      "evidence": "Riftbound: League Of Legends TCG - Proving Grounds [Reprint] · 56 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-proving-grounds-reprint-en",
+      "evidence": "Riftbound: League Of Legends TCG - Proving Grounds [Reprint] · 56 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-proving-grounds-reprint-en",
+      "evidence": "Riftbound: League Of Legends TCG - Proving Grounds [Reprint] · 56 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_56955675214165.jpg?v=1794265470&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-proving-grounds-reprint-en",
+      "evidence": "Riftbound: League Of Legends TCG - Proving Grounds [Reprint] · 56 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Proving Grounds",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-proving-grounds",
+      "evidence": "Riftbound: League of Legends TCG - Proving Grounds · 45 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-proving-grounds",
+      "evidence": "Riftbound: League of Legends TCG - Proving Grounds · 45 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-proving-grounds",
+      "evidence": "Riftbound: League of Legends TCG - Proving Grounds · 45 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Riftbound_League_of_Legends_TCG_Origins_Proving_Grounds.webp?v=1760143839&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-proving-grounds",
+      "evidence": "Riftbound: League of Legends TCG - Proving Grounds · 45 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-24T19:14:18.682Z"
+  "updatedAt": "2026-11-24T19:37:51.814Z"
 }

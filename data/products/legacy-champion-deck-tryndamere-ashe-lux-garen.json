@@ -1,0 +1,70 @@
+{
+  "slug": "legacy-champion-deck-tryndamere-ashe-lux-garen",
+  "name": "Legacy Champion Deck Tryndamere, Ashe, Lux, Garen",
+  "set": "Legacy",
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/legacy-champion-deck-tryndamere-ashe-lux-garen-26265800.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/riftbound-legacy-champion-deck-tryndamere.jpg?v=1794437349&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-champion-deck-en",
+      "price": {
+        "amount": 28,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Legacy Champion Deck Tryndamere, Ashe, Lux, Garen",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-champion-deck-en",
+      "evidence": "Riftbound TCG: Legacy Champion Deck (Tryndamere, Ashe, Lux, Garen) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Legacy",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-champion-deck-en",
+      "evidence": "Riftbound TCG: Legacy Champion Deck (Tryndamere, Ashe, Lux, Garen) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-champion-deck-en",
+      "evidence": "Riftbound TCG: Legacy Champion Deck (Tryndamere, Ashe, Lux, Garen) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/riftbound-legacy-champion-deck-tryndamere.jpg?v=1794437349&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-champion-deck-en",
+      "evidence": "Riftbound TCG: Legacy Champion Deck (Tryndamere, Ashe, Lux, Garen) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

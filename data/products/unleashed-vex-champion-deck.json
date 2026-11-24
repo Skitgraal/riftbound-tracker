@@ -1,0 +1,217 @@
+{
+  "slug": "unleashed-vex-champion-deck",
+  "name": "Unleashed Vex Champion Deck",
+  "set": "Unleashed",
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "unconfirmed",
+  "image": "media/unleashed-vex-champion-deck-221a03f0.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55087480308053.jpg?v=1794266819&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vex-champion-deck",
+      "price": {
+        "amount": 28,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "cardcosmos",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vex-en",
+      "price": {
+        "amount": 29.99,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "price": {
+        "amount": 30,
+        "currency": "USD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "price": {
+        "amount": 24.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Unleashed Vex Champion Deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vex-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vex Champion Deck · 28 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vex-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vex Champion Deck · 28 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vex-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vex Champion Deck · 28 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55087480308053.jpg?v=1794266819&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vex-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vex Champion Deck · 28 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Champion Deck Vex",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vex-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vex - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vex-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vex - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vex-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vex - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Unleashed_Champion_Deck_Vex_-_EN_f7e884e901b73aba.webp?v=1791207057&width=1200",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vex-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vex - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Champion Deck Vex",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vex] · 30 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vex] · 30 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vex] · 30 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vex] · 30 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Unleashed_Champion_Deck_Vex.webp?v=1775840879&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vex] · 30 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Champion Deck Vex",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vex · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vex · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vex · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/cf1d85e76fb8e19862c20d5b7e9f6b4c6cc1eb3a_Asset_SEA_DEC_RBD_RB_03PD02_EN.jpg?v=1764971283&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vex",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vex · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

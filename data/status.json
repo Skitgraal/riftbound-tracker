@@ -9,32 +9,64 @@
       "lastSnapshotDate": "2026-11-24"
     }
   },
+  "source:cardcosmos": {
+    "lastRunAt": "2026-11-24T19:37:51.814Z",
+    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "consecutiveFailures": 0,
+    "info": {
+      "items": 19
+    }
+  },
+  "source:face-to-face": {
+    "lastRunAt": "2026-11-24T19:37:51.814Z",
+    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "consecutiveFailures": 0,
+    "info": {
+      "items": 27
+    }
+  },
   "source:riot-merch": {
-    "lastRunAt": "2026-11-24T19:14:18.682Z",
-    "lastSuccessAt": "2026-11-24T19:14:18.682Z",
+    "lastRunAt": "2026-11-24T19:37:51.814Z",
+    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 9
     }
   },
   "source:riot-news": {
-    "lastRunAt": "2026-11-24T19:14:18.682Z",
-    "lastSuccessAt": "2026-11-24T19:14:18.682Z",
+    "lastRunAt": "2026-11-24T19:37:51.814Z",
+    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 107,
       "fresh": 0
     }
   },
-  "watch": {
-    "lastRunAt": "2026-11-24T19:14:18.682Z",
-    "lastSuccessAt": "2026-11-24T19:14:18.682Z",
+  "source:stomping-grounds": {
+    "lastRunAt": "2026-11-24T19:37:51.814Z",
+    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
     "consecutiveFailures": 0,
     "info": {
-      "products": 9,
-      "pending": 23,
-      "extracted": 2,
-      "llm": "indisponible"
+      "items": 19
+    }
+  },
+  "source:universe-tcg": {
+    "lastRunAt": "2026-11-24T19:37:51.814Z",
+    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "consecutiveFailures": 0,
+    "info": {
+      "items": 33
+    }
+  },
+  "watch": {
+    "lastRunAt": "2026-11-24T19:37:51.814Z",
+    "lastSuccessAt": "2026-11-24T19:37:51.814Z",
+    "consecutiveFailures": 0,
+    "info": {
+      "products": 48,
+      "pending": 17,
+      "extracted": 6,
+      "llm": "ok"
     }
   }
 }

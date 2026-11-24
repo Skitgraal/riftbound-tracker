@@ -1,0 +1,116 @@
+{
+  "slug": "origins-booster-pack",
+  "name": "Origins Booster Pack",
+  "set": "Origins",
+  "type": "booster",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/origins-booster-pack-a4e8f37e.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_54487616553301.jpg?v=1794266033&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-origins-booster-pack-ingles",
+      "price": {
+        "amount": 9,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-booster-pack",
+      "price": {
+        "amount": 13.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Origins Booster Pack",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-origins-booster-pack-ingles",
+      "evidence": "Riftbound: Origins Booster Pack · 9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-origins-booster-pack-ingles",
+      "evidence": "Riftbound: Origins Booster Pack · 9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-origins-booster-pack-ingles",
+      "evidence": "Riftbound: Origins Booster Pack · 9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_54487616553301.jpg?v=1794266033&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-origins-booster-pack-ingles",
+      "evidence": "Riftbound: Origins Booster Pack · 9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Origins Booster Pack",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Booster Pack · 13.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Booster Pack · 13.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Booster Pack · 13.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/804b2c2053895015089295503c0ddfd721ff433b_Asset_SEA_PAC_RBD_RB_01BD01_EN.jpg?v=1781104694&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Booster Pack · 13.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

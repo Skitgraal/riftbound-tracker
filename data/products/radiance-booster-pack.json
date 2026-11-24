@@ -1,0 +1,125 @@
+{
+  "slug": "radiance-booster-pack",
+  "name": "Radiance Booster Pack",
+  "set": "Radiance",
+  "type": "booster",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "unconfirmed",
+  "image": "media/radiance-booster-pack-243a44a1.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_56985789137237.jpg?v=1794265676&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-pack-en",
+      "price": {
+        "amount": 7,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-pack",
+      "price": {
+        "amount": 6.99,
+        "currency": "CAD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Radiance Booster Pack",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-pack-en",
+      "evidence": "Riftbound TCG: Radiance Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-pack-en",
+      "evidence": "Riftbound TCG: Radiance Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-pack-en",
+      "evidence": "Riftbound TCG: Radiance Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_56985789137237.jpg?v=1794265676&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-pack-en",
+      "evidence": "Riftbound TCG: Radiance Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Booster Pack",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Pack · 6.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Pack · 6.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Pack · 6.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Pack · 6.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/92b62c03e4146c50fd3aeb4de493d8f1668c6114_Asset_SEA_PAC_RBD_RB_05BD01_EN.webp?v=1783455491&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Pack · 6.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

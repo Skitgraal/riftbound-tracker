@@ -1,0 +1,70 @@
+{
+  "slug": "reckoning-booster-display",
+  "name": "The Reckoning Booster Display",
+  "set": "The Reckoning",
+  "type": "display",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/reckoning-booster-display-4e568287.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb07bd01en.png?v=1794781777&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-booster-display-en",
+      "price": {
+        "amount": 140,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "The Reckoning Booster Display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-booster-display-en",
+      "evidence": "Riftbound TCG: The Reckoning Booster Display · 140 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "The Reckoning",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-booster-display-en",
+      "evidence": "Riftbound TCG: The Reckoning Booster Display · 140 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-booster-display-en",
+      "evidence": "Riftbound TCG: The Reckoning Booster Display · 140 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb07bd01en.png?v=1794781777&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-booster-display-en",
+      "evidence": "Riftbound TCG: The Reckoning Booster Display · 140 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

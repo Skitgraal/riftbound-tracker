@@ -1,0 +1,226 @@
+{
+  "slug": "unleashed-vi-champion-deck",
+  "name": "Unleashed Vi Champion Deck",
+  "set": "Unleashed",
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "unconfirmed",
+  "image": "media/unleashed-vi-champion-deck-9ddb5ec2.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55087449145685.jpg?v=1794266800&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": "unleashed-vex-champion-deck",
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vi-champion-deck",
+      "price": {
+        "amount": 28,
+        "currency": "EUR"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "cardcosmos",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vi-en",
+      "price": {
+        "amount": 29.99,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "price": {
+        "amount": 14,
+        "currency": "USD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "price": {
+        "amount": 19.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Unleashed Vi Champion Deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vi-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vi Champion Deck · 28 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vi-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vi Champion Deck · 28 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vi-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vi Champion Deck · 28 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vi-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vi Champion Deck · 28 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55087449145685.jpg?v=1794266800&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-vi-champion-deck",
+      "evidence": "Riftbound: Unleashed - Vi Champion Deck · 28 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Champion Deck Vi",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vi-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vi - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vi-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vi - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vi-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vi - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Unleashed_Champion_Deck_Vi_-_EN.png?v=1774488085&width=1200",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-champion-deck-vi-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Champion Deck Vi - EN · 29.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Champion Deck Vi",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vi] · 14 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vi] · 14 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vi] · 14 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vi] · 14 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Unleashed_Champion_Deck_Vi.webp?v=1775782861&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Champion Deck [Vi] · 14 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Champion Deck Vi",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vi · 19.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vi · 19.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vi · 19.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/e3c2db412e10b8e430a51978e6f1e20edd6bbe84_Asset_SEA_DEC_RBD_RB_03PD01_EN.jpg?v=1764971286&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-champion-deck-vi",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Champion Deck - Vi · 19.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

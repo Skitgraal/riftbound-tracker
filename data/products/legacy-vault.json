@@ -1,0 +1,79 @@
+{
+  "slug": "legacy-vault",
+  "name": "Legacy Vault Bundle",
+  "set": "Legacy",
+  "type": "bundle",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "preorder",
+  "reliability": "unconfirmed",
+  "image": "media/legacy-vault-0731a6cb.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb06vb01en.png?v=1794781711&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-vault-en",
+      "price": {
+        "amount": 45,
+        "currency": "EUR"
+      },
+      "availability": "preorder",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Legacy Vault Bundle",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-vault-en",
+      "evidence": "Riftbound TCG: Legacy Vault Bundle · 45 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Legacy",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-vault-en",
+      "evidence": "Riftbound TCG: Legacy Vault Bundle · 45 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-vault-en",
+      "evidence": "Riftbound TCG: Legacy Vault Bundle · 45 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "preorder",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-vault-en",
+      "evidence": "Riftbound TCG: Legacy Vault Bundle · 45 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb06vb01en.png?v=1794781711&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-vault-en",
+      "evidence": "Riftbound TCG: Legacy Vault Bundle · 45 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

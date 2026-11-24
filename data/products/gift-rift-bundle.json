@@ -1,0 +1,107 @@
+{
+  "slug": "gift-rift-bundle",
+  "name": "Gift of the Rift Bundle",
+  "set": null,
+  "type": "bundle",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "preorder",
+  "reliability": "unconfirmed",
+  "image": "media/gift-rift-bundle-dd498a4b.png",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/lol-packaging_renders-sotg-gtr-3840x3840_alt.png?v=1786728412&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-gift-of-the-rift-bundle-english",
+      "price": {
+        "amount": 269,
+        "currency": "EUR"
+      },
+      "availability": "preorder",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-gift-to-the-rift-bundle",
+      "price": {
+        "amount": 129,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Gift of the Rift Bundle",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-gift-of-the-rift-bundle-english",
+      "evidence": "Riftbound: League of Legends TCG - Gift of the Rift Bundle · 269 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-gift-of-the-rift-bundle-english",
+      "evidence": "Riftbound: League of Legends TCG - Gift of the Rift Bundle · 269 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "preorder",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-gift-of-the-rift-bundle-english",
+      "evidence": "Riftbound: League of Legends TCG - Gift of the Rift Bundle · 269 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/lol-packaging_renders-sotg-gtr-3840x3840_alt.png?v=1786728412&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-gift-of-the-rift-bundle-english",
+      "evidence": "Riftbound: League of Legends TCG - Gift of the Rift Bundle · 269 EUR · précommande · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Gift of the Rift Bundle",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-gift-to-the-rift-bundle",
+      "evidence": "[PREORDER] Riftbound: League of Legends TCG - Gift of the Rift Bundle · 129 USD · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-gift-to-the-rift-bundle",
+      "evidence": "[PREORDER] Riftbound: League of Legends TCG - Gift of the Rift Bundle · 129 USD · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/RiftboundGifttotheRiftBundle.webp?v=1795205309&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-gift-to-the-rift-bundle",
+      "evidence": "[PREORDER] Riftbound: League of Legends TCG - Gift of the Rift Bundle · 129 USD · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

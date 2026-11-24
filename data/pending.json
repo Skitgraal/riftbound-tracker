@@ -6,10 +6,10 @@
     "publishedAt": "2026-10-22T16:00:00.000Z",
     "text": "Riftbound’s 2026 Drawings\n\nEverything about the K/DA Collection, T1 Player Bundle, 2026 Worlds Bundle, and Gift of the Rift.",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3dca0c33a0b7567ee83b4aa2b3a4d1175f68dda2-2880x1620.jpg",
-    "attempts": 1,
+    "attempts": 2,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
     "alerted": true,
-    "lastError": "Gemini gemini-3.8-flash : HTTP 503 (quota ou surcharge) ; Gemini gemini-3.5-flash-lite : HTTP 503 (quota ou surcharge)"
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",
@@ -18,9 +18,10 @@
     "publishedAt": "2026-10-21T16:00:00.000Z",
     "text": "Riftbound x K/DA Couture Collection\n\nBring the heat. Enter drawing for the Riftbound x K/DA Couture Collection starting October 27.",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f357e0b4a5545bf27e5303f049ce7a61293f3e7f-1920x1080.png",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
@@ -29,9 +30,10 @@
     "publishedAt": "2026-10-12T16:00:00.000Z",
     "text": "Preparing for the Radiance Pre-Rift\n\nGet ready to play Riftbound’s newest set at your local Pre-Rift.",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/06f598de7c6f88948da3d5144d40c966f2609931-3166x1781.jpg",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://youtu.be/c3CqvmA2uuA",
@@ -40,31 +42,10 @@
     "publishedAt": "2026-10-09T20:00:00.000Z",
     "text": "A festival of brilliance begins in Radiance!\n\nTake a look at some of the cards that are lighting up Radiance, dropping October 23.",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/5572a598fed29243ba51d9419326155a7a8fa3e9-1920x1080.png",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/radiance-errata-updates",
-    "source": "riot-news",
-    "title": "Radiance Errata Updates",
-    "publishedAt": "2026-10-09T16:00:00.000Z",
-    "text": "Radiance Errata Updates\n\nUpdates to the text of cards introduced with the release of Radiance.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7f5a41cf1c09f7a807b34b195c9f4002c9400101-1820x1024.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/core-rules-radiance-patch-notes-effective-october-16-2026",
-    "source": "riot-news",
-    "title": "Core Rules: Radiance Patch Notes (Effective October 16, 2026)",
-    "publishedAt": "2026-10-09T16:00:00.000Z",
-    "text": "Core Rules: Radiance Patch Notes (Effective October 16, 2026)\n\nRead about the latest changes to core rules, along with some fun new interactions.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4e6e7f9bc37b5a1913eee9e3b3aa79c906d42235-3780x2127.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://www.youtube.com/watch?v=tZ9JALmlzJY",
@@ -73,53 +54,10 @@
     "publishedAt": "2026-09-28T19:00:00.000Z",
     "text": "The boys are back. Find them in Radiance!\n\nHeartsteel OVN and OVN signature cards drop October 23rd in Riftound’s 5th Set: Radiance",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/87a9d9de0214a20362f1ae89396e01369ed09758-1920x1080.jpg",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
-    "source": "riot-news",
-    "title": "Watch the Dev Drop for Radiance!",
-    "publishedAt": "2026-09-25T22:30:00.000Z",
-    "text": "Watch the Dev Drop for Radiance!\n\nGet ready to make show-stopping plays! Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026. Learn all about the new Legends, mechanics, and cards in this Dev Drop.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/144ab9429ce67dd42a8755cef9b577e70d27a91e-2048x1152.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
-    "source": "riot-news",
-    "title": "The Radiance Overview",
-    "publishedAt": "2026-09-25T22:30:00.000Z",
-    "text": "The Radiance Overview\n\nEverything you want to know about Radiance.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/0d895d9d1ec8446fd14649933ff8d7efe1972cc4-1920x1080.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/radiance-preview-season",
-    "source": "riot-news",
-    "title": "Radiance Preview Season",
-    "publishedAt": "2026-09-18T16:00:00.000Z",
-    "text": "Radiance Preview Season\n\nPreviews kick off September 25 at the Los Angeles RQ! Find where to see the new cards for Set 5.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/08da730c513dd6d217dc71e5ae37193f46ebcadf-4623x2600.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
-    "source": "riot-news",
-    "title": "Radiance Merch Store Update",
-    "publishedAt": "2026-09-17T16:00:00.000Z",
-    "text": "Radiance Merch Store Update\n\nHere’s how to get Radiance product from the Riot Merch Store.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/237d07862c344e4dd49f2ba7248b14decb55e9e0-1954x1099.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://playriftbound.com/en-us/news/announcements/secret-garden-bundle-events",

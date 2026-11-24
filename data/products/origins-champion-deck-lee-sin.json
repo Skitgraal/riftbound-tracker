@@ -1,0 +1,162 @@
+{
+  "slug": "origins-champion-deck-lee-sin",
+  "name": "Origins Champion Deck Lee Sin",
+  "set": "Origins",
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/origins-champion-deck-lee-sin-38552dcd.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Origins_Champion_Deck_Lee_Sin_-_EN_b00fd25e0c5381cd.webp?v=1791207387&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "cardcosmos",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-lee-sin-en",
+      "price": {
+        "amount": 19.99,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "price": {
+        "amount": 50,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "price": {
+        "amount": 39.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Origins Champion Deck Lee Sin",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-lee-sin-en",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Lee Sin - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-lee-sin-en",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Lee Sin - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-lee-sin-en",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Lee Sin - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Origins_Champion_Deck_Lee_Sin_-_EN_b00fd25e0c5381cd.webp?v=1791207387&width=1200",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-lee-sin-en",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Lee Sin - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Origins Champion Deck Lee Sin",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Lee Sin] · 50 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Lee Sin] · 50 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Lee Sin] · 50 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Riftbound_League_of_Legends_TCG_Origins_Lee_Sin_Champion_Deck.webp?v=1760142313&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Lee Sin] · 50 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Origins Champion Deck Lee Sin",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Lee Sin · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Lee Sin · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Lee Sin · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/bef3391a2f22e46b012b8e94e835925fe8487c92_Asset_SEA_DEC_RBD_RB_01PD03_EN.jpg?v=1755709398&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-lee-sin",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Lee Sin · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

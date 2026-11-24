@@ -1,0 +1,162 @@
+{
+  "slug": "origins-champion-deck-viktor",
+  "name": "Origins Champion Deck Viktor",
+  "set": "Origins",
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/origins-champion-deck-viktor-a950c9d9.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Origins_Champion_Deck_Viktor_-_EN_e7245d2c2a754e50.webp?v=1791207389&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "cardcosmos",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-viktor-englisch",
+      "price": {
+        "amount": 19.99,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "price": {
+        "amount": 35,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "price": {
+        "amount": 39.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Origins Champion Deck Viktor",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-viktor-englisch",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Viktor - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-viktor-englisch",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Viktor - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-viktor-englisch",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Viktor - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Origins_Champion_Deck_Viktor_-_EN_e7245d2c2a754e50.webp?v=1791207389&width=1200",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-origins-champion-deck-viktor-englisch",
+      "evidence": "Riftbound: League of Legends - Origins Champion Deck Viktor - EN · 19.99 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Origins Champion Deck Viktor",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Viktor] · 35 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Viktor] · 35 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Viktor] · 35 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Riftbound_League_of_Legends_TCG_Origins_Viktor_Champion_Deck.webp?v=1760142886&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG - Origins Champion Deck [Viktor] · 35 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Origins Champion Deck Viktor",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Viktor · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Viktor · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Viktor · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/904130693464c613b4759123afa5afb5894ff65b_Asset_SEA_DEC_RBD_RB_01PD02_EN.jpg?v=1755709399&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-champion-deck-viktor",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Champion Deck - Viktor · 39.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

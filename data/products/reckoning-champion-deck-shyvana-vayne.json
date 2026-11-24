@@ -1,0 +1,70 @@
+{
+  "slug": "reckoning-champion-deck-shyvana-vayne",
+  "name": "The Reckoning Champion Deck Shyvana, Vayne",
+  "set": "The Reckoning",
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/reckoning-champion-deck-shyvana-vayne-e8525b83.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb07pd01en.png?v=1794781813&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-champion-deck-en",
+      "price": {
+        "amount": 28,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "The Reckoning Champion Deck Shyvana, Vayne",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-champion-deck-en",
+      "evidence": "Riftbound TCG: The Reckoning Champion Deck (Shyvana, Vayne) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "The Reckoning",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-champion-deck-en",
+      "evidence": "Riftbound TCG: The Reckoning Champion Deck (Shyvana, Vayne) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-champion-deck-en",
+      "evidence": "Riftbound TCG: The Reckoning Champion Deck (Shyvana, Vayne) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/uvsrb07pd01en.png?v=1794781813&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-champion-deck-en",
+      "evidence": "Riftbound TCG: The Reckoning Champion Deck (Shyvana, Vayne) · 28 EUR · précommande · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

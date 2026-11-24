@@ -1,0 +1,70 @@
+{
+  "slug": "proving-grounds-box-set",
+  "name": "Proving Grounds Box Set",
+  "set": null,
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "unconfirmed",
+  "image": "media/proving-grounds-box-set-eb60a405.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/2a0b54f2ff01138f7490573566aac1cd2a9ba598_Asset_SEA_COL_RBD_RB_01PG01_EN.jpg?v=1755709398&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-proving-grounds-box-set",
+      "price": {
+        "amount": 79.99,
+        "currency": "CAD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Proving Grounds Box Set",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-proving-grounds-box-set",
+      "evidence": "Riftbound: League of Legends TCG: Proving Grounds Box Set · 79.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-proving-grounds-box-set",
+      "evidence": "Riftbound: League of Legends TCG: Proving Grounds Box Set · 79.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-proving-grounds-box-set",
+      "evidence": "Riftbound: League of Legends TCG: Proving Grounds Box Set · 79.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/2a0b54f2ff01138f7490573566aac1cd2a9ba598_Asset_SEA_COL_RBD_RB_01PG01_EN.jpg?v=1755709398&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-proving-grounds-box-set",
+      "evidence": "Riftbound: League of Legends TCG: Proving Grounds Box Set · 79.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

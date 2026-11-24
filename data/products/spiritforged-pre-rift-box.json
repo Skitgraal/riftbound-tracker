@@ -1,0 +1,79 @@
+{
+  "slug": "spiritforged-pre-rift-box",
+  "name": "Spiritforged Pre-Rift Box",
+  "set": "Spiritforged",
+  "type": "box_exclusive",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "unconfirmed",
+  "image": "media/spiritforged-pre-rift-box-6935ca59.png",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Riftbound_Spiritforged_Pre-Rift_Kit.webp?v=1771794238&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-spiritforged-pre-rift-box",
+      "price": {
+        "amount": 76,
+        "currency": "USD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Spiritforged Pre-Rift Box",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-spiritforged-pre-rift-box",
+      "evidence": "Riftbound: League of Legends TCG - Spiritforged Pre-Rift Box · 76 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Spiritforged",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-spiritforged-pre-rift-box",
+      "evidence": "Riftbound: League of Legends TCG - Spiritforged Pre-Rift Box · 76 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "box_exclusive",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-spiritforged-pre-rift-box",
+      "evidence": "Riftbound: League of Legends TCG - Spiritforged Pre-Rift Box · 76 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-spiritforged-pre-rift-box",
+      "evidence": "Riftbound: League of Legends TCG - Spiritforged Pre-Rift Box · 76 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Riftbound_Spiritforged_Pre-Rift_Kit.webp?v=1771794238&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-spiritforged-pre-rift-box",
+      "evidence": "Riftbound: League of Legends TCG - Spiritforged Pre-Rift Box · 76 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

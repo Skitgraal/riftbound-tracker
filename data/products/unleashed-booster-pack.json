@@ -1,0 +1,116 @@
+{
+  "slug": "unleashed-booster-pack",
+  "name": "Unleashed Booster Pack",
+  "set": "Unleashed",
+  "type": "booster",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/unleashed-booster-pack-08800583.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55130843414869_1c8ae364-1136-4c8b-b878-457708955707.jpg?v=1794267101&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-pack",
+      "price": {
+        "amount": 7,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-pack",
+      "price": {
+        "amount": 12.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Unleashed Booster Pack",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55130843414869_1c8ae364-1136-4c8b-b878-457708955707.jpg?v=1794267101&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Booster Pack",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Pack · 12.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Pack · 12.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Pack · 12.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/e6a1bdaa08411b5c141cc836a583e30d2a70cd73_Asset_SEA_PAC_RBD_RB_03BD01_EN.jpg?v=1764971284&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Pack · 12.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

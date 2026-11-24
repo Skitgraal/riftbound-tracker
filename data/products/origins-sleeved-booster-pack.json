@@ -1,0 +1,70 @@
+{
+  "slug": "origins-sleeved-booster-pack",
+  "name": "Origins Sleeved Booster Pack",
+  "set": "Origins",
+  "type": "booster",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "rumor",
+  "reliability": "unconfirmed",
+  "image": "media/origins-sleeved-booster-pack-cb6588a5.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/4824c4b62a23bca47d88352a689b838375b0ef80_Asset_SEA_PAC_RBD_RB_01SB01_EN.jpg?v=1755709398&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": "origins-booster-pack",
+  "draws": [],
+  "offers": [
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-sleeved-booster-pack",
+      "price": {
+        "amount": 24.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Origins Sleeved Booster Pack",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-sleeved-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Sleeved Booster Pack · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Origins",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-sleeved-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Sleeved Booster Pack · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-sleeved-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Sleeved Booster Pack · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/4824c4b62a23bca47d88352a689b838375b0ef80_Asset_SEA_PAC_RBD_RB_01SB01_EN.jpg?v=1755709398&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-origins-sleeved-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Origins - Sleeved Booster Pack · 24.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

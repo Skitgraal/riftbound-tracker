@@ -1,0 +1,217 @@
+{
+  "slug": "unleashed-booster-display",
+  "name": "Unleashed Booster Display",
+  "set": "Unleashed",
+  "type": "display",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "unconfirmed",
+  "image": "media/unleashed-booster-display-7df76705.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55130843382101.jpg?v=1794266863&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-box",
+      "price": {
+        "amount": 162,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "cardcosmos",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-booster-display-en",
+      "price": {
+        "amount": 129.9,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box-display",
+      "price": {
+        "amount": 169,
+        "currency": "USD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box",
+      "price": {
+        "amount": 229.99,
+        "currency": "CAD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Unleashed Booster Display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box (24 packs) · 162 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box (24 packs) · 162 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box (24 packs) · 162 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55130843382101.jpg?v=1794266863&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box (24 packs) · 162 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Booster Display",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-booster-display-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Booster Display - EN · 129.9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-booster-display-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Booster Display - EN · 129.9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-booster-display-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Booster Display - EN · 129.9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Unleashed_Booster_Display_-_EN.png?v=1774488044&width=1200",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-unleashed-booster-display-en",
+      "evidence": "Riftbound: League of Legends - Unleashed Booster Display - EN · 129.9 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Booster Display",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box-display",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box Display · 169 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box-display",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box Display · 169 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box-display",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box Display · 169 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box-display",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box Display · 169 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/Unleashed_Booster_Box_Display.webp?v=1775782386&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box-display",
+      "evidence": "Riftbound: League of Legends TCG - Unleashed Booster Box Display · 169 USD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Unleashed Booster Display",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Box · 229.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Unleashed",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Box · 229.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Box · 229.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/ec8bccbfdbdfa2c375d3a5b0f65f7f5d4288a732_Asset_SEA_BOX_RBD_RB_03BD01_EN.jpg?v=1765220586&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-unleashed-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Unleashed - Booster Box · 229.99 CAD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

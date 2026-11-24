@@ -1,0 +1,148 @@
+{
+  "slug": "radiance-showdown-deck",
+  "name": "Radiance Showdown Decks",
+  "set": "Radiance",
+  "type": "deck",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": "2026-09-25",
+  "releaseDate": {
+    "value": "2026-10-23",
+    "precision": "day"
+  },
+  "status": "released",
+  "reliability": "confirmed",
+  "image": "media/radiance-showdown-deck-f03ae4ab.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_56985788416341.jpg?v=1794265563&width=1200",
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+  "cmProductId": null,
+  "possibleDuplicateOf": null,
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-showdown-deck-1-deck-en",
+      "price": {
+        "amount": 40,
+        "currency": "EUR"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Radiance Showdown Deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-showdown-deck-1-deck-en",
+      "evidence": "Riftbound TCG: Radiance Showdown Deck (1 Deck) · 40 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-showdown-deck-1-deck-en",
+      "evidence": "Riftbound TCG: Radiance Showdown Deck (1 Deck) · 40 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-showdown-deck-1-deck-en",
+      "evidence": "Riftbound TCG: Radiance Showdown Deck (1 Deck) · 40 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-showdown-deck-1-deck-en",
+      "evidence": "Riftbound TCG: Radiance Showdown Deck (1 Deck) · 40 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_56985788416341.jpg?v=1794265563&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-showdown-deck-1-deck-en",
+      "evidence": "Riftbound TCG: Radiance Showdown Deck (1 Deck) · 40 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Showdown Decks",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Seraphine’s bright and bubbly performance clashes with Evelynn’s seductive sultry tones.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Seraphine’s bright and bubbly performance clashes with Evelynn’s seductive sultry tones.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "deck",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Seraphine’s bright and bubbly performance clashes with Evelynn’s seductive sultry tones.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "releaseDate",
+      "value": {
+        "value": "2026-10-23",
+        "precision": "day"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Seraphine’s bright and bubbly performance clashes with Evelynn’s seductive sultry tones.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Seraphine’s bright and bubbly performance clashes with Evelynn’s seductive sultry tones.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Seraphine’s bright and bubbly performance clashes with Evelynn’s seductive sultry tones.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-09-25",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Seraphine’s bright and bubbly performance clashes with Evelynn’s seductive sultry tones.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}

@@ -8,16 +8,25 @@
     "amount": 119.99,
     "currency": "USD"
   },
-  "announcedAt": null,
-  "releaseDate": null,
-  "status": "announced",
+  "announcedAt": "2026-09-17",
+  "releaseDate": {
+    "value": "2026-10-23",
+    "precision": "day"
+  },
+  "status": "released",
   "reliability": "confirmed",
   "image": "media/radiance-booster-display-5a8604b9.webp",
   "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/e154a63d230f3a60df89f6da867fa6adbe6585b7-2560x2560.png?w=1200&fm=webp&q=82",
-  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-radiance-booster-display/",
+  "officialUrl": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
   "cmProductId": null,
   "possibleDuplicateOf": null,
-  "draws": [],
+  "draws": [
+    {
+      "opensAt": "2026-09-25T16:00:00.000Z",
+      "closesAt": "2026-09-30T16:00:00.000Z",
+      "region": "North America and Europe"
+    }
+  ],
   "offers": [
     {
       "source": "riot-merch",
@@ -28,6 +37,46 @@
       },
       "availability": "out_of_stock",
       "lastSeenAt": "2026-11-24T19:14:18.682Z"
+    },
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-display-24-boosters-en",
+      "price": {
+        "amount": 162,
+        "currency": "EUR"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "cardcosmos",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-booster-display-englisch",
+      "price": {
+        "amount": 119.9,
+        "currency": "EUR"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "stomping-grounds",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "price": {
+        "amount": 99,
+        "currency": "USD"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "price": {
+        "amount": 129.99,
+        "currency": "CAD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
     }
   ],
   "claims": [
@@ -87,8 +136,331 @@
       "url": "https://merch.riotgames.com/en-us/product/riftbound-radiance-booster-display/",
       "evidence": "Riftbound: League of Legends TCG Radiance Booster Display · 119.99 USD · épuisé",
       "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Booster Display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Radiance Booster Display (24 Boosters) · 162 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Radiance Booster Display (24 Boosters) · 162 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Radiance Booster Display (24 Boosters) · 162 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Radiance Booster Display (24 Boosters) · 162 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_56985789071701.jpg?v=1794265655&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-display-24-boosters-en",
+      "evidence": "Riftbound TCG: Radiance Booster Display (24 Boosters) · 162 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Booster Display",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-booster-display-englisch",
+      "evidence": "Riftbound: League of Legends - Radiance Booster Display - EN · 119.9 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-booster-display-englisch",
+      "evidence": "Riftbound: League of Legends - Radiance Booster Display - EN · 119.9 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-booster-display-englisch",
+      "evidence": "Riftbound: League of Legends - Radiance Booster Display - EN · 119.9 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-booster-display-englisch",
+      "evidence": "Riftbound: League of Legends - Radiance Booster Display - EN · 119.9 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0809/9473/0327/files/Riftbound_League_of_Legends_-_Radiance_Booster_Display_-_EN_26221289704147ac.webp?v=1795020684&width=1200",
+      "source": "cardcosmos",
+      "tier": "relay",
+      "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-booster-display-englisch",
+      "evidence": "Riftbound: League of Legends - Radiance Booster Display - EN · 119.9 EUR · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Booster Display",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Radiance Booster Box · 99 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Radiance Booster Box · 99 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Radiance Booster Box · 99 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0592/1606/8768/files/RiftboundRadianceBoosterBox.webp?v=1791245779&width=1200",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Radiance Booster Box · 99 USD · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Booster Display",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Box · 129.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Box · 129.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Box · 129.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Box · 129.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/d1ff7716f2af2dd9eadeb806b8053f673619990f_Asset_SEA_BOX_RBD_RB_05BD01_EN.png?v=1781107407&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG: Radiance - Booster Box · 129.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Booster Display",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "releaseDate",
+      "value": {
+        "value": "2026-10-23",
+        "precision": "day"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "announced",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "imageFallback",
+      "value": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/144ab9429ce67dd42a8755cef9b577e70d27a91e-2048x1152.jpg",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-09-25",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=rGkvxY7RvgI",
+      "evidence": "Riftbound’s fifth set, Radiance, launches worldwide on October 23, 2026.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Release: October 23, 2026",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-radiance-overview",
+      "evidence": "Release: October 23, 2026",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "draw_product",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "announced",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "imageFallback",
+      "value": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/237d07862c344e4dd49f2ba7248b14decb55e9e0-1954x1099.jpg",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-09-17",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-09-25T16:00:00.000Z",
+        "closesAt": "2026-09-30T16:00:00.000Z",
+        "url": null,
+        "region": "North America and Europe"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-24T19:37:51.814Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-24T19:14:18.682Z"
+  "updatedAt": "2026-11-24T19:37:51.814Z"
 }

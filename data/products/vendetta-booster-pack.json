@@ -1,0 +1,125 @@
+{
+  "slug": "vendetta-booster-pack",
+  "name": "Vendetta Booster Pack",
+  "set": "Vendetta",
+  "type": "booster",
+  "language": "EN",
+  "msrp": null,
+  "announcedAt": null,
+  "releaseDate": null,
+  "status": "released",
+  "reliability": "unconfirmed",
+  "image": "media/vendetta-booster-pack-ce2d39b5.jpg",
+  "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55296374767957.jpg?v=1794266883&width=1200",
+  "officialUrl": null,
+  "cmProductId": null,
+  "possibleDuplicateOf": "vendetta-sleeved-booster-pack",
+  "draws": [],
+  "offers": [
+    {
+      "source": "universe-tcg",
+      "url": "https://www.universetcg.com/products/riftbound-vendetta-booster-display-24-boosters-english-league-of-legends-tcg-universe-tcg-copy",
+      "price": {
+        "amount": 7,
+        "currency": "EUR"
+      },
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "source": "face-to-face",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-vendetta-booster-pack",
+      "price": {
+        "amount": 7.99,
+        "currency": "CAD"
+      },
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "value": "Vendetta Booster Pack",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-vendetta-booster-display-24-boosters-english-league-of-legends-tcg-universe-tcg-copy",
+      "evidence": "Riftbound: Vendetta Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Vendetta",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-vendetta-booster-display-24-boosters-english-league-of-legends-tcg-universe-tcg-copy",
+      "evidence": "Riftbound: Vendetta Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-vendetta-booster-display-24-boosters-english-league-of-legends-tcg-universe-tcg-copy",
+      "evidence": "Riftbound: Vendetta Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55296374767957.jpg?v=1794266883&width=1200",
+      "source": "universe-tcg",
+      "tier": "relay",
+      "url": "https://www.universetcg.com/products/riftbound-vendetta-booster-display-24-boosters-english-league-of-legends-tcg-universe-tcg-copy",
+      "evidence": "Riftbound: Vendetta Booster Pack · 7 EUR · indisponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Vendetta Booster Pack",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-vendetta-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Vendetta - Booster Pack · 7.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "set",
+      "value": "Vendetta",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-vendetta-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Vendetta - Booster Pack · 7.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-vendetta-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Vendetta - Booster Pack · 7.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-vendetta-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Vendetta - Booster Pack · 7.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "image",
+      "value": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/400cb6b993c2bebb92f7c6fe3c9a45cfcdfbe052_Asset_SEA_PAC_RBD_RB_04BD01_EN.jpg?v=1774450991&width=1200",
+      "source": "face-to-face",
+      "tier": "relay",
+      "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-vendetta-booster-pack",
+      "evidence": "Riftbound: League of Legends TCG: Vendetta - Booster Pack · 7.99 CAD · disponible",
+      "observedAt": "2026-11-24T19:37:51.814Z"
+    }
+  ],
+  "createdAt": "2026-11-24T19:37:51.814Z",
+  "updatedAt": "2026-11-24T19:37:51.814Z"
+}
