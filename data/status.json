@@ -10,16 +10,16 @@
     }
   },
   "source:riot-merch": {
-    "lastRunAt": "2026-11-24T17:56:49.879Z",
-    "lastSuccessAt": "2026-11-24T17:56:49.879Z",
+    "lastRunAt": "2026-11-24T19:11:41.923Z",
+    "lastSuccessAt": "2026-11-24T19:11:41.923Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 9
     }
   },
   "source:riot-news": {
-    "lastRunAt": "2026-11-24T17:56:49.879Z",
-    "lastSuccessAt": "2026-11-24T17:56:49.879Z",
+    "lastRunAt": "2026-11-24T19:11:41.923Z",
+    "lastSuccessAt": "2026-11-24T19:11:41.923Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 107,
@@ -27,13 +27,13 @@
     }
   },
   "watch": {
-    "lastRunAt": "2026-11-24T17:56:49.879Z",
-    "lastSuccessAt": "2026-11-24T17:56:49.879Z",
+    "lastRunAt": "2026-11-24T19:11:41.923Z",
+    "lastSuccessAt": "2026-11-24T19:11:41.923Z",
     "consecutiveFailures": 0,
     "info": {
       "products": 9,
-      "pending": 26,
-      "extracted": 0,
+      "pending": 25,
+      "extracted": 1,
       "llm": "indisponible"
     }
   }

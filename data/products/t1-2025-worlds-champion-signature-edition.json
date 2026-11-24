@@ -27,7 +27,7 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T17:56:49.879Z"
+      "lastSeenAt": "2026-11-24T19:11:41.923Z"
     }
   ],
   "claims": [
@@ -81,5 +81,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-24T17:56:49.879Z"
+  "updatedAt": "2026-11-24T19:11:41.923Z"
 }
