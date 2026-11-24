@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { parseExtraction } from '../src/watch/extract.ts';
+import { parseExtraction, retryDelayMs } from '../src/watch/extract.ts';
+
+describe('retryDelayMs', () => {
+  it('lit le délai conseillé par Gemini', () => {
+    expect(retryDelayMs('{"error":{"details":[{"retryDelay": "17s"}]}}')).toBe(17_000);
+    expect(retryDelayMs('{"retryDelay":"2.5s"}')).toBe(2_500);
+    expect(retryDelayMs('Service Unavailable')).toBeUndefined();
+  });
+});
 import { describeChanges } from '../src/watch/events.ts';
 import { decodeEntities, htmlToText, jsonAfterKey } from '../src/watch/html.ts';
 import { applySighting, classifyType, cleanProductName, emptyProduct, findMatch, isAccessory, nameTokens, recompute, slugOf } from '../src/watch/products.ts';

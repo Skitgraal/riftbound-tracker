@@ -13,7 +13,7 @@ import { recordJob } from '../shared/status.ts';
 import { parisDate } from '../shared/time.ts';
 import { collectRiotMerch } from './collectors/riot-merch.ts';
 import { collectRiotNews, loadArticleBody } from './collectors/riot-news.ts';
-import { ExtractionError, extractProducts } from './extract.ts';
+import { ExtractionError, extractProducts, pauseBetweenExtractions } from './extract.ts';
 import { storeImage } from './media.ts';
 import { applySighting, detectSet, emptyProduct, findMatch, recompute, slugOf } from './products.ts';
 import type { Doc, Product, Sighting, SourceConfig, Tier } from './types.ts';
@@ -159,6 +159,7 @@ async function main(): Promise<void> {
   for (const doc of queue) pending = [...pending.filter((p) => p.url !== doc.url), doc];
   const sourceById = new Map(sources.map((s) => [s.id, s]));
   let extracted = 0;
+  let calls = 0;
   let llmDown: string | undefined;
   const remaining: Pending[] = [];
   for (const item of pending) {
@@ -172,6 +173,7 @@ async function main(): Promise<void> {
       } else remaining.push(item);
       continue;
     }
+    if (calls++ > 0) await pauseBetweenExtractions();
     try {
       let doc: Doc = { source, url: item.url, title: item.title, publishedAt: item.publishedAt, text: item.text, image: item.image, full: item.full };
       if (source.kind === 'riot-news') doc = await loadArticleBody(doc);

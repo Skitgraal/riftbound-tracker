@@ -11,10 +11,24 @@ export class ExtractionError extends Error {
     message: string,
     /** `unavailable` : pas de clé, quota atteint, service en panne → on réessaiera. `invalid` : réponse inutilisable. */
     readonly reason: 'unavailable' | 'invalid',
+    /** Délai d'attente conseillé par l'API avant de réessayer, s'il est donné. */
+    readonly retryAfterMs?: number,
   ) {
     super(message);
   }
 }
+
+/** Lit le délai conseillé dans une erreur Gemini (`"retryDelay": "17s"`). */
+export function retryDelayMs(body: string): number | undefined {
+  const m = /"retryDelay"\s*:\s*"(\d+(?:\.\d+)?)s"/.exec(body);
+  return m ? Math.ceil(Number(m[1]) * 1000) : undefined;
+}
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+/** Réessais sur un même modèle : les 503 (surcharge) et 429 (quota par minute) de l'offre gratuite sont passagers. */
+const RETRY_DELAYS_MS = [5_000, 20_000];
+const MAX_WAIT_MS = 60_000;
 
 const TYPES: ProductType[] = ['display', 'booster', 'deck', 'bundle', 'box_exclusive', 'draw_product', 'other'];
 const STATUSES: Status[] = ['announced', 'preorder', 'released', 'cancelled'];
@@ -148,7 +162,8 @@ async function callGemini(model: string, key: string, system: string, user: stri
     }),
   });
   if (response.status === 429 || response.status >= 500) {
-    throw new ExtractionError(`Gemini ${model} : HTTP ${response.status} (quota ou panne)`, 'unavailable');
+    const detail = await response.text().catch(() => '');
+    throw new ExtractionError(`Gemini ${model} : HTTP ${response.status} (quota ou surcharge)`, 'unavailable', retryDelayMs(detail));
   }
   if (!response.ok) {
     const detail = (await response.text()).slice(0, 300);
@@ -177,13 +192,26 @@ export async function extractProducts(doc: Doc, settings: LlmSettings): Promise<
     '</document>',
   ].join('\n');
   const system = await systemPrompt();
-  try {
-    return parseExtraction(await callGemini(settings.model, key, system, user));
-  } catch (error) {
-    // Modèle de secours si le principal est saturé (les quotas gratuits sont comptés par modèle).
-    if (error instanceof ExtractionError && error.reason === 'unavailable' && settings.fallbackModel) {
-      return parseExtraction(await callGemini(settings.fallbackModel, key, system, user));
+  const models = [settings.model, settings.fallbackModel].filter((m): m is string => Boolean(m));
+  const errors: string[] = [];
+  // Chaque modèle est réessayé avant de passer au secours (les quotas gratuits sont comptés par modèle).
+  for (const model of models) {
+    for (let attempt = 0; ; attempt++) {
+      try {
+        return parseExtraction(await callGemini(model, key, system, user));
+      } catch (error) {
+        if (!(error instanceof ExtractionError) || error.reason !== 'unavailable') throw error;
+        const wait = error.retryAfterMs ?? RETRY_DELAYS_MS[attempt];
+        if (attempt >= RETRY_DELAYS_MS.length || wait === undefined || wait > MAX_WAIT_MS || error.message.includes('HTTP 40')) {
+          errors.push(error.message);
+          break;
+        }
+        await sleep(wait);
+      }
     }
-    throw error;
   }
+  throw new ExtractionError(errors.join(' ; '), 'unavailable');
 }
+
+/** Pause entre deux extractions, pour rester sous le quota par minute de l'offre gratuite. */
+export const pauseBetweenExtractions = () => sleep(Number(process.env.LLM_PAUSE_MS ?? 6_000));
