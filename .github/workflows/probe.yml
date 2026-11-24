@@ -1,0 +1,27 @@
+name: probe
+
+# Diagnostic manuel de sources candidates depuis les serveurs de GitHub (aucune écriture).
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: URL à tester, séparées par des espaces
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run probe -w collector
+        env:
+          PROBE_URLS: ${{ inputs.urls }}
