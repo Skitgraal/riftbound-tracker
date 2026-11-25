@@ -20,11 +20,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-tcg-legacy-champion-deck-en",
       "price": {
-        "amount": 28,
+        "amount": 29,
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T19:01:12.003Z"
     }
   ],
   "claims": [
@@ -66,5 +66,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:59:23.782Z"
+  "updatedAt": "2026-11-25T19:01:12.003Z"
 }

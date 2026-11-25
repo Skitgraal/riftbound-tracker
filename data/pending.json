@@ -6,21 +6,10 @@
     "publishedAt": "2026-09-03T16:00:00.000Z",
     "text": "September Merch Store Update\n\nCheck out the ways purchasing Riftbound product on Riot Merch Store is changing",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/59278d6448af8e90070018992e7a204e0e931464-1440x810.jpg",
-    "attempts": 1,
+    "attempts": 2,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
     "alerted": true,
-    "lastError": "Gemini gemini-3.8-flash : HTTP 503 (quota ou surcharge) ; Gemini gemini-3.5-flash-lite : HTTP 503 (quota ou surcharge)"
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/rules-and-releases/vendetta-rules-faq-and-clarifications",
-    "source": "riot-news",
-    "title": "Vendetta Rules FAQ and Clarifications",
-    "publishedAt": "2026-08-14T01:00:00.000Z",
-    "text": "Vendetta Rules FAQ and Clarifications\n\nAnswers for some frequent questions regarding Vendetta’s core rules update.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/fc630fdb9141204f598e47c72ce3e4c3f8209327-1305x734.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://playriftbound.com/en-us/news/announcements/august-merch-store-updates",
@@ -29,9 +18,10 @@
     "publishedAt": "2026-08-06T16:00:00.000Z",
     "text": "August Merch Store Updates",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/1b7d7586ceb59022c6639b9743526a75f1c328bb-2954x1662.jpg",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://playriftbound.com/en-us/news/announcements/vendetta-errata-updates",
@@ -40,42 +30,10 @@
     "publishedAt": "2026-07-23T16:00:00.000Z",
     "text": "Vendetta Errata Updates\n\nUpdates regarding card text with the Vendetta release.",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/3e34170c1dc97a97045d5474676bc55fb72dcd5b-1039x584.jpg",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
-    "source": "riot-news",
-    "title": "Preparing for the Vendetta Pre-Rift",
-    "publishedAt": "2026-07-20T16:00:00.000Z",
-    "text": "Preparing for the Vendetta Pre-Rift\n\nGet ready to play Riftbound’s newest set at your local Pre-Rift.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4e9fa6cb967a660994b07ac4a42edafa134324f9-4500x2531.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/riftbound-vendetta-wild-rift-and-you",
-    "source": "riot-news",
-    "title": "Riftbound: Vendetta, Wild Rift, and You!",
-    "publishedAt": "2026-07-17T16:00:00.000Z",
-    "text": "Riftbound: Vendetta, Wild Rift, and You!\n\nParticipants in the Pre-Rift and winners of the first Summoner Skirmish get special prizes from Wild Rift!",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/14ea53ee69b4bbdbd539b576aa59c1becfb9d530-4216x2368.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/core-rules-vendetta-patch-notes",
-    "source": "riot-news",
-    "title": "Core Rules: Vendetta Patch Notes",
-    "publishedAt": "2026-07-17T00:30:00.000Z",
-    "text": "Core Rules: Vendetta Patch Notes\n\nHere are the updates to Riftbound’s Core Rules with Vendetta",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/0c20fbe799029a72228b02a01fabcd7768d01b36-1977x1112.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://playriftbound.com/en-us/news/announcements/a-note-on-vendetta-card-images",
@@ -84,31 +42,10 @@
     "publishedAt": "2026-07-17T00:30:00.000Z",
     "text": "A Note on Vendetta Card Images\n\nWe have identified a few updates for Vendetta we want to tell you.",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/c84b72546ca00618ae705f2a7b9239a75111408c-5219x2936.jpg",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://www.youtube.com/watch?v=QS4ahl3BHTQ",
-    "source": "riot-news",
-    "title": "The Vendetta Begins",
-    "publishedAt": "2026-07-07T01:00:00.000Z",
-    "text": "The Vendetta Begins\n\nA first glance at Riftbound’s 4th set!",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2ecf8fe400034ef411a43622e654c815b8ae4ae2-1920x1080.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
-  },
-  {
-    "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
-    "source": "riot-news",
-    "title": "The Vendetta Overview",
-    "publishedAt": "2026-07-07T01:00:00.000Z",
-    "text": "The Vendetta Overview\n\nEverything you want to know about Vendetta.",
-    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/2e739864ab92f78f14a32968283ea66669a6c6a9-4800x2700.jpg",
-    "attempts": 0,
-    "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "The operation was aborted due to timeout"
   },
   {
     "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",

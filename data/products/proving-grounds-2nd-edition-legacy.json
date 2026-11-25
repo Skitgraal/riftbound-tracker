@@ -20,11 +20,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-tcg-proving-grounds-second-edition",
       "price": {
-        "amount": 67,
+        "amount": 68,
         "currency": "EUR"
       },
       "availability": "preorder",
-      "lastSeenAt": "2026-11-25T14:38:11.303Z"
+      "lastSeenAt": "2026-11-25T19:01:12.003Z"
     }
   ],
   "claims": [
@@ -75,5 +75,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-25T14:38:11.303Z"
+  "updatedAt": "2026-11-25T19:01:12.003Z"
 }

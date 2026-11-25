@@ -42,11 +42,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-display-24-boosters-en",
       "price": {
-        "amount": 161,
+        "amount": 162,
         "currency": "EUR"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-25T02:36:37.689Z"
+      "lastSeenAt": "2026-11-25T19:01:12.003Z"
     },
     {
       "source": "cardcosmos",
@@ -75,8 +75,8 @@
         "amount": 129.99,
         "currency": "CAD"
       },
-      "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-25T14:38:11.303Z"
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-25T19:01:12.003Z"
     }
   ],
   "claims": [
@@ -462,5 +462,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T14:38:11.303Z"
+  "updatedAt": "2026-11-25T19:01:12.003Z"
 }

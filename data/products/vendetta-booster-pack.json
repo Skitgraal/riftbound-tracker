@@ -1,17 +1,17 @@
 {
   "slug": "vendetta-booster-pack",
-  "name": "Vendetta Booster Pack",
+  "name": "Vendetta Booster Packs",
   "set": "Vendetta",
   "type": "booster",
   "language": "EN",
   "msrp": null,
-  "announcedAt": null,
+  "announcedAt": "2026-07-20",
   "releaseDate": null,
   "status": "released",
-  "reliability": "unconfirmed",
+  "reliability": "confirmed",
   "image": "media/vendetta-booster-pack-ce2d39b5.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_55296374767957.jpg?v=1794266883&width=1200",
-  "officialUrl": null,
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
   "cmProductId": null,
   "possibleDuplicateOf": "vendetta-sleeved-booster-pack",
   "draws": [],
@@ -127,8 +127,53 @@
       "url": "https://www.universetcg.com/products/riftbound-vendetta-booster-display-24-boosters-english-league-of-legends-tcg-universe-tcg-copy",
       "evidence": "Riftbound: Vendetta Booster Pack · 7 EUR · indisponible",
       "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "name",
+      "value": "Vendetta Booster Packs",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+      "evidence": "In Sealed, you'll open Booster Packs; for this event, they'll be Vendetta Booster Packs.",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "set",
+      "value": "Vendetta",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+      "evidence": "In Sealed, you'll open Booster Packs; for this event, they'll be Vendetta Booster Packs.",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+      "evidence": "In Sealed, you'll open Booster Packs; for this event, they'll be Vendetta Booster Packs.",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+      "evidence": "In Sealed, you'll open Booster Packs; for this event, they'll be Vendetta Booster Packs.",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-07-20",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+      "evidence": "In Sealed, you'll open Booster Packs; for this event, they'll be Vendetta Booster Packs.",
+      "observedAt": "2026-11-25T19:01:12.003Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:59:23.782Z"
+  "updatedAt": "2026-11-25T19:01:12.003Z"
 }

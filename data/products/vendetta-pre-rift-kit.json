@@ -1,17 +1,20 @@
 {
   "slug": "vendetta-pre-rift-kit",
-  "name": "Vendetta Pre-Rift Kit",
+  "name": "Vendetta Pre-Rift Kits",
   "set": "Vendetta",
-  "type": "box_exclusive",
+  "type": "bundle",
   "language": "EN",
   "msrp": null,
-  "announcedAt": null,
-  "releaseDate": null,
+  "announcedAt": "2026-07-07",
+  "releaseDate": {
+    "value": "2026-07-24",
+    "precision": "day"
+  },
   "status": "released",
-  "reliability": "unconfirmed",
+  "reliability": "confirmed",
   "image": "media/vendetta-pre-rift-kit-e7790d02.png",
   "imageSource": "https://cdn.shopify.com/s/files/1/0574/4692/4324/files/449f716b36d26be04398de00e9cbc1e01410ab2d_Asset_SEA_KIT_RBD_RB_04RK01_EN.png?v=1782244119&width=1200",
-  "officialUrl": null,
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
   "cmProductId": null,
   "possibleDuplicateOf": null,
   "draws": [],
@@ -72,8 +75,74 @@
       "url": "https://facetofacegames.com/products/riftbound-league-of-legends-tcg-vendetta-pre-rift-kit",
       "evidence": "Riftbound: League of Legends TCG: Vendetta - Pre-Rift Kit · 40 CAD · indisponible",
       "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "name",
+      "value": "Vendetta Pre-Rift Kits",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "evidence": "Pre-Rift: July 24",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "set",
+      "value": "Vendetta",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "evidence": "Pre-Rift: July 24",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "evidence": "Pre-Rift: July 24",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "releaseDate",
+      "value": {
+        "value": "2026-07-24",
+        "precision": "day"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "evidence": "Pre-Rift: July 24",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "evidence": "Pre-Rift: July 24",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "evidence": "Pre-Rift: July 24",
+      "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-07-07",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
+      "evidence": "Pre-Rift: July 24",
+      "observedAt": "2026-11-25T19:01:12.003Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:59:23.782Z"
+  "updatedAt": "2026-11-25T19:01:12.003Z"
 }
