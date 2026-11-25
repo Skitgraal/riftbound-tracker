@@ -4,14 +4,20 @@
   "set": null,
   "type": "bundle",
   "language": "EN",
-  "msrp": null,
-  "announcedAt": null,
-  "releaseDate": null,
-  "status": "preorder",
-  "reliability": "unconfirmed",
+  "msrp": {
+    "amount": 109,
+    "currency": "USD"
+  },
+  "announcedAt": "2026-10-22",
+  "releaseDate": {
+    "value": "2026-12-04",
+    "precision": "day"
+  },
+  "status": "released",
+  "reliability": "confirmed",
   "image": "media/gift-rift-bundle-dd498a4b.png",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/lol-packaging_renders-sotg-gtr-3840x3840_alt.png?v=1786728412&width=1200",
-  "officialUrl": null,
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
   "cmProductId": null,
   "possibleDuplicateOf": null,
   "draws": [],
@@ -100,8 +106,77 @@
       "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-gift-to-the-rift-bundle",
       "evidence": "[PREORDER] Riftbound: League of Legends TCG - Gift of the Rift Bundle · 129 USD · précommande · indisponible",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "name",
+      "value": "Gift of the Rift Bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 109,
+        "currency": "USD"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "releaseDate",
+      "value": {
+        "value": "2026-12-04",
+        "precision": "day"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-10-22",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-25T02:36:37.689Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:59:23.782Z"
+  "updatedAt": "2026-11-25T02:36:37.689Z"
 }

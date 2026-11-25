@@ -1,23 +1,31 @@
 {
   "slug": "k-da-couture-collection",
-  "name": "Riftbound x K/DA: Couture Collection",
+  "name": "Riftbound x K/DA Couture Collection",
   "set": null,
-  "type": "box_exclusive",
+  "type": "draw_product",
   "language": "EN",
   "msrp": {
     "amount": 150,
     "currency": "USD"
   },
-  "announcedAt": null,
+  "announcedAt": "2026-10-21",
   "releaseDate": null,
-  "status": "announced",
+  "status": "preorder",
   "reliability": "confirmed",
   "image": "media/k-da-couture-collection-abd3e8bc.webp",
   "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/22ab18d64a04741aa6d917d34a21c5932f2e259b-2560x2560.png?w=1200&fm=webp&q=82",
-  "officialUrl": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
   "cmProductId": null,
   "possibleDuplicateOf": null,
-  "draws": [],
+  "draws": [
+    {
+      "opensAt": "2026-10-27T07:00:00.000Z"
+    },
+    {
+      "opensAt": "2026-10-27T16:00:00.000Z",
+      "closesAt": "2026-10-30T16:00:00.000Z"
+    }
+  ],
   "offers": [
     {
       "source": "riot-merch",
@@ -78,8 +86,129 @@
       "url": "https://merch.riotgames.com/en-us/product/riftbound-kda-couture-collection/",
       "evidence": "Riftbound x K/DA: Couture Collection · 150 USD · épuisé",
       "observedAt": "2026-11-23T22:04:12.120Z"
+    },
+    {
+      "field": "name",
+      "value": "Riftbound x K/DA Couture Collection",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Drawing registration opens: October 27, 9:00 AM PT",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "type",
+      "value": "draw_product",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Drawing registration opens: October 27, 9:00 AM PT",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "msrp",
+      "value": {
+        "amount": 150,
+        "currency": "USD"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Drawing registration opens: October 27, 9:00 AM PT",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "status",
+      "value": "preorder",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Drawing registration opens: October 27, 9:00 AM PT",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Drawing registration opens: October 27, 9:00 AM PT",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-10-22",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Drawing registration opens: October 27, 9:00 AM PT",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-10-27T16:00:00.000Z",
+        "closesAt": "2026-10-30T16:00:00.000Z",
+        "url": null,
+        "region": null
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Drawing registration opens: October 27, 9:00 AM PT",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "status",
+      "value": "announced",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",
+      "evidence": "Enter drawing for the Riftbound x K/DA Couture Collection starting October 27.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "imageFallback",
+      "value": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/f357e0b4a5545bf27e5303f049ce7a61293f3e7f-1920x1080.png",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",
+      "evidence": "Enter drawing for the Riftbound x K/DA Couture Collection starting October 27.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://www.youtube.com/watch?v=n-53EjaNrdU",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",
+      "evidence": "Enter drawing for the Riftbound x K/DA Couture Collection starting October 27.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-10-21",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",
+      "evidence": "Enter drawing for the Riftbound x K/DA Couture Collection starting October 27.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-10-27T07:00:00.000Z",
+        "closesAt": null,
+        "url": null,
+        "region": null
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",
+      "evidence": "Enter drawing for the Riftbound x K/DA Couture Collection starting October 27.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-24T19:59:23.782Z"
+  "updatedAt": "2026-11-25T02:36:37.689Z"
 }

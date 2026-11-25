@@ -1,17 +1,17 @@
 {
   "slug": "radiance-booster-pack",
-  "name": "Radiance Booster Pack",
+  "name": "Radiance Booster Packs",
   "set": "Radiance",
   "type": "booster",
   "language": "EN",
   "msrp": null,
-  "announcedAt": null,
+  "announcedAt": "2026-10-12",
   "releaseDate": null,
   "status": "released",
-  "reliability": "unconfirmed",
+  "reliability": "confirmed",
   "image": "media/radiance-booster-pack-243a44a1.jpg",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/ot_56985789137237.jpg?v=1794265676&width=1200",
-  "officialUrl": null,
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
   "cmProductId": null,
   "possibleDuplicateOf": null,
   "draws": [],
@@ -127,8 +127,62 @@
       "url": "https://www.universetcg.com/products/riftbound-tcg-radiance-booster-pack-en",
       "evidence": "Riftbound TCG: Radiance Booster Pack · 7 EUR · indisponible",
       "observedAt": "2026-11-24T19:59:23.782Z"
+    },
+    {
+      "field": "name",
+      "value": "Radiance Booster Packs",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
+      "evidence": "In Sealed formats, you open Booster Packs and play with the cards you get; for this event, they'll be Radiance Booster Packs.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "set",
+      "value": "Radiance",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
+      "evidence": "In Sealed formats, you open Booster Packs and play with the cards you get; for this event, they'll be Radiance Booster Packs.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "type",
+      "value": "booster",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
+      "evidence": "In Sealed formats, you open Booster Packs and play with the cards you get; for this event, they'll be Radiance Booster Packs.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "imageFallback",
+      "value": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/06f598de7c6f88948da3d5144d40c966f2609931-3166x1781.jpg",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
+      "evidence": "In Sealed formats, you open Booster Packs and play with the cards you get; for this event, they'll be Radiance Booster Packs.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
+      "evidence": "In Sealed formats, you open Booster Packs and play with the cards you get; for this event, they'll be Radiance Booster Packs.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-10-12",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-radiance-pre-rift",
+      "evidence": "In Sealed formats, you open Booster Packs and play with the cards you get; for this event, they'll be Radiance Booster Packs.",
+      "observedAt": "2026-11-25T02:36:37.689Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:59:23.782Z"
+  "updatedAt": "2026-11-25T02:36:37.689Z"
 }
