@@ -1,0 +1,56 @@
+name: reminders
+
+# Rappels de tirage (ouverture, 24 h et 2 h avant la fermeture), toutes les 15 min.
+# GitHub peut retarder un passage planifié de quelques minutes : les rappels tolèrent ce retard.
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+    inputs:
+      test:
+        description: Envoyer 3 rappels de test (tirage fictif) dans #alertes-critiques
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# File d'attente à part : un rappel ne doit jamais annuler une veille ou un relevé de prix en attente.
+# Les rappels n'écrivent que data/reminders.json, que personne d'autre ne touche.
+concurrency:
+  group: reminders
+  cancel-in-progress: false
+
+jobs:
+  reminders:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Rappels
+        run: npm run reminders -w collector
+        env:
+          DISCORD_WEBHOOK_CRITICAL: ${{ secrets.DISCORD_WEBHOOK_CRITICAL }}
+          REMINDERS_TEST: ${{ inputs.test }}
+
+      - name: Commit des rappels envoyés
+        if: ${{ inputs.test != true }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/reminders.json 2>/dev/null || exit 0
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "data: rappels du $(TZ=Europe/Paris date '+%F %H:%M')"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase
+          done
+          exit 1

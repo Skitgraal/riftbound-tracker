@@ -149,6 +149,37 @@ export function instantLabel(iso: string | null): string {
   return `${date} à ${time}`;
 }
 
+/**
+ * Fichier d'agenda (.ics) pour la fermeture d'un tirage, avec une alarme 2 h avant :
+ * un filet de sécurité en plus des rappels Discord.
+ */
+export function drawIcsUrl(p: Pick<ProductSummary, 'name' | 'slug'>, d: Draw): string | null {
+  if (!d.closesAt) return null;
+  const stamp = (ms: number) => new Date(ms).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const end = Date.parse(d.closesAt);
+  const text = (s: string) => s.replace(/[\\;,]/g, (c) => `\\${c}`).replace(/\n/g, '\\n');
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Riftbound Tracker//FR',
+    'BEGIN:VEVENT',
+    `UID:${p.slug}-${stamp(end)}@riftbound-tracker`,
+    `DTSTAMP:${stamp(Date.now())}`,
+    `DTSTART:${stamp(end - 30 * 60_000)}`,
+    `DTEND:${stamp(end)}`,
+    `SUMMARY:${text(`Fermeture du tirage : ${p.name}`)}`,
+    ...(d.url ? [`URL:${d.url}`, `DESCRIPTION:${text(`Inscription : ${d.url}`)}`] : []),
+    'BEGIN:VALARM',
+    'TRIGGER:-PT2H',
+    'ACTION:DISPLAY',
+    `DESCRIPTION:${text(`Tirage ${p.name} : fermeture dans 2 h`)}`,
+    'END:VALARM',
+    'END:VEVENT',
+    'END:VCALENDAR',
+  ];
+  return `data:text/calendar;charset=utf-8,${encodeURIComponent(lines.join('\r\n'))}`;
+}
+
 /** Temps restant découpé en jours / heures / minutes. */
 export function remaining(iso: string, now = Date.now()): { d: number; h: number; m: number } {
   const ms = Math.max(0, Date.parse(iso) - now);
