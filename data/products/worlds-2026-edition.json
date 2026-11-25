@@ -35,7 +35,7 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T19:14:18.682Z"
+      "lastSeenAt": "2026-11-25T19:26:13.174Z"
     },
     {
       "source": "universe-tcg",
@@ -254,5 +254,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T19:01:12.003Z"
+  "updatedAt": "2026-11-25T19:26:13.174Z"
 }

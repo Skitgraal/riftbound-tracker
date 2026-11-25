@@ -2,7 +2,7 @@
   "slug": "vendetta-booster-display",
   "name": "Vendetta Booster Display",
   "set": "Vendetta",
-  "type": "display",
+  "type": "draw_product",
   "language": "EN",
   "msrp": {
     "amount": 119.99,
@@ -17,10 +17,16 @@
   "reliability": "confirmed",
   "image": "media/vendetta-booster-display-bcfca670.webp",
   "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/3102667c372acb3a074f2ca9c2fdbc1caeaef923-2560x2560.png?w=1200&fm=webp&q=82",
-  "officialUrl": "https://playriftbound.com/en-us/news/announcements/preparing-for-the-vendetta-pre-rift",
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
   "cmProductId": null,
   "possibleDuplicateOf": null,
-  "draws": [],
+  "draws": [
+    {
+      "opensAt": "2026-09-08T16:00:00.000Z",
+      "closesAt": "2026-09-10T16:00:00.000Z",
+      "region": "North America and Europe"
+    }
+  ],
   "offers": [
     {
       "source": "riot-merch",
@@ -30,7 +36,7 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T19:14:18.682Z"
+      "lastSeenAt": "2026-11-25T19:26:13.174Z"
     },
     {
       "source": "universe-tcg",
@@ -394,8 +400,58 @@
       "url": "https://playriftbound.com/en-us/news/announcements/the-vendetta-overview",
       "evidence": "Release: July 31 for English and Chinese; Oct. 23 for French",
       "observedAt": "2026-11-25T19:01:12.003Z"
+    },
+    {
+      "field": "type",
+      "value": "draw_product",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+      "evidence": "The Riot Merch Store’s next drawing is the second for Vendetta Booster Displays, as promised back in our June update.",
+      "observedAt": "2026-11-25T19:26:13.174Z"
+    },
+    {
+      "field": "imageFallback",
+      "value": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/59278d6448af8e90070018992e7a204e0e931464-1440x810.jpg",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+      "evidence": "The Riot Merch Store’s next drawing is the second for Vendetta Booster Displays, as promised back in our June update.",
+      "observedAt": "2026-11-25T19:26:13.174Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+      "evidence": "The Riot Merch Store’s next drawing is the second for Vendetta Booster Displays, as promised back in our June update.",
+      "observedAt": "2026-11-25T19:26:13.174Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-09-03",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+      "evidence": "The Riot Merch Store’s next drawing is the second for Vendetta Booster Displays, as promised back in our June update.",
+      "observedAt": "2026-11-25T19:26:13.174Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-09-08T16:00:00.000Z",
+        "closesAt": "2026-09-10T16:00:00.000Z",
+        "url": null,
+        "region": "North America and Europe"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+      "evidence": "The Riot Merch Store’s next drawing is the second for Vendetta Booster Displays, as promised back in our June update.",
+      "observedAt": "2026-11-25T19:26:13.174Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T19:01:12.003Z"
+  "updatedAt": "2026-11-25T19:26:13.174Z"
 }
