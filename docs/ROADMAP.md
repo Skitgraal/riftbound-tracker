@@ -60,6 +60,7 @@ Déjà en place sur le poste : Node 22 et Git. Rien à payer.
 
 ## Jalon 5 — Tirages
 - Extraction des fenêtres de tirage, workflow `reminders`, vue Tirages.
+- Fait le 25/11/2026 : test réussi (`reminders` avec l'option `test`, 3 rappels reçus dans #alertes-critiques).
 
 **Fini quand** : un tirage de test déclenche les rappels d'ouverture, de 24 h et de 2 h.
 

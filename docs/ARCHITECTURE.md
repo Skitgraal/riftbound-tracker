@@ -135,10 +135,11 @@ Fonctionnement :
 |---|---|---|
 | `prices` | 3 fois par jour | ingestion Cardmarket, alertes de variation |
 | `watch` | toutes les 2 h | veille des sorties |
-| `reminders` | toutes les 30 min | rappels de tirages ; se termine en quelques secondes s'il n'y a rien |
+| `reminders` | toutes les 15 min | rappels de tirages ; se termine en quelques secondes s'il n'y a rien ; option `test` (tirage fictif) |
+| `probe` | à la main | test d'URL candidates depuis les serveurs de GitHub (aucune écriture) |
 | `ci` | à chaque modification du code | tests |
 
-Chaque workflow qui modifie `data/` reconstruit et publie le site dans la foulée. Un verrou de concurrence empêche deux workflows d'écrire en même temps.
+Chaque workflow qui modifie `data/` reconstruit et publie le site dans la foulée (sauf `reminders`, qui ne change rien d'affiché). Un verrou de concurrence (`data-writer`) empêche `prices` et `watch` d'écrire en même temps. `reminders` a sa propre file et son propre fichier (`data/reminders.json`) : un rappel n'annule jamais une veille en attente, et ne peut pas entrer en conflit avec elle.
 
 ## 8. Alertes
 
@@ -149,7 +150,9 @@ Deux webhooks Discord, pour régler les notifications du téléphone par salon.
 | Critique | tirage ouvert, tirage qui ferme dans 24 h / 2 h, précommande ouverte |
 | Fil | nouveau produit, leak confirmé, date ou prix modifié, « à lire », variation de prix, source en panne |
 
-Les alertes déjà envoyées sont notées dans `data/alerts.json` pour ne jamais envoyer deux fois la même.
+Les alertes déjà envoyées sont notées dans `data/alerts.json` (rappels de tirage : `data/reminders.json`) pour ne jamais envoyer deux fois la même.
+
+Rappels de tirage : ouverture (si elle date de moins de 12 h, et sauf si la veille a déjà annoncé « Tirage ouvert »), 24 h puis 2 h avant la fermeture. GitHub retarde parfois un passage planifié : un passage en retard n'envoie que le rappel le plus urgent et marque les autres comme faits. La vue Tirages propose aussi un fichier d'agenda (.ics) avec alarme 2 h avant la fermeture.
 
 ## 9. Dashboard
 

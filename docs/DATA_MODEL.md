@@ -16,6 +16,7 @@ data/
 ├─ seen.json                 empreintes des documents déjà vus
 ├─ pending.json              documents en attente d'extraction (mode dégradé)
 ├─ alerts.json               alertes déjà envoyées
+├─ reminders.json            rappels de tirage déjà envoyés (écrit par le seul workflow reminders)
 ├─ status.json               état de chaque source et de chaque workflow
 └─ prices/
    ├─ catalog.json           catalogue Cardmarket (cartes + scellé)
