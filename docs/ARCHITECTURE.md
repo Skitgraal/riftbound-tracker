@@ -186,9 +186,9 @@ Site statique, lecture seule.
 | Limite | Conséquence |
 |---|---|
 | Dépôt et dashboard publics | n'importe qui avec l'adresse peut voir le dashboard ; il ne contient que des infos publiques |
-| Horaires GitHub Actions approximatifs | un passage peut démarrer avec 5 à 30 minutes de retard ; les rappels de tirage sont précis à une demi-heure près |
-| Offres gratuites de LLM variables | couvert par le mode dégradé |
-| Pas de X / Twitter | compensé par les notifications du téléphone et Reddit |
+| Horaires GitHub Actions approximatifs | un passage peut démarrer avec 5 à 30 minutes de retard ; les rappels de tirage passent toutes les 15 min et sont précis à environ une demi-heure près |
+| Offres gratuites de LLM variables | Gemini gratuit répond souvent « surchargé » (503) : réessais, file d'attente, alerte « à lire » ; les articles sont lus avec quelques heures de retard au pire |
+| Pas de X / Twitter, ni Reddit | compensé par les notifications du téléphone, les boutiques (qui listent avant l'annonce) et les salons Discord suivis |
 | Prix : 1 mise à jour par jour, pas de détail par langue | limite de la source Cardmarket |
 | Cartes ajoutées à la watchlist à la main | via un fichier, pas un bouton ; le scellé est automatique |
-| Planifications suspendues par GitHub après 60 jours sans activité sur le dépôt | les commits quotidiens de données devraient l'éviter ; à surveiller, la vue État le rendrait visible |
+| Planifications suspendues par GitHub après 60 jours sans activité sur le dépôt | les commits quotidiens de données devraient l'éviter ; sinon le bandeau « données périmées » apparaît sur toutes les pages après 8 h sans mise à jour, avec le lien pour réactiver |

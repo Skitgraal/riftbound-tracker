@@ -60,7 +60,9 @@ Pistes non retenues pour l'instant : `cardmarket-catalog` (nouveau produit scell
 ### Leaks
 | Id | Source | Type envisagé | Apporte |
 |---|---|---|---|
-| `discord-relay` | salons d'annonces suivis dans ton serveur (jalon 6) | `discord` | leaks précoces |
+| `discord-relay` | tous les salons texte de ton serveur que le bot voit (salons d'annonces suivis + messages collés à la main), sauf `#alertes-critiques` et `#fil` | `discord` | leaks précoces ; extraction par LLM, fiabilité « leak » |
+
+Collecteur `discord` (jalon 6) : API officielle avec un bot (`DISCORD_BOT_TOKEN`, guide dans SETUP.md). 50 derniers messages par salon à chaque passage, dédoublonnés par lien de message. Gardés : messages recopiés d'un salon suivi (drapeau `IS_CROSSPOST`) et messages écrits par une personne ; ignorés : bots et webhooks. Premier passage : historique marqué vu, sans extraction. Sans jeton : source inactive, sans erreur.
 
 Reddit abandonné : `robots.txt` en `Disallow: /` et API fermée aux nouvelles applications (D15).
 

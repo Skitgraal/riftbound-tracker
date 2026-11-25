@@ -56,3 +56,14 @@ sources:
     collections: [riftbound-sealed]
     currency: CAD
     enabled: true
+
+  # --- Leaks : salons Discord de ton serveur (bot à créer, voir docs/SETUP.md). Inactive tant que DISCORD_BOT_TOKEN manque. ---
+  # Le bot lit tous les salons texte qu'il voit : ceux où tu « suis » les annonces des serveurs Riftbound,
+  # et ceux où tu colles un leak à la main. Les alertes de l'outil (webhooks) sont ignorées d'office.
+  - id: discord-relay
+    name: Discord — salons suivis
+    kind: discord
+    tier: leak
+    url: https://discord.com/channels/@me
+    exclude_channels: [alertes-critiques, fil]
+    enabled: true

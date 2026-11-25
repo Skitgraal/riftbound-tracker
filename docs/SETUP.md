@@ -45,6 +45,23 @@ Dans l'application X, sur le profil du compte officiel Riftbound et de ton leake
 | Jalon 2 | ouvrir le dashboard sur le téléphone → menu du navigateur → **Ajouter à l'écran d'accueil** | 1 min |
 | Jalon 3 | créer une clé API Gemini gratuite sur aistudio.google.com (**Get API key** → **Create API key**), puis `gh secret set GEMINI_API_KEY` et coller la clé | 2 min |
 | Jalon 4 | valider la liste des boutiques suivies (`config/sources.yml`) ; Reddit abandonné, rien à créer | 2 min |
-| Jalon 6 | créer le bot Discord qui lit les salons d'annonces suivis (guide fourni) | 5 min |
+| Jalon 6 | créer le bot Discord qui lit les salons d'annonces suivis (guide ci-dessous) ; facultatif, l'outil marche sans | 5 min |
 
 L'outil GitHub en ligne de commande (`gh`) est installé par l'IA au jalon 0, en version portable : `winget` est absent du poste, et la version portable ne demande pas de droits administrateur.
+
+## Bot Discord (source « leaks », facultatif)
+
+Tant que ces étapes ne sont pas faites, la source `discord-relay` reste inactive (grise dans l'onglet État), sans erreur.
+
+1. **Créer le bot** : https://discord.com/developers/applications → **New Application** → nom `Riftbound Tracker` → onglet **Bot** :
+   - **Reset Token** → copier le jeton (il ne s'affiche qu'une fois) ;
+   - activer **Message Content Intent** (sans lui, le bot voit les messages vides).
+2. **L'inviter dans ton serveur** : onglet **OAuth2** → **URL Generator** → cocher `bot`, puis les permissions **View Channels** et **Read Message History** → ouvrir l'URL générée → choisir ton serveur.
+3. **Donner le jeton à GitHub** (il ne passe jamais par la conversation) :
+   `& "$env:LOCALAPPDATA\gh-cli\bin\gh.exe" secret set DISCORD_BOT_TOKEN -R Skitgraal/riftbound-tracker`
+4. **Brancher des sources** dans ton serveur :
+   - créer un salon, par exemple `#veille-leaks` ;
+   - sur un serveur communautaire Riftbound, dans un salon d'**annonces** (icône mégaphone) → bouton **Suivre** → choisir `#veille-leaks`. Ses messages seront recopiés chez toi ;
+   - tu peux aussi y coller à la main un lien ou un texte de leak vu ailleurs (X, etc.) : il sera lu et extrait comme le reste.
+
+Au premier passage, l'historique des salons est marqué « vu » sans alerte ; seuls les messages suivants sont lus. Les salons `#alertes-critiques` et `#fil` sont ignorés, ainsi que tout message de bot ou de webhook (les alertes de l'outil ne reviennent pas en boucle).

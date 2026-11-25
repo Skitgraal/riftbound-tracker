@@ -67,6 +67,7 @@ Déjà en place sur le poste : Node 22 et Git. Rien à payer.
 ## Jalon 6 — Finitions
 - Collecteur `discord`.
 - Purges, bandeau de données périmées, réglage des seuils et des mots-clés à l'usage.
+- Fait le 25/11/2026 : collecteur `discord` (actif dès que le bot existe), offres retirées après 21 jours sans être vues, visuels orphelins supprimés, bandeau « données périmées » (site > 8 h, prix > 48 h), source pas encore configurée affichée en gris. Reste : deux semaines sans intervention, puis réglages à l'usage.
 
 **Fini quand** : l'outil tourne deux semaines sans intervention.
 

@@ -118,12 +118,14 @@ const sources = computed(() =>
           <span class="min-w-0">
             <a :href="s.url" target="_blank" rel="noopener" class="font-medium">{{ s.name }}</a>
             <span v-if="s.job?.lastError && s.failing" class="block break-words text-xs text-down">{{ s.job.lastError }}</span>
-            <span v-else class="block text-xs text-text-faint">{{ s.enabled ? `Lue ${ago(s.job?.lastSuccessAt)}` : 'Désactivée' }}</span>
+            <span v-else class="block text-xs text-text-faint">
+              {{ !s.enabled ? 'Désactivée' : !s.job ? 'Pas encore active (configuration à faire)' : `Lue ${ago(s.job.lastSuccessAt)}` }}
+            </span>
           </span>
           <span
             class="mt-1 size-2 shrink-0 rounded-full"
-            :class="!s.enabled ? 'bg-border' : s.failing || s.late ? 'bg-down' : 'bg-accent'"
-            :title="s.failing ? 'En échec' : s.late ? 'Pas lue depuis plus de 6 h' : 'OK'"
+            :class="!s.enabled || !s.job ? 'bg-border' : s.failing || s.late ? 'bg-down' : 'bg-accent'"
+            :title="!s.job ? 'Pas encore active' : s.failing ? 'En échec' : s.late ? 'Pas lue depuis plus de 6 h' : 'OK'"
           />
         </li>
       </ul>

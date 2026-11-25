@@ -37,7 +37,7 @@ export interface Offer {
 export interface SourceConfig {
   id: string;
   name: string;
-  kind: 'riot-news' | 'riot-merch' | 'shopify';
+  kind: 'riot-news' | 'riot-merch' | 'shopify' | 'discord';
   tier: Tier;
   url: string;
   enabled: boolean;
@@ -47,6 +47,8 @@ export interface SourceConfig {
   collections?: string[];
   /** Devise des prix de la boutique (shopify : la liste JSON ne la donne pas). */
   currency?: string;
+  /** Salons de ton serveur à ne pas lire (discord), par nom. */
+  exclude_channels?: string[];
 }
 
 /** Article ou page récupéré par un collecteur, avant extraction. */

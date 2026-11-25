@@ -14,6 +14,7 @@ import { parisDate } from '../shared/time.ts';
 import { collectRiotMerch } from './collectors/riot-merch.ts';
 import { collectRiotNews, loadArticleBody } from './collectors/riot-news.ts';
 import { collectShopify } from './collectors/shopify.ts';
+import { collectDiscord } from './collectors/discord.ts';
 import { ExtractionError, extractProducts, pauseBetweenExtractions } from './extract.ts';
 import { storeImage } from './media.ts';
 import { applySighting, consolidate, detectSet, emptyProduct, findMatch, recompute, slugOf } from './products.ts';
@@ -23,7 +24,9 @@ import { describeChanges, productEmbed, type ChangeEvent } from './events.ts';
 const PRODUCTS_DIR = repoPath('data/products');
 const SEEN = repoPath('data/seen.json');
 const PENDING = repoPath('data/pending.json');
+const MEDIA_DIR = repoPath('data/media');
 const MAX_ATTEMPTS = 10;
+const OFFER_RETENTION_DAYS = 21;
 const SEEN_RETENTION_DAYS = 365;
 
 interface SeenEntry {
@@ -133,8 +136,16 @@ async function main(): Promise<void> {
         if (firstRun) sourceSummaries.push({ source, items: found.length, created });
         log.push(`${source.id} : ${found.length} produits${firstRun ? ' (premier passage, sans alerte)' : ''}`);
         await recordJob(`source:${source.id}`, { ok: true, info: { items: found.length } }, now);
-      } else if (source.kind === 'riot-news') {
-        const docs = await collectRiotNews(source, now);
+      } else if (source.kind === 'riot-news' || source.kind === 'discord') {
+        const collected = source.kind === 'riot-news' ? await collectRiotNews(source, now) : await collectDiscord(source);
+        if (collected === null) {
+          // Source pas encore configurée (jeton absent) : ni échec ni alerte.
+          log.push(`${source.id} : inactive (jeton absent)`);
+          continue;
+        }
+        const docs = collected;
+        // Premier passage d'un salon Discord : l'historique est marqué vu sans être lu (pas de rafale de vieux leaks).
+        const firstRun = !bootstrap && source.kind === 'discord' && !jobs[`source:${source.id}`]?.lastSuccessAt;
         let fresh = 0;
         for (const doc of docs) {
           const h = hash(doc.text);
@@ -147,6 +158,7 @@ async function main(): Promise<void> {
           seen[doc.url] = { hash: h, firstSeenAt: entry?.firstSeenAt ?? nowIso, lastSeenAt: nowIso };
           const age = (now.getTime() - Date.parse(doc.publishedAt ?? nowIso)) / 86_400_000;
           if (bootstrap && age > settings.bootstrap_days) continue;
+          if (firstRun) continue;
           if (!matchesKeywords(doc, settings.keywords, knownSets)) continue;
           fresh++;
           queue.push({
@@ -161,7 +173,7 @@ async function main(): Promise<void> {
             firstSeenAt: nowIso,
           });
         }
-        log.push(`${source.id} : ${docs.length} articles, ${fresh} nouveau(x) ou modifié(s) à lire`);
+        log.push(`${source.id} : ${docs.length} documents, ${fresh} nouveau(x) ou modifié(s) à lire${firstRun ? ' (premier passage : historique marqué vu)' : ''}`);
         await recordJob(`source:${source.id}`, { ok: true, info: { items: docs.length, fresh } }, now);
       }
     } catch (error) {
@@ -230,6 +242,8 @@ async function main(): Promise<void> {
   // 3. Recalcul de toutes les fiches (le statut « sorti » dépend de la date du jour), visuels, écriture
   const events: ChangeEvent[] = [];
   for (const [slug, product] of products) {
+    // Offre plus vue depuis 3 semaines : la boutique a retiré le produit (ou la source a été coupée).
+    product.offers = product.offers.filter((o) => now.getTime() - Date.parse(o.lastSeenAt) < OFFER_RETENTION_DAYS * 86_400_000);
     recompute(product, today);
     const expected = product.imageSource ? createHash('sha1').update(product.imageSource).digest('hex').slice(0, 8) : undefined;
     if (product.imageSource && !product.image?.includes(expected!)) {
@@ -249,6 +263,12 @@ async function main(): Promise<void> {
       await writeJson(`${PRODUCTS_DIR}/${slug}.json`, product);
       events.push(...describeChanges(old, product, now));
     }
+  }
+
+  // Visuels orphelins (fiche fusionnée ou visuel remplacé lors d'un passage interrompu)
+  const used = new Set([...products.values()].map((p) => p.image).filter(Boolean));
+  for (const f of await readdir(MEDIA_DIR).catch(() => [] as string[])) {
+    if (!used.has(`media/${f}`)) await rm(`${MEDIA_DIR}/${f}`, { force: true });
   }
 
   // 4. Alertes
