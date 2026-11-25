@@ -34,7 +34,7 @@
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T20:01:37.597Z"
     },
     {
       "source": "stomping-grounds",
@@ -44,7 +44,7 @@
         "currency": "USD"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T20:01:37.597Z"
     },
     {
       "source": "face-to-face",
@@ -54,7 +54,7 @@
         "currency": "CAD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T20:01:37.597Z"
     }
   ],
   "claims": [
@@ -240,5 +240,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-25T19:01:12.003Z"
+  "updatedAt": "2026-11-25T20:01:37.597Z"
 }

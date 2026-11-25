@@ -24,6 +24,7 @@
     {
       "opensAt": "2026-09-25T16:00:00.000Z",
       "closesAt": "2026-09-30T16:00:00.000Z",
+      "url": null,
       "region": "North America and Europe"
     }
   ],
@@ -66,7 +67,7 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T20:01:37.597Z"
     },
     {
       "source": "face-to-face",
@@ -462,5 +463,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T19:26:13.174Z"
+  "updatedAt": "2026-11-25T20:01:37.597Z"
 }
