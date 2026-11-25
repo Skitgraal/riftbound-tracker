@@ -1,12 +1,12 @@
 {
   "prices": {
-    "lastRunAt": "2026-11-24T23:02:32.925Z",
-    "lastSuccessAt": "2026-11-24T23:02:32.925Z",
+    "lastRunAt": "2026-11-25T15:39:34.722Z",
+    "lastSuccessAt": "2026-11-25T15:39:34.722Z",
     "consecutiveFailures": 0,
     "info": {
-      "priceGuideCreatedAt": "2026-11-24T02:45:42+0100",
-      "catalogCreatedAt": "2026-11-24T13:07:37+0100",
-      "lastSnapshotDate": "2026-11-24"
+      "priceGuideCreatedAt": "2026-11-25T02:42:52+0100",
+      "catalogCreatedAt": "2026-11-25T12:38:14+0100",
+      "lastSnapshotDate": "2026-11-25"
     }
   },
   "source:cardcosmos": {

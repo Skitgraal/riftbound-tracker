@@ -20878,5 +20878,15 @@
     "languageTag": "",
     "dateAdded": "2026-11-24 12:46:45",
     "firstSeenAt": "2026-11-24T23:02:32.925Z"
+  },
+  "925949": {
+    "id": 925949,
+    "name": "Recruit",
+    "kind": "single",
+    "category": "Riftbound Single",
+    "expansionId": 6480,
+    "languageTag": "",
+    "dateAdded": "2026-11-24 13:44:38",
+    "firstSeenAt": "2026-11-25T15:39:34.722Z"
   }
 }
