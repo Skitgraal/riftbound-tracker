@@ -15,6 +15,8 @@ For each product:
 - `release_date` + `release_precision`: when it releases in English. Formats: `YYYY-MM-DD` (day), `YYYY-MM` (month), `YYYY-Qn` (quarter, e.g. 2027-Q1). When the year is not written, infer it from the publication date. Unknown → null and "unknown".
 - `status`: announced, preorder (preorders open now), released, cancelled, or null if unclear.
 - `draws`: drawing/raffle windows for this product, with `opens_at` / `closes_at` as ISO 8601 date-times **including the UTC offset of the time zone written** (PT is -08:00 from November to mid-March, -07:00 otherwise), the registration `url` if given, and the `region` if stated. Empty list if none.
+  - Only a drawing whose dates are written in the document. If only a day is written without a time, use that day at 00:00 in the stated time zone, but never guess a closing date.
+  - `url`: the link where people sign up for the drawing (links appear in the text as `label (https://…)`), e.g. a Riot merch store page or a registration form. Not the article itself, not a video.
 - `evidence`: one short verbatim quote from the document supporting the most important fact (date, price or drawing).
 
 Never invent values: anything not stated in the document is null.

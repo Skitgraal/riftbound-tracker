@@ -212,6 +212,36 @@ function resolve<T>(claims: Claim[], field: Claim['field']): T | null {
   return best ? (best.value as T) : null;
 }
 
+const DAY = 86_400_000;
+
+/**
+ * Tirages d'un produit, à partir des seules affirmations de Riot (une boutique ou un leak ne crée jamais de tirage).
+ * Une même fenêtre est souvent décrite plusieurs fois (article complet, vidéo qui ne donne que le jour d'ouverture) :
+ * une fenêtre incomplète qui ouvre à 2 jours près d'une fenêtre complète est fondue dedans (son lien est gardé).
+ */
+export function mergeDraws(draws: Draw[]): Draw[] {
+  // Plusieurs affirmations d'une même fenêtre : on complète champ par champ (le plus récent l'emporte).
+  const byKey = new Map<string, Partial<Draw>>();
+  for (const d of draws) {
+    const key = d.opensAt ?? d.closesAt ?? d.url ?? '';
+    byKey.set(key, { ...byKey.get(key), ...Object.fromEntries(Object.entries(d).filter(([, v]) => v !== null)) });
+  }
+  const all: Draw[] = [...byKey.values()].map((d) => ({ opensAt: null, closesAt: null, url: null, region: null, ...d }));
+  const complete = all.filter((d) => d.opensAt && d.closesAt);
+  const kept = all.filter((d) => {
+    if (d.opensAt && d.closesAt) return true;
+    // Lien d'inscription seul (boutique Riot) : un tirage à venir dont les dates ne sont pas encore connues.
+    if (!d.opensAt && !d.closesAt) return true;
+    const t = Date.parse(d.opensAt ?? d.closesAt!);
+    const twin = complete.find((c) => Math.abs(Date.parse(d.opensAt ? c.opensAt! : c.closesAt!) - t) <= 2 * DAY);
+    if (!twin) return true;
+    twin.url ??= d.url;
+    twin.region ??= d.region;
+    return false;
+  });
+  return kept.sort((a, b) => (a.opensAt ?? a.closesAt ?? '').localeCompare(b.opensAt ?? b.closesAt ?? ''));
+}
+
 /**
  * Statut annoncé : niveau de source le plus fiable, puis le dernier avis de chaque source de ce niveau.
  * Si l'une d'elles le vend déjà en stock, il est sorti (une boutique peut garder une vieille étiquette « précommande »).
@@ -250,16 +280,7 @@ export function recompute(product: Product, today: string): void {
   product.announcedAt = claims.filter((c) => c.field === 'announcedAt').map((c) => String(c.value)).sort()[0] ?? null;
   product.reliability = claims.some((c) => c.tier === 'official') ? 'confirmed' : 'unconfirmed';
 
-  // Tirages : ceux du niveau de source le plus fiable, une entrée par fenêtre.
-  const drawClaims = claims.filter((c) => c.field === 'draw').sort(byPriority);
-  const topTier = drawClaims[0]?.tier;
-  const draws = new Map<string, Draw>();
-  for (const c of drawClaims.filter((c) => c.tier === topTier).reverse()) {
-    const d = c.value as Draw;
-    const key = d.opensAt ?? d.closesAt ?? d.url ?? '';
-    draws.set(key, { ...draws.get(key), ...Object.fromEntries(Object.entries(d).filter(([, v]) => v !== null)) } as Draw);
-  }
-  product.draws = [...draws.values()].sort((a, b) => (a.opensAt ?? a.closesAt ?? '').localeCompare(b.opensAt ?? b.closesAt ?? ''));
+  product.draws = mergeDraws(claims.filter((c) => c.field === 'draw' && c.tier === 'official').sort(byPriority).reverse().map((c) => c.value as Draw));
 
   const stated = resolveStatus(claims);
   const released = product.releaseDate?.precision === 'day' && product.releaseDate.value <= today;

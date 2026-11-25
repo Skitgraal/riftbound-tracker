@@ -6,7 +6,7 @@ import { readdir } from 'node:fs/promises';
 import { COLORS, sendDiscord, type Embed } from '../alerts/discord.ts';
 import { loadSent } from '../alerts/sent.ts';
 import { readJson, repoPath, writeJson } from '../shared/fs.ts';
-import { formatInstant, formatMoney, SITE_URL } from '../watch/events.ts';
+import { drawSignupUrl, formatInstant, formatMoney, riotStoreUrl, SITE_URL } from '../watch/events.ts';
 import { emptyProduct } from '../watch/products.ts';
 import type { Product } from '../watch/types.ts';
 import { dueReminders, type Reminder } from './due.ts';
@@ -48,10 +48,10 @@ const TITLES: Record<Reminder['kind'], string> = {
 
 export function reminderEmbed(r: Reminder, now: Date, prefix = ''): Embed {
   const { product: p, draw: d } = r;
-  const signup = d.url ?? p.officialUrl ?? `${SITE_URL}#/produit/${p.slug}`;
+  const signup = drawSignupUrl(p, d);
   const lines = [
     d.closesAt ? `Fermeture le **${formatInstant(d.closesAt)}** (heure de Paris), dans **${remainingLabel(d.closesAt, now)}**.` : 'Date de fermeture inconnue.',
-    `[S'inscrire au tirage](${signup}) · [Fiche](${SITE_URL}#/produit/${p.slug})`,
+    `[${d.url ? "S'inscrire au tirage" : "Voir l'annonce"}](${signup}) · [Boutique Riot](${riotStoreUrl(p)}) · [Fiche](${SITE_URL}#/produit/${p.slug})`,
     p.reliability === 'confirmed' ? null : 'Non confirmé par Riot.',
   ];
   return {

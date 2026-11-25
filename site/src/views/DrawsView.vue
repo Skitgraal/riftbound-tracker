@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, ref } from 'vue';
-import { ArrowUpRight, Bell, CalendarPlus } from 'lucide-vue-next';
+import { ArrowUpRight, Bell, CalendarPlus, Store } from 'lucide-vue-next';
 import CountdownTiles from '../components/CountdownTiles.vue';
 import EmptyState from '../components/EmptyState.vue';
 import PageTitle from '../components/PageTitle.vue';
@@ -8,7 +8,18 @@ import ProductArt from '../components/ProductArt.vue';
 import StatusChip from '../components/StatusChip.vue';
 import { useData, type SiteMeta } from '../lib/data.ts';
 import { ago } from '../lib/format.ts';
-import { drawIcsUrl, drawState, instantLabel, money, TYPE_LABELS, useProducts, type Draw, type ProductSummary } from '../lib/products.ts';
+import {
+  drawIcsUrl,
+  drawSignupUrl,
+  drawState,
+  instantLabel,
+  money,
+  riotStoreUrl,
+  TYPE_LABELS,
+  useProducts,
+  type Draw,
+  type ProductSummary,
+} from '../lib/products.ts';
 
 const { data: products, error } = useProducts();
 const { data: meta } = useData<SiteMeta>('meta.json');
@@ -34,11 +45,14 @@ const upcoming = computed(() => rows.value.filter((r) => drawState(r.d, now.valu
 /** Terminés depuis moins de 6 mois, le plus récent d'abord. */
 const past = computed(() =>
   rows.value
-    .filter((r) => drawState(r.d, now.value) === 'closed' && now.value - Date.parse(r.d.closesAt!) < 183 * 86_400_000)
-    .sort((a, b) => b.d.closesAt!.localeCompare(a.d.closesAt!)),
+    .filter((r) => drawState(r.d, now.value) === 'closed' && now.value - Date.parse(endOf(r.d)) < 183 * 86_400_000)
+    .sort((a, b) => endOf(b.d).localeCompare(endOf(a.d))),
 );
 
-const signup = (r: Row) => r.d.url ?? r.p.officialUrl ?? undefined;
+function endOf(d: Draw): string {
+  return d.closesAt ?? d.opensAt ?? '';
+}
+const signup = (r: Row) => drawSignupUrl(r.p, r.d);
 const facts = (r: Row) => [TYPE_LABELS[r.p.type], money(r.p.msrp), r.d.region].filter((x) => x && x !== '—').join(' · ');
 const drawWindow = (d: Draw) => `${d.opensAt ? instantLabel(d.opensAt) : '?'} → ${d.closesAt ? instantLabel(d.closesAt) : '?'}`;
 </script>
@@ -88,7 +102,7 @@ const drawWindow = (d: Draw) => `${d.opensAt ? instantLabel(d.opensAt) : '?'} �
               rel="noopener"
               class="inline-flex h-11 items-center gap-2 rounded-[10px] bg-urgent px-4 text-sm font-semibold text-[#1A1306] no-underline hover:bg-[#FFD88A]"
             >
-              S'inscrire <ArrowUpRight :size="16" aria-hidden="true" />
+              {{ r.d.url ? "S'inscrire au tirage" : "Voir l'annonce" }} <ArrowUpRight :size="16" aria-hidden="true" />
             </a>
             <a
               v-if="drawIcsUrl(r.p, r.d)"
@@ -98,6 +112,14 @@ const drawWindow = (d: Draw) => `${d.opensAt ? instantLabel(d.opensAt) : '?'} �
               title="Ajouter la fermeture à l'agenda, avec une alarme 2 h avant"
             >
               <CalendarPlus :size="16" aria-hidden="true" /> Agenda
+            </a>
+            <a
+              :href="riotStoreUrl(r.p)"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex h-11 items-center gap-2 rounded-[10px] border border-urgent-border px-3 text-sm font-medium text-urgent no-underline hover:bg-[#2A2010]"
+            >
+              <Store :size="16" aria-hidden="true" /> Boutique Riot
             </a>
           </div>
         </article>
@@ -122,9 +144,14 @@ const drawWindow = (d: Draw) => `${d.opensAt ? instantLabel(d.opensAt) : '?'} �
           <div v-if="r.d.opensAt" class="mt-4">
             <CountdownTiles :until="r.d.opensAt" verb="Ouvre" />
           </div>
-          <a v-if="signup(r)" :href="signup(r)" target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-1 text-sm font-medium">
-            Page du tirage <ArrowUpRight :size="14" aria-hidden="true" />
-          </a>
+          <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium">
+            <a :href="signup(r)" target="_blank" rel="noopener" class="inline-flex items-center gap-1">
+              {{ r.d.url ? "Page d'inscription" : 'Annonce officielle' }} <ArrowUpRight :size="14" aria-hidden="true" />
+            </a>
+            <a :href="riotStoreUrl(r.p)" target="_blank" rel="noopener" class="inline-flex items-center gap-1">
+              Boutique Riot <ArrowUpRight :size="14" aria-hidden="true" />
+            </a>
+          </div>
         </article>
       </div>
     </section>

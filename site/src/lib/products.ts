@@ -125,10 +125,21 @@ export function artTint(p: Pick<ProductSummary, 'set' | 'name'>): string {
   return ['#141A26', '#1A1626', '#121F1F', '#201A14'][h % 4]!;
 }
 
+export const RIOT_STORE_URL = 'https://merch.riotgames.com/en-us/category/riftbound/';
+
+/** Page du produit sur la boutique Riot s'il y est, sinon la catégorie Riftbound de la boutique. */
+export const riotStoreUrl = (p: Pick<ProductSummary, 'offers'>): string => p.offers.find((o) => o.source === 'riot-merch')?.url ?? RIOT_STORE_URL;
+
+/** Lien d'inscription d'un tirage : celui donné par Riot, sinon la page du produit sur la boutique Riot, sinon l'annonce. */
+export const drawSignupUrl = (p: Pick<ProductSummary, 'offers' | 'officialUrl'>, d: Draw): string =>
+  d.url ?? p.offers.find((o) => o.source === 'riot-merch')?.url ?? p.officialUrl ?? RIOT_STORE_URL;
+
 export type DrawState = 'open' | 'upcoming' | 'closed';
 
 export function drawState(d: Draw, now = Date.now()): DrawState {
   if (d.closesAt && Date.parse(d.closesAt) <= now) return 'closed';
+  // Fermeture inconnue : un tirage Riot dure quelques jours ; ouvert depuis plus de 7 jours, il est fini.
+  if (!d.closesAt && d.opensAt && now - Date.parse(d.opensAt) > 7 * 86_400_000) return 'closed';
   if (d.opensAt && Date.parse(d.opensAt) > now) return 'upcoming';
   // Ouvert seulement si une date le prouve ; un simple lien d'inscription sans dates reste « à venir ».
   return d.opensAt || d.closesAt ? 'open' : 'upcoming';

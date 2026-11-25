@@ -17,6 +17,11 @@ export function htmlToText(html: string): string {
   return decodeEntities(
     html
       .replace(/<(script|style)[\s\S]*?<\/\1>/gi, '')
+      // Les liens sont gardés (« texte (adresse) ») : c'est souvent là qu'est le formulaire d'inscription d'un tirage.
+      .replace(/<a\b[^>]*\bhref\s*=\s*"(https?:\/\/[^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href: string, inner: string) => {
+        const label = inner.replace(/<[^>]+>/g, '').trim();
+        return label && label !== href ? `${inner} (${href})` : href;
+      })
       .replace(/<h[1-6][^>]*>/gi, '\n\n## ')
       .replace(/<li[^>]*>/gi, '\n- ')
       .replace(/<br\s*\/?>/gi, '\n')

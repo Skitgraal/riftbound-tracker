@@ -3,6 +3,14 @@ import { COLORS, type Channel, type Embed } from '../alerts/discord.ts';
 import type { Draw, FuzzyDate, Money, Product } from './types.ts';
 
 export const SITE_URL = 'https://skitgraal.github.io/riftbound-tracker/';
+export const RIOT_STORE_URL = 'https://merch.riotgames.com/en-us/category/riftbound/';
+
+/** Page du produit sur la boutique Riot s'il y est, sinon la catégorie Riftbound. */
+export const riotStoreUrl = (p: Product): string => p.offers.find((o) => o.source === 'riot-merch')?.url ?? RIOT_STORE_URL;
+
+/** Lien d'inscription : celui donné par Riot, sinon la page du produit sur la boutique Riot, sinon l'annonce. */
+export const drawSignupUrl = (p: Product, d: Draw): string =>
+  d.url ?? p.offers.find((o) => o.source === 'riot-merch')?.url ?? p.officialUrl ?? RIOT_STORE_URL;
 
 export interface ChangeEvent {
   /** Clé d'unicité : la même alerte ne part jamais deux fois. */
@@ -11,6 +19,8 @@ export interface ChangeEvent {
   title: string;
   detail?: string;
   product: Product;
+  /** Tirage concerné (alertes de tirage) : sert au lien d'inscription. */
+  draw?: Draw;
 }
 
 const TYPE_LABELS: Record<Product['type'], string> = {
@@ -91,6 +101,7 @@ export function describeChanges(old: Product | undefined, p: Product, now: Date)
   for (const d of p.draws) {
     if (known.has(drawKey(d))) continue;
     if (d.closesAt && Date.parse(d.closesAt) < now.getTime()) continue; // déjà terminé
+    if (!d.closesAt && d.opensAt && now.getTime() - Date.parse(d.opensAt) > 7 * 86_400_000) continue; // fin inconnue, mais ancien
     const open = d.opensAt && Date.parse(d.opensAt) <= now.getTime();
     events.push({
       key: `draw:${p.slug}:${drawKey(d)}`,
@@ -98,6 +109,7 @@ export function describeChanges(old: Product | undefined, p: Product, now: Date)
       title: `${open ? 'Tirage ouvert' : 'Tirage annoncé'} : ${p.name}`,
       detail: `Inscriptions ${d.opensAt ? `du ${formatInstant(d.opensAt)}` : ''} ${d.closesAt ? `au ${formatInstant(d.closesAt)}` : ''} (heure de Paris)${d.region ? ` · ${d.region}` : ''}`.replace(/\s+/g, ' '),
       product: p,
+      draw: d,
     });
   }
   return events;
@@ -114,7 +126,14 @@ export function productEmbed(e: ChangeEvent): Embed {
       { name: 'Type', value: `${TYPE_LABELS[p.type]}${p.set ? ` · ${p.set}` : ''}`, inline: true },
       { name: 'Sortie', value: formatFuzzyDate(p.releaseDate), inline: true },
       { name: 'Prix officiel', value: formatMoney(p.msrp), inline: true },
-      ...(p.officialUrl ? [{ name: 'Source', value: `[Page officielle](${p.officialUrl})` }] : []),
+      {
+        name: 'Liens',
+        value: [
+          ...(e.draw ? [`[${e.draw.url ? "S'inscrire au tirage" : "Voir l'annonce du tirage"}](${drawSignupUrl(p, e.draw)})`] : []),
+          ...(p.officialUrl && !e.draw ? [`[Annonce officielle](${p.officialUrl})`] : []),
+          `[Boutique Riot](${riotStoreUrl(p)})`,
+        ].join(' · '),
+      },
     ],
     ...(p.imageSource ? { thumbnail: { url: p.imageSource } } : {}),
   };

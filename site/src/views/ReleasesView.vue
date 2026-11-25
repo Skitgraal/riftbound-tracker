@@ -10,7 +10,9 @@ import { useData, type SiteMeta } from '../lib/data.ts';
 import { ago } from '../lib/format.ts';
 import {
   currentDraw,
+  drawSignupUrl,
   fuzzyLabel,
+  riotStoreUrl,
   fuzzySortKey,
   instantLabel,
   money,
@@ -183,14 +185,21 @@ const joinMeta = (parts: (string | null | undefined)[]) => parts.filter((x) => x
             <CountdownTiles v-if="d.state === 'open' && d.draw.closesAt" :until="d.draw.closesAt" verb="Ferme" />
             <CountdownTiles v-else-if="d.state === 'upcoming' && d.draw.opensAt" :until="d.draw.opensAt" verb="Ouvre" />
             <a
-              v-if="d.draw.url || p.officialUrl"
-              :href="d.draw.url || p.officialUrl || undefined"
+              :href="drawSignupUrl(p, d.draw)"
               target="_blank"
               rel="noopener"
               class="inline-flex h-11 items-center gap-2 rounded-[10px] bg-urgent px-4 text-sm font-semibold text-[#1A1306] no-underline hover:bg-[#FFD88A]"
             >
-              {{ d.state === 'open' ? "S'inscrire au tirage" : 'Voir les détails' }}
+              {{ d.draw.url ? (d.state === 'open' ? "S'inscrire au tirage" : "Page d'inscription") : "Voir l'annonce" }}
               <ArrowUpRight :size="16" aria-hidden="true" />
+            </a>
+            <a
+              :href="riotStoreUrl(p)"
+              target="_blank"
+              rel="noopener"
+              class="inline-flex h-11 items-center gap-2 rounded-[10px] border border-urgent-border px-3 text-sm font-medium text-urgent no-underline hover:bg-[#2A2010]"
+            >
+              Boutique Riot <ArrowUpRight :size="16" aria-hidden="true" />
             </a>
           </div>
         </article>

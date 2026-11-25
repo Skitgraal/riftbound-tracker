@@ -79,3 +79,7 @@ Contrainte directrice : **gratuit, simple, et pratique**. Une entrée par choix 
 **Raison.** Les boutiques listent les produits des semaines avant l'annonce de Riot (sets 6 et 7 vus ainsi le 24/11/2026), avec stock et photos, sans LLM. Un prix de revente (ex. 672 € pour une édition limitée) ne doit pas passer pour le prix officiel.
 **Garde-fous.** Premier passage d'une nouvelle boutique : un seul message de résumé. Les boutiques protégées par un défi anti-robots (Cloudflare) sont écartées.
 
+## D17 — Tirages : Riot seulement, une fenêtre par tirage, lien direct
+**Décision.** Un tirage n'est affiché et rappelé que s'il vient d'une source officielle (site Riftbound, boutique Riot). Une fenêtre incomplète (jour d'ouverture seul, souvent tiré d'une vidéo) qui ouvre à 2 jours près d'une fenêtre complète est fondue dedans. Sans date de fermeture, un tirage ouvert depuis plus de 7 jours est considéré comme fini. Le lien d'inscription est extrait de l'article (les liens sont gardés dans le texte envoyé au LLM) ; à défaut : page du produit sur la boutique Riot, puis l'annonce. Chaque fiche, carte de tirage et alerte propose aussi un lien vers la boutique Riot.
+**Raison.** Retour d'usage (25/11/2026) : le K/DA apparaissait comme un tirage encore ouvert, à cause d'une seconde fenêtre sans fermeture ; et aucun tirage n'avait de lien d'inscription direct.
+

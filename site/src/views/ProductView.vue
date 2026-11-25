@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, shallowRef, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { ArrowLeft, ArrowUpRight, ShieldCheck, ShieldQuestion, TrendingUp } from 'lucide-vue-next';
+import { ArrowLeft, ArrowUpRight, ShieldCheck, ShieldQuestion, Store, TrendingUp } from 'lucide-vue-next';
 import CountdownTiles from '../components/CountdownTiles.vue';
 import EmptyState from '../components/EmptyState.vue';
 import ProductArt from '../components/ProductArt.vue';
@@ -10,7 +10,9 @@ import { fetchData } from '../lib/data.ts';
 import { euro } from '../lib/format.ts';
 import {
   currentDraw,
+  drawSignupUrl,
   fuzzyLabel,
+  riotStoreUrl,
   instantLabel,
   money,
   TIER_LABELS,
@@ -152,13 +154,12 @@ const AVAILABILITY: Record<string, string> = { in_stock: 'En stock', out_of_stoc
             <CountdownTiles v-if="draw.state === 'open' && draw.draw.closesAt" :until="draw.draw.closesAt" verb="Ferme" />
             <CountdownTiles v-else-if="draw.draw.opensAt" :until="draw.draw.opensAt" verb="Ouvre" />
             <a
-              v-if="draw.draw.url || product.officialUrl"
-              :href="draw.draw.url || product.officialUrl || undefined"
+              :href="drawSignupUrl(product, draw.draw)"
               target="_blank"
               rel="noopener"
               class="inline-flex h-11 items-center gap-2 rounded-[10px] bg-urgent px-4 text-sm font-semibold text-[#1A1306] no-underline hover:bg-[#FFD88A]"
             >
-              {{ draw.state === 'open' ? "S'inscrire au tirage" : 'Détails du tirage' }}
+              {{ draw.draw.url ? (draw.state === 'open' ? "S'inscrire au tirage" : "Page d'inscription") : "Voir l'annonce" }}
               <ArrowUpRight :size="16" aria-hidden="true" />
             </a>
           </div>
@@ -173,7 +174,16 @@ const AVAILABILITY: Record<string, string> = { in_stock: 'En stock', out_of_stoc
             rel="noopener"
             class="inline-flex h-11 items-center gap-2 rounded-[10px] border border-[#2C3242] px-[18px] text-sm font-semibold text-text no-underline hover:border-[#4A5368]"
           >
-            Page officielle <ArrowUpRight :size="16" aria-hidden="true" />
+            Annonce officielle <ArrowUpRight :size="16" aria-hidden="true" />
+          </a>
+          <a
+            :href="riotStoreUrl(product)"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex h-11 items-center gap-2 rounded-[10px] border border-[#2C3242] px-[18px] text-sm font-semibold text-text no-underline hover:border-[#4A5368]"
+            :title="product.offers.some((o) => o.source === 'riot-merch') ? 'Page du produit sur la boutique Riot' : 'Catégorie Riftbound de la boutique Riot'"
+          >
+            <Store :size="16" aria-hidden="true" /> Boutique Riot
           </a>
           <RouterLink
             v-if="product.market"
