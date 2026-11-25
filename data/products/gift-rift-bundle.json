@@ -26,11 +26,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-gift-of-the-rift-bundle-english",
       "price": {
-        "amount": 269,
+        "amount": 268,
         "currency": "EUR"
       },
       "availability": "preorder",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T14:38:11.303Z"
     },
     {
       "source": "stomping-grounds",
@@ -178,5 +178,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-25T02:36:37.689Z"
+  "updatedAt": "2026-11-25T14:38:11.303Z"
 }

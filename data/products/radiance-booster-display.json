@@ -52,11 +52,11 @@
       "source": "cardcosmos",
       "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-booster-display-englisch",
       "price": {
-        "amount": 119.9,
+        "amount": 99.9,
         "currency": "EUR"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T14:38:11.303Z"
     },
     {
       "source": "stomping-grounds",
@@ -75,8 +75,8 @@
         "amount": 129.99,
         "currency": "CAD"
       },
-      "availability": "in_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-25T14:38:11.303Z"
     }
   ],
   "claims": [
@@ -462,5 +462,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T02:36:37.689Z"
+  "updatedAt": "2026-11-25T14:38:11.303Z"
 }

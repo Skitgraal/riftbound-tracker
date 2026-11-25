@@ -6,9 +6,10 @@
     "publishedAt": "2026-09-03T16:00:00.000Z",
     "text": "September Merch Store Update\n\nCheck out the ways purchasing Riftbound product on Riot Merch Store is changing",
     "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/59278d6448af8e90070018992e7a204e0e931464-1440x810.jpg",
-    "attempts": 0,
+    "attempts": 1,
     "firstSeenAt": "2026-11-23T22:04:12.120Z",
-    "alerted": true
+    "alerted": true,
+    "lastError": "Gemini gemini-3.8-flash : HTTP 503 (quota ou surcharge) ; Gemini gemini-3.5-flash-lite : HTTP 503 (quota ou surcharge)"
   },
   {
     "url": "https://playriftbound.com/en-us/news/rules-and-releases/vendetta-rules-faq-and-clarifications",

@@ -41,11 +41,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-x-worlds-2026-edition",
       "price": {
-        "amount": 671,
+        "amount": 670,
         "currency": "EUR"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-25T02:36:37.689Z"
+      "lastSeenAt": "2026-11-25T14:38:11.303Z"
     }
   ],
   "claims": [
@@ -254,5 +254,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T02:36:37.689Z"
+  "updatedAt": "2026-11-25T14:38:11.303Z"
 }

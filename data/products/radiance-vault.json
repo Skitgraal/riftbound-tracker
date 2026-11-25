@@ -33,11 +33,11 @@
       "source": "cardcosmos",
       "url": "https://cardcosmos.de/products/riftbound-league-of-legends-radiance-vault-englisch",
       "price": {
-        "amount": 39.9,
+        "amount": 29.9,
         "currency": "EUR"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-24T19:37:51.814Z"
+      "lastSeenAt": "2026-11-25T14:38:11.303Z"
     },
     {
       "source": "stomping-grounds",
@@ -336,5 +336,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-24T19:59:23.782Z"
+  "updatedAt": "2026-11-25T14:38:11.303Z"
 }
