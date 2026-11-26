@@ -20,11 +20,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-tcg-the-reckoning-champion-deck-en",
       "price": {
-        "amount": 29,
+        "amount": 28,
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-25T19:01:12.003Z"
+      "lastSeenAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "claims": [
@@ -66,5 +66,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-25T19:01:12.003Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }

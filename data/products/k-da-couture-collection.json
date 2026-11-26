@@ -2,7 +2,7 @@
   "slug": "k-da-couture-collection",
   "name": "Riftbound x K/DA Couture Collection",
   "set": null,
-  "type": "draw_product",
+  "type": "bundle",
   "language": "EN",
   "msrp": {
     "amount": 150,
@@ -21,7 +21,7 @@
     {
       "opensAt": "2026-10-27T16:00:00.000Z",
       "closesAt": "2026-10-30T16:00:00.000Z",
-      "url": null,
+      "url": "https://merch.riotgames.com",
       "region": null
     }
   ],
@@ -206,8 +206,40 @@
       "url": "https://www.youtube.com/watch?v=n-53EjaNrdU",
       "evidence": "Enter drawing for the Riftbound x K/DA Couture Collection starting October 27.",
       "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $150.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $150.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-10-27T16:00:00.000Z",
+        "closesAt": "2026-10-30T16:00:00.000Z",
+        "url": "https://merch.riotgames.com",
+        "region": null
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $150.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }

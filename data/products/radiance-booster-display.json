@@ -22,6 +22,12 @@
   "possibleDuplicateOf": null,
   "draws": [
     {
+      "opensAt": "2001-09-25T00:00:00.000Z",
+      "closesAt": "2001-09-30T16:00:00.000Z",
+      "url": "https://playriftbound.com/en-us/preorder/registration/",
+      "region": "North America and Europe"
+    },
+    {
       "opensAt": "2026-09-25T16:00:00.000Z",
       "closesAt": "2026-09-30T16:00:00.000Z",
       "url": null,
@@ -460,8 +466,31 @@
       "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
       "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
       "observedAt": "2026-11-24T19:37:51.814Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2001-09-25T00:00:00.000Z",
+        "closesAt": "2001-09-30T16:00:00.000Z",
+        "url": "https://playriftbound.com/en-us/preorder/registration/",
+        "region": "North America and Europe"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
+      "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }

@@ -13,7 +13,7 @@
     "value": "2026-12-04",
     "precision": "day"
   },
-  "status": "released",
+  "status": "announced",
   "reliability": "confirmed",
   "image": "media/gift-rift-bundle-dd498a4b.png",
   "imageSource": "https://cdn.shopify.com/s/files/1/0912/3554/9525/files/lol-packaging_renders-sotg-gtr-3840x3840_alt.png?v=1786728412&width=1200",
@@ -175,8 +175,17 @@
       "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
       "evidence": "It’ll be available starting December 4, just in time for the holidays!",
       "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "status",
+      "value": "announced",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "It’ll be available starting December 4, just in time for the holidays!",
+      "observedAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }

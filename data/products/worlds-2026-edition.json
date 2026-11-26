@@ -2,7 +2,7 @@
   "slug": "worlds-2026-edition",
   "name": "Riftbound x Worlds 2026 Edition",
   "set": null,
-  "type": "draw_product",
+  "type": "bundle",
   "language": "EN",
   "msrp": {
     "amount": 80,
@@ -13,18 +13,18 @@
     "value": "2026-12",
     "precision": "month"
   },
-  "status": "preorder",
+  "status": "announced",
   "reliability": "confirmed",
   "image": "media/worlds-2026-edition-60a4102d.webp",
   "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/8b1da37ccc1a248a7500e790600eed16ce208a16-2560x2560.png?w=1200&fm=webp&q=82",
-  "officialUrl": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
   "cmProductId": null,
   "possibleDuplicateOf": null,
   "draws": [
     {
       "opensAt": "2026-11-13T17:00:00.000Z",
       "closesAt": "2026-11-16T17:00:00.000Z",
-      "url": null,
+      "url": "https://merch.riotgames.com",
       "region": null
     }
   ],
@@ -43,11 +43,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-x-worlds-2026-edition",
       "price": {
-        "amount": 673,
+        "amount": 672,
         "currency": "EUR"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-25T19:01:12.003Z"
+      "lastSeenAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "claims": [
@@ -253,8 +253,58 @@
       "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
       "evidence": "Drawing registration opens: November 13, 9:00 AM PT",
       "observedAt": "2026-11-25T02:36:37.689Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "status",
+      "value": "announced",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-11-13T17:00:00.000Z",
+        "closesAt": "2026-11-16T17:00:00.000Z",
+        "url": "https://merch.riotgames.com",
+        "region": null
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $80.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Drawing registration opens: November 13, 9:00 AM PT",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-11-06",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Drawing registration opens: November 13, 9:00 AM PT",
+      "observedAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }

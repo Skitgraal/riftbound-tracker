@@ -2,7 +2,7 @@
   "slug": "t1-2025-worlds-champion-player-bundle",
   "name": "T1 2025 Worlds Champion Player Bundle",
   "set": null,
-  "type": "draw_product",
+  "type": "bundle",
   "language": "EN",
   "msrp": {
     "amount": 70,
@@ -17,14 +17,14 @@
   "reliability": "confirmed",
   "image": "media/t1-2025-worlds-champion-player-bundle-b77aa26c.webp",
   "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/00d22f8dc82269bca968ddd72802b0ba3e2d03c6-2560x2560.png?w=1200&fm=webp&q=82",
-  "officialUrl": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+  "officialUrl": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
   "cmProductId": null,
   "possibleDuplicateOf": null,
   "draws": [
     {
       "opensAt": "2026-11-13T17:00:00.000Z",
       "closesAt": "2026-11-16T17:00:00.000Z",
-      "url": null,
+      "url": "https://merch.riotgames.com",
       "region": null
     }
   ],
@@ -234,8 +234,85 @@
       "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
       "evidence": "These will be available later in the year, stay tuned for more details. The English version will be available on the Riot Merch store via drawing.",
       "observedAt": "2026-11-25T19:26:13.174Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $70.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $70.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-11-13T17:00:00.000Z",
+        "closesAt": "2026-11-16T17:00:00.000Z",
+        "url": "https://merch.riotgames.com",
+        "region": null
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/riftbounds-2026-drawings",
+      "evidence": "Cost: $70.00 + shipping and handling.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "type",
+      "value": "draw_product",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+      "evidence": "The English version will be available on the Riot Merch store via drawing.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+      "evidence": "The English version will be available on the Riot Merch store via drawing.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "type",
+      "value": "bundle",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Drawing registration opens: November 13, 9:00 AM PT",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Drawing registration opens: November 13, 9:00 AM PT",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "announcedAt",
+      "value": "2026-11-06",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/product-drawing-faq/",
+      "evidence": "Drawing registration opens: November 13, 9:00 AM PT",
+      "observedAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }

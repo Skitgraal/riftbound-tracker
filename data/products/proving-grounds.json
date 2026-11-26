@@ -33,11 +33,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-league-of-legends-tcg-proving-grounds-reprint-en",
       "price": {
-        "amount": 57,
+        "amount": 56,
         "currency": "EUR"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-25T19:01:12.003Z"
+      "lastSeenAt": "2026-11-26T00:31:44.017Z"
     },
     {
       "source": "stomping-grounds",
@@ -182,5 +182,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }

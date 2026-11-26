@@ -10,10 +10,10 @@
   },
   "announcedAt": "2026-07-03",
   "releaseDate": {
-    "value": "2026-09-02",
-    "precision": "day"
+    "value": "2026-08",
+    "precision": "month"
   },
-  "status": "released",
+  "status": "announced",
   "reliability": "confirmed",
   "image": "media/t1-2025-worlds-champion-signature-edition-8a5a3cf6.webp",
   "imageSource": "https://cdn.sanity.io/images/dsfx7636/consumer_products_live/2bf18d151699274b1573635b24e205526d1258d1-2560x2560.png?w=1200&fm=webp&q=82",
@@ -212,8 +212,52 @@
       "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
       "evidence": "Announced on August 3, 2026: The T1 2025 Worlds Champion Signature Edition drawing will open on Friday, August. 14.",
       "observedAt": "2026-11-25T19:26:13.174Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/august-merch-store-updates",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/august-merch-store-updates",
+      "evidence": "Wednesday, September, 2, 2026 - T1 2025 Worlds Champion Signature Edition begins arriving for players",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "releaseDate",
+      "value": {
+        "value": "2026-08",
+        "precision": "month"
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+      "evidence": "The T1 2025 Worlds Champion Signature Edition drawing will open on Friday, August. 14.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "officialUrl",
+      "value": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+      "evidence": "The T1 2025 Worlds Champion Signature Edition drawing will open on Friday, August. 14.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "draw",
+      "value": {
+        "opensAt": "2026-08-14T00:00:00.000Z",
+        "closesAt": null,
+        "url": null,
+        "region": null
+      },
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/the-riftbound-x-t1-2025-worlds-champion-collection",
+      "evidence": "The T1 2025 Worlds Champion Signature Edition drawing will open on Friday, August. 14.",
+      "observedAt": "2026-11-26T00:31:44.017Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T00:31:44.017Z"
 }
