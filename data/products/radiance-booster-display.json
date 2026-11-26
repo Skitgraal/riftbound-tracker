@@ -72,8 +72,8 @@
         "amount": 99,
         "currency": "USD"
       },
-      "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-25T20:01:37.597Z"
+      "availability": "in_stock",
+      "lastSeenAt": "2026-11-26T11:05:53.746Z"
     },
     {
       "source": "face-to-face",
@@ -489,8 +489,17 @@
       "url": "https://playriftbound.com/en-us/news/announcements/radiance-merch-store-update",
       "evidence": "Players in North America and Europe can sign up to be selected to purchase one Radiance Booster Display from the Riot Games Merch Store.",
       "observedAt": "2026-11-26T00:31:44.017Z"
+    },
+    {
+      "field": "status",
+      "value": "released",
+      "source": "stomping-grounds",
+      "tier": "relay",
+      "url": "https://www.stompinggroundstcg.com/products/riftbound-league-of-legends-tcg-radiance-booster-box",
+      "evidence": "Riftbound: League of Legends TCG - Radiance Booster Box · 99 USD · disponible",
+      "observedAt": "2026-11-26T11:05:53.746Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-26T00:31:44.017Z"
+  "updatedAt": "2026-11-26T11:05:53.746Z"
 }

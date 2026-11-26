@@ -20,11 +20,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-origins-booster-box-24-ingles",
       "price": {
-        "amount": 188,
+        "amount": 189,
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-26T00:31:44.017Z"
+      "lastSeenAt": "2026-11-26T11:05:53.746Z"
     },
     {
       "source": "cardcosmos",
@@ -240,5 +240,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-26T00:31:44.017Z"
+  "updatedAt": "2026-11-26T11:05:53.746Z"
 }

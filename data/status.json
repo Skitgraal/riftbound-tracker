@@ -10,16 +10,16 @@
     }
   },
   "source:cardcosmos": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 19
     }
   },
   "source:discord-relay": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 3,
@@ -27,24 +27,24 @@
     }
   },
   "source:face-to-face": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 27
     }
   },
   "source:riot-merch": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 9
     }
   },
   "source:riot-news": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 107,
@@ -52,29 +52,29 @@
     }
   },
   "source:stomping-grounds": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 19
     }
   },
   "source:universe-tcg": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "items": 33
     }
   },
   "watch": {
-    "lastRunAt": "2026-11-26T00:31:44.017Z",
-    "lastSuccessAt": "2026-11-26T00:31:44.017Z",
+    "lastRunAt": "2026-11-26T11:05:53.746Z",
+    "lastSuccessAt": "2026-11-26T11:05:53.746Z",
     "consecutiveFailures": 0,
     "info": {
       "products": 48,
       "pending": 1,
-      "extracted": 5,
+      "extracted": 0,
       "llm": "ok"
     }
   }
