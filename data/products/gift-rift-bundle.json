@@ -30,7 +30,7 @@
         "currency": "EUR"
       },
       "availability": "preorder",
-      "lastSeenAt": "2026-11-25T19:01:12.003Z"
+      "lastSeenAt": "2026-11-26T21:43:44.077Z"
     },
     {
       "source": "stomping-grounds",
@@ -40,7 +40,7 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-25T20:01:37.597Z"
+      "lastSeenAt": "2026-11-26T21:43:44.077Z"
     }
   ],
   "claims": [
@@ -187,5 +187,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-26T00:31:44.017Z"
+  "updatedAt": "2026-11-26T21:43:44.077Z"
 }

@@ -37,7 +37,7 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-25T19:26:13.174Z"
+      "lastSeenAt": "2026-11-26T21:43:44.077Z"
     },
     {
       "source": "universe-tcg",
@@ -47,7 +47,7 @@
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-25T19:01:12.003Z"
+      "lastSeenAt": "2026-11-26T21:43:44.077Z"
     },
     {
       "source": "cardcosmos",
@@ -57,7 +57,7 @@
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-25T20:01:37.597Z"
+      "lastSeenAt": "2026-11-26T21:43:44.077Z"
     },
     {
       "source": "stomping-grounds",
@@ -67,7 +67,7 @@
         "currency": "USD"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-25T20:01:37.597Z"
+      "lastSeenAt": "2026-11-26T21:43:44.077Z"
     },
     {
       "source": "face-to-face",
@@ -77,7 +77,7 @@
         "currency": "CAD"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-25T20:01:37.597Z"
+      "lastSeenAt": "2026-11-26T21:43:44.077Z"
     }
   ],
   "claims": [
@@ -454,5 +454,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-25T20:01:37.597Z"
+  "updatedAt": "2026-11-26T21:43:44.077Z"
 }
