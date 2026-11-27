@@ -62,8 +62,8 @@
         "amount": 99.9,
         "currency": "EUR"
       },
-      "availability": "in_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "availability": "out_of_stock",
+      "lastSeenAt": "2026-11-27T14:02:25.441Z"
     },
     {
       "source": "stomping-grounds",
@@ -73,7 +73,7 @@
         "currency": "USD"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-26T11:05:53.746Z"
+      "lastSeenAt": "2026-11-27T14:02:25.441Z"
     },
     {
       "source": "face-to-face",
@@ -501,5 +501,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-26T21:43:44.077Z"
+  "updatedAt": "2026-11-27T14:02:25.441Z"
 }

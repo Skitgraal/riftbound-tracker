@@ -20,11 +20,11 @@
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/riftbound-unleashed-pre-rift-event-kit",
       "price": {
-        "amount": 678,
+        "amount": 677,
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-27T04:20:06.602Z"
+      "lastSeenAt": "2026-11-27T14:02:25.441Z"
     },
     {
       "source": "face-to-face",
@@ -121,5 +121,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-27T04:20:06.602Z"
+  "updatedAt": "2026-11-27T14:02:25.441Z"
 }
