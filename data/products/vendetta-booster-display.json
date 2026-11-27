@@ -2,7 +2,7 @@
   "slug": "vendetta-booster-display",
   "name": "Vendetta Booster Display",
   "set": "Vendetta",
-  "type": "draw_product",
+  "type": "display",
   "language": "EN",
   "msrp": {
     "amount": 119.99,
@@ -37,17 +37,17 @@
         "currency": "USD"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "lastSeenAt": "2026-11-27T22:46:26.420Z"
     },
     {
       "source": "universe-tcg",
       "url": "https://www.universetcg.com/products/rb-04bd01-en-vendetta-booster-display",
       "price": {
-        "amount": 162,
+        "amount": 161,
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "lastSeenAt": "2026-11-27T22:46:26.420Z"
     },
     {
       "source": "cardcosmos",
@@ -57,7 +57,7 @@
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "lastSeenAt": "2026-11-27T22:46:26.420Z"
     },
     {
       "source": "stomping-grounds",
@@ -67,7 +67,7 @@
         "currency": "USD"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "lastSeenAt": "2026-11-27T22:46:26.420Z"
     },
     {
       "source": "face-to-face",
@@ -77,7 +77,7 @@
         "currency": "CAD"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "lastSeenAt": "2026-11-27T22:46:26.420Z"
     }
   ],
   "claims": [
@@ -451,8 +451,17 @@
       "url": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
       "evidence": "The Riot Merch Store’s next drawing is the second for Vendetta Booster Displays, as promised back in our June update.",
       "observedAt": "2026-11-25T19:26:13.174Z"
+    },
+    {
+      "field": "type",
+      "value": "display",
+      "source": "riot-news",
+      "tier": "official",
+      "url": "https://playriftbound.com/en-us/news/announcements/september-merch-store-update",
+      "evidence": "Email Sign-Up Window: September 8-10 at 9:00 AM Pacific Time",
+      "observedAt": "2026-11-27T22:46:26.420Z"
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-26T21:43:44.077Z"
+  "updatedAt": "2026-11-27T22:46:26.420Z"
 }

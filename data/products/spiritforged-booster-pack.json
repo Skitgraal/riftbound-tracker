@@ -24,7 +24,7 @@
         "currency": "EUR"
       },
       "availability": "out_of_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "lastSeenAt": "2026-11-27T22:46:26.420Z"
     },
     {
       "source": "face-to-face",
@@ -34,7 +34,7 @@
         "currency": "CAD"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-26T21:43:44.077Z"
+      "lastSeenAt": "2026-11-27T22:46:26.420Z"
     }
   ],
   "claims": [
@@ -130,5 +130,5 @@
     }
   ],
   "createdAt": "2026-11-24T19:37:51.814Z",
-  "updatedAt": "2026-11-26T21:43:44.077Z"
+  "updatedAt": "2026-11-27T22:46:26.420Z"
 }
