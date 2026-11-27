@@ -20888,5 +20888,25 @@
     "languageTag": "",
     "dateAdded": "2026-11-24 13:44:38",
     "firstSeenAt": "2026-11-25T15:39:34.722Z"
+  },
+  "926395": {
+    "id": 926395,
+    "name": "Radiance Booster Box (Chinese, Jumbo)",
+    "kind": "sealed",
+    "category": "Riftbound Display",
+    "expansionId": 6659,
+    "languageTag": "ZH",
+    "dateAdded": "2026-11-25 13:03:37",
+    "firstSeenAt": "2026-11-27T03:39:55.600Z"
+  },
+  "926401": {
+    "id": 926401,
+    "name": "Radiance Booster Box (Chinese, Slim)",
+    "kind": "sealed",
+    "category": "Riftbound Display",
+    "expansionId": 6659,
+    "languageTag": "ZH",
+    "dateAdded": "2026-11-25 13:05:23",
+    "firstSeenAt": "2026-11-27T03:39:55.600Z"
   }
 }
