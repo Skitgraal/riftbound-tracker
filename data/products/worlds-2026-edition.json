@@ -47,7 +47,7 @@
         "currency": "EUR"
       },
       "availability": "in_stock",
-      "lastSeenAt": "2026-11-26T00:31:44.017Z"
+      "lastSeenAt": "2026-11-27T04:20:06.602Z"
     }
   ],
   "claims": [
@@ -306,5 +306,5 @@
     }
   ],
   "createdAt": "2026-11-23T22:04:12.120Z",
-  "updatedAt": "2026-11-26T21:43:44.077Z"
+  "updatedAt": "2026-11-27T04:20:06.602Z"
 }
