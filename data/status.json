@@ -1,11 +1,11 @@
 {
   "prices": {
-    "lastRunAt": "2026-11-28T03:20:46.461Z",
-    "lastSuccessAt": "2026-11-28T03:20:46.461Z",
+    "lastRunAt": "2026-11-28T14:14:54.534Z",
+    "lastSuccessAt": "2026-11-28T14:14:54.534Z",
     "consecutiveFailures": 0,
     "info": {
       "priceGuideCreatedAt": "2026-11-27T15:50:01+0100",
-      "catalogCreatedAt": "2026-11-27T13:43:07+0100",
+      "catalogCreatedAt": "2026-11-28T12:50:17+0100",
       "lastSnapshotDate": "2026-11-27"
     }
   },
